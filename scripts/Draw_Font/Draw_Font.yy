@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Draw_Font",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Draw_Font",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
