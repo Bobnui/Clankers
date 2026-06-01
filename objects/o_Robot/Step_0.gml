@@ -266,12 +266,12 @@ if o_Game.pause == false
 		
 			if lowering_amount == 0 // if not, check for left/right key presses:
 			{
-				if keyboard_check(vk_left)
+				if keyboard_check(ord("A"))
 				{
 					h_speed -= 1;	
 				}
 
-				if keyboard_check(vk_right)
+				if keyboard_check(ord("D"))
 				{
 					h_speed += 1;
 				}
