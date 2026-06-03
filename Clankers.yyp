@@ -66,6 +66,7 @@
     {"id":{"name":"s_Collision","path":"sprites/s_Collision/s_Collision.yy",},},
     {"id":{"name":"s_Disk_UI","path":"sprites/s_Disk_UI/s_Disk_UI.yy",},},
     {"id":{"name":"s_Disk","path":"sprites/s_Disk/s_Disk.yy",},},
+    {"id":{"name":"s_Magnet_UI","path":"sprites/s_Magnet_UI/s_Magnet_UI.yy",},},
     {"id":{"name":"s_Magnet","path":"sprites/s_Magnet/s_Magnet.yy",},},
     {"id":{"name":"s_Particle","path":"sprites/s_Particle/s_Particle.yy",},},
     {"id":{"name":"s_Robot_Middle_Bit","path":"sprites/s_Robot_Middle_Bit/s_Robot_Middle_Bit.yy",},},
