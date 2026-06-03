@@ -35,6 +35,7 @@
   },
   "name":"Clankers",
   "resources":[
+    {"id":{"name":"O__Robit","path":"objects/O__Robit/O__Robit.yy",},},
     {"id":{"name":"o_Camera","path":"objects/o_Camera/o_Camera.yy",},},
     {"id":{"name":"o_Ceiling","path":"objects/o_Ceiling/o_Ceiling.yy",},},
     {"id":{"name":"o_Collision","path":"objects/o_Collision/o_Collision.yy",},},
@@ -42,6 +43,7 @@
     {"id":{"name":"o_Game","path":"objects/o_Game/o_Game.yy",},},
     {"id":{"name":"o_Particle","path":"objects/o_Particle/o_Particle.yy",},},
     {"id":{"name":"o_Robot","path":"objects/o_Robot/o_Robot.yy",},},
+    {"id":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Draw_Font","path":"scripts/Draw_Font/Draw_Font.yy",},},
@@ -56,6 +58,8 @@
     {"id":{"name":"snd_Motor","path":"sounds/snd_Motor/snd_Motor.yy",},},
     {"id":{"name":"snd_Pickup","path":"sounds/snd_Pickup/snd_Pickup.yy",},},
     {"id":{"name":"snd_Wheels","path":"sounds/snd_Wheels/snd_Wheels.yy",},},
+    {"id":{"name":"S__Robit_Mid","path":"sprites/S__Robit_Mid/S__Robit_Mid.yy",},},
+    {"id":{"name":"S__Robit","path":"sprites/S__Robit/S__Robit.yy",},},
     {"id":{"name":"s_Black_Pixel","path":"sprites/s_Black_Pixel/s_Black_Pixel.yy",},},
     {"id":{"name":"s_Border","path":"sprites/s_Border/s_Border.yy",},},
     {"id":{"name":"s_Ceiling","path":"sprites/s_Ceiling/s_Ceiling.yy",},},
@@ -78,6 +82,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
