@@ -44,8 +44,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S__Robit",
-    "path":"sprites/S__Robit/S__Robit.yy",
+    "name":"s_Robot_Wheels",
+    "path":"sprites/s_Robot_Wheels/s_Robot_Wheels.yy",
   },
   "spriteMaskId":null,
   "visible":true,

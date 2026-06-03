@@ -25,7 +25,10 @@ currentStates = [];
 event_user(0) //Init State Machine
 
 //CHARCTER SIZE
-charSizeX = 
+charWidth = 22;
+charHeight = 12;
+wheelsHeight = 20;
+
 
 //STRETCH
 canStretch = false;
