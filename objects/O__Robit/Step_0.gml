@@ -23,6 +23,12 @@ if place_meeting(x, y + 1, o_Collision) // if there is a collision object direct
 {
 	currentYSpeed = 0; //Stop player from falling
 	
+	if(array_contains(currentStates, playerStates.hanging) && array_contains(currentStates, playerStates.stretching)) // if player is stretching down from roof
+	{
+		show_debug_message("Retract From Roof"); // retract from roof to ground
+	}
+	
+	
 	if(array_contains(currentStates, playerStates.falling)) // if player states contains falling
 	{
 		NewRemoveState(playerStates.falling); // remove it

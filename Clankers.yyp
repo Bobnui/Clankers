@@ -66,6 +66,7 @@
     {"id":{"name":"s_Collision","path":"sprites/s_Collision/s_Collision.yy",},},
     {"id":{"name":"s_Disk_UI","path":"sprites/s_Disk_UI/s_Disk_UI.yy",},},
     {"id":{"name":"s_Disk","path":"sprites/s_Disk/s_Disk.yy",},},
+    {"id":{"name":"s_Magnet","path":"sprites/s_Magnet/s_Magnet.yy",},},
     {"id":{"name":"s_Particle","path":"sprites/s_Particle/s_Particle.yy",},},
     {"id":{"name":"s_Robot_Middle_Bit","path":"sprites/s_Robot_Middle_Bit/s_Robot_Middle_Bit.yy",},},
     {"id":{"name":"s_Robot_Torso_Hanging","path":"sprites/s_Robot_Torso_Hanging/s_Robot_Torso_Hanging.yy",},},
@@ -80,9 +81,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
-    {"roomId":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
