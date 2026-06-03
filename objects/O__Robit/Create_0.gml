@@ -24,6 +24,9 @@ currentStates = [];
 
 event_user(0) //Init State Machine
 
+//CHARCTER SIZE
+charSizeX = 
+
 //STRETCH
 canStretch = false;
 currentStretchAmount = 0;

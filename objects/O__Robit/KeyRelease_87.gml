@@ -6,5 +6,5 @@ if(array_contains(currentStates, playerStates.stretching)) && (array_contains(cu
 }
 else
 {
-	show_debug_message("Key Up - W");
+	
 }
