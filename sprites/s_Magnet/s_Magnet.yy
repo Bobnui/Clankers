@@ -55,8 +55,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Pick Ups",
+    "path":"folders/Sprites/Pick Ups.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
