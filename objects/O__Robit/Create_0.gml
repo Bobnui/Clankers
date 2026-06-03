@@ -28,6 +28,7 @@ event_user(0) //Init State Machine
 canStretch = false;
 currentStretchAmount = 0;
 maxStretchLength = 80;
+roofDetectLength = 13;
 
 event_user(1) //Enables Stretch ability - REMOVE
 
