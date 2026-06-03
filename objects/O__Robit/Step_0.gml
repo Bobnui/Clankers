@@ -35,8 +35,13 @@ if place_meeting(x, y + 1, o_Collision) // if there is a collision object direct
 		NewDesiredState(playerStates.grounded); // and add grounded
 	}
 }
+else if(collision_point())
+{
+
+}
 else //Otherwise
 {
+	
 	if(!array_contains(currentStates, playerStates.falling)) // if player states don't contain falling
 	{
 		NewDesiredState(playerStates.falling) // add it

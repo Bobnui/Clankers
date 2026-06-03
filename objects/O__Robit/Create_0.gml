@@ -24,11 +24,13 @@ currentStates = [];
 
 event_user(0) //Init State Machine
 
+//CHARCTER SIZE
+charSizeX = 
+
 //STRETCH
 canStretch = false;
 currentStretchAmount = 0;
 maxStretchLength = 80;
-roofDetectLength = 13;
 
 event_user(1) //Enables Stretch ability - REMOVE
 
