@@ -70,6 +70,8 @@
     {"id":{"name":"s_Disk","path":"sprites/s_Disk/s_Disk.yy",},},
     {"id":{"name":"s_Hydrolic_UI","path":"sprites/s_Hydrolic_UI/s_Hydrolic_UI.yy",},},
     {"id":{"name":"s_Hydrolic","path":"sprites/s_Hydrolic/s_Hydrolic.yy",},},
+    {"id":{"name":"s_Lights_UI","path":"sprites/s_Lights_UI/s_Lights_UI.yy",},},
+    {"id":{"name":"s_Lights","path":"sprites/s_Lights/s_Lights.yy",},},
     {"id":{"name":"s_Magnet_UI","path":"sprites/s_Magnet_UI/s_Magnet_UI.yy",},},
     {"id":{"name":"s_Magnet","path":"sprites/s_Magnet/s_Magnet.yy",},},
     {"id":{"name":"s_Particle","path":"sprites/s_Particle/s_Particle.yy",},},
