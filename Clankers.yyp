@@ -71,6 +71,7 @@
     {"id":{"name":"s_Magnet_UI","path":"sprites/s_Magnet_UI/s_Magnet_UI.yy",},},
     {"id":{"name":"s_Magnet","path":"sprites/s_Magnet/s_Magnet.yy",},},
     {"id":{"name":"s_Particle","path":"sprites/s_Particle/s_Particle.yy",},},
+    {"id":{"name":"s_Robit_hangin","path":"sprites/s_Robit_hangin/s_Robit_hangin.yy",},},
     {"id":{"name":"s_Robot_Middle_Bit","path":"sprites/s_Robot_Middle_Bit/s_Robot_Middle_Bit.yy",},},
     {"id":{"name":"s_Robot_Torso_Hanging","path":"sprites/s_Robot_Torso_Hanging/s_Robot_Torso_Hanging.yy",},},
     {"id":{"name":"s_Robot_Torso","path":"sprites/s_Robot_Torso/s_Robot_Torso.yy",},},
