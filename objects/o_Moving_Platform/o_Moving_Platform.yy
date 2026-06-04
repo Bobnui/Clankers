@@ -1,13 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"O__PlayerChar",
+  "%Name":"o_Moving_Platform",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"O__PlayerChar",
+  "name":"o_Moving_Platform",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Robot_Wheels",
-    "path":"sprites/s_Robot_Wheels/s_Robot_Wheels.yy",
+    "name":"s_Collision",
+    "path":"sprites/s_Collision/s_Collision.yy",
   },
   "spriteMaskId":null,
   "visible":true,

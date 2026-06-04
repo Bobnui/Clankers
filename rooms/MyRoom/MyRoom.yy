@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_F387AB9_1","path":"rooms/MyRoom/MyRoom.yy",},
-    {"name":"inst_64F84B69","path":"rooms/MyRoom/MyRoom.yy",},
     {"name":"inst_1ED26F8E","path":"rooms/MyRoom/MyRoom.yy",},
     {"name":"inst_E54708F","path":"rooms/MyRoom/MyRoom.yy",},
     {"name":"inst_471F2762","path":"rooms/MyRoom/MyRoom.yy",},
@@ -45,6 +44,7 @@
     {"name":"inst_E257A29","path":"rooms/MyRoom/MyRoom.yy",},
     {"name":"inst_13C776E4","path":"rooms/MyRoom/MyRoom.yy",},
     {"name":"inst_76509960","path":"rooms/MyRoom/MyRoom.yy",},
+    {"name":"inst_35DBAD71","path":"rooms/MyRoom/MyRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -93,7 +93,7 @@
           0,-17,-2147483648,1,0,-27,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"t_Foreground","path":"tilesets/t_Foreground/t_Foreground.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Robot","depth":300,"effectEnabled":true,"effectType":null,"gridX":6,"gridY":6,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_64F84B69","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_64F84B69","objectId":{"name":"O__Robit","path":"objects/O__Robit/O__Robit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":90.0,"y":84.0,},
+        {"$GMRInstance":"v4","%Name":"inst_35DBAD71","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35DBAD71","objectId":{"name":"O__PlayerChar","path":"objects/O__PlayerChar/O__PlayerChar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":84.0,"y":84.0,},
       ],"layers":[],"name":"Robot","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Pickups","depth":400,"effectEnabled":true,"effectType":null,"gridX":6,"gridY":6,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_F387AB9_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F387AB9_1","objectId":{"name":"o_Magnet","path":"objects/o_Magnet/o_Magnet.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":108.0,"y":78.0,},
