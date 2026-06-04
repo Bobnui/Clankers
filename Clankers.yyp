@@ -99,7 +99,6 @@
     {"id":{"name":"s_Robot_Torso","path":"sprites/s_Robot_Torso/s_Robot_Torso.yy",},},
     {"id":{"name":"s_Robot_Wheels","path":"sprites/s_Robot_Wheels/s_Robot_Wheels.yy",},},
     {"id":{"name":"s_Spring","path":"sprites/s_Spring/s_Spring.yy",},},
-    {"id":{"name":"s_TapeMeasure","path":"sprites/s_TapeMeasure/s_TapeMeasure.yy",},},
     {"id":{"name":"s_Tiles_Background","path":"sprites/s_Tiles_Background/s_Tiles_Background.yy",},},
     {"id":{"name":"s_Tiles_Foreground","path":"sprites/s_Tiles_Foreground/s_Tiles_Foreground.yy",},},
     {"id":{"name":"s_UI_Font","path":"sprites/s_UI_Font/s_UI_Font.yy",},},
