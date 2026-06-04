@@ -324,7 +324,7 @@ if o_Game.pause == false
 	// so here we also check if the head is colliding with a pickup. 
 	// This way, if we are stretching up, we can pick up disks:
 
-	var _body_check = collision_point(x, y - lowering_amount - rise_amount - 8, o_Disk, true, false);
+	var _body_check = collision_point(x, y - lowering_amount - rise_amount - 8, o_Magnet, true, false);
 	if _body_check != noone
 	{
 		Pickup(_body_check);
