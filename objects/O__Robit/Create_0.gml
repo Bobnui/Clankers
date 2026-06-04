@@ -17,7 +17,8 @@ enum playerStates
 	hanging, //3
 	falling, // 4
 	stretching, //5
-	hovering, // 6
+	retracting, //6
+	hovering, // 7
 }
 
 currentStates = [];
@@ -43,6 +44,10 @@ maxHoverLength = 4;
 
 event_user(2) //Enables hover ability - REMOVE
 
-//
+//Functions
+DrawTorso = function(sprite, frame)
+{
+	draw_sprite_ext(sprite, frame, x, y - currentStretchAmount, image_xscale, 1, 0, c_white, 1);
+}
 
 

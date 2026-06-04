@@ -37,6 +37,7 @@
   },
   "name":"Clankers",
   "resources":[
+    {"id":{"name":"O__PlayerChar","path":"objects/O__PlayerChar/O__PlayerChar.yy",},},
     {"id":{"name":"O__Robit","path":"objects/O__Robit/O__Robit.yy",},},
     {"id":{"name":"o_Camera","path":"objects/o_Camera/o_Camera.yy",},},
     {"id":{"name":"o_Ceiling","path":"objects/o_Ceiling/o_Ceiling.yy",},},

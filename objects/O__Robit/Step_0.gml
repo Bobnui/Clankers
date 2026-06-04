@@ -26,31 +26,35 @@ if place_meeting(x, y + 1, o_Collision) // if there is a collision object direct
 	//And player is currently stretching
 	if(array_contains(currentStates, playerStates.stretching))
 	{
+		// if player is currently hanging from the roof
 		if(array_contains(currentStates, playerStates.hanging)) 
 		{
-			show_debug_message("Retract From Roof"); // retract from roof to ground
+			AttachToGround() // retract from roof to ground
 		}
 		
-		//AND player collides with roof 
-		if (collision_point(x - (0.5 * charWidth), y - currentStretchAmount - charHeight, o_Collision, false, false)) 
-		&& 
-		(collision_point(x + (0.5 * charWidth), y - currentStretchAmount - charHeight, o_Collision, false, false))
+		//Or if the player collides with roof from the ground
+		else if(collision_point(x, y - (currentStretchAmount + wheelsHeight + 2), o_Collision, false, true))
 		{
-			show_debug_message("Retract from floor"); // retract from floor to roof
+			AttachToRoof(); // retract from floor to roof
 		}
 	}
-	// and if player states contains falling
+	
+	// Or if player states contains falling instead
 	if(array_contains(currentStates, playerStates.falling)) || !(array_contains(currentStates, playerStates.grounded)) 
 	{
 		NewRemoveState(playerStates.falling); // remove it
 		NewDesiredState(playerStates.grounded); // and add grounded
 	}
-	
-	
 }
-else //Otherwise
+
+else if(collision_point(x, y - (currentStretchAmount + wheelsHeight + 2), o_Collision, false, true)) // if there is a collision object directly above the player
 {
-	
+	currentYSpeed = 0; // Stop player from falling through floor
+}
+
+//Otherwise
+else 
+{
 	if(!array_contains(currentStates, playerStates.falling)) // if player states don't contain falling
 	{
 		NewDesiredState(playerStates.falling) // add it
