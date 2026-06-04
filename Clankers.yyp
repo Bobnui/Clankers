@@ -48,12 +48,6 @@
     {"id":{"name":"o_Magnet","path":"objects/o_Magnet/o_Magnet.yy",},},
     {"id":{"name":"o_Particle","path":"objects/o_Particle/o_Particle.yy",},},
     {"id":{"name":"o_Robot","path":"objects/o_Robot/o_Robot.yy",},},
-<<<<<<< HEAD
-    {"id":{"name":"o_Rod","path":"objects/o_Rod/o_Rod.yy",},},
-=======
-    {"id":{"name":"o_TapeMeasure","path":"objects/o_TapeMeasure/o_TapeMeasure.yy",},},
-    {"id":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
->>>>>>> b88133333e5a020258066e07e44da3cf75b72b6e
     {"id":{"name":"KeriaRoom","path":"rooms/KeriaRoom/KeriaRoom.yy",},},
     {"id":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
@@ -79,6 +73,7 @@
     {"id":{"name":"s_Collision","path":"sprites/s_Collision/s_Collision.yy",},},
     {"id":{"name":"s_Disk_UI","path":"sprites/s_Disk_UI/s_Disk_UI.yy",},},
     {"id":{"name":"s_Disk","path":"sprites/s_Disk/s_Disk.yy",},},
+    {"id":{"name":"s_Extention","path":"sprites/s_Extention/s_Extention.yy",},},
     {"id":{"name":"s_Hydrolic_UI","path":"sprites/s_Hydrolic_UI/s_Hydrolic_UI.yy",},},
     {"id":{"name":"s_Hydrolic","path":"sprites/s_Hydrolic/s_Hydrolic.yy",},},
     {"id":{"name":"s_Lights_UI","path":"sprites/s_Lights_UI/s_Lights_UI.yy",},},
@@ -91,8 +86,6 @@
     {"id":{"name":"s_Robot_Torso_Hanging","path":"sprites/s_Robot_Torso_Hanging/s_Robot_Torso_Hanging.yy",},},
     {"id":{"name":"s_Robot_Torso","path":"sprites/s_Robot_Torso/s_Robot_Torso.yy",},},
     {"id":{"name":"s_Robot_Wheels","path":"sprites/s_Robot_Wheels/s_Robot_Wheels.yy",},},
-    {"id":{"name":"s_Rod_UI","path":"sprites/s_Rod_UI/s_Rod_UI.yy",},},
-    {"id":{"name":"s_Rod","path":"sprites/s_Rod/s_Rod.yy",},},
     {"id":{"name":"s_Spring","path":"sprites/s_Spring/s_Spring.yy",},},
     {"id":{"name":"s_TapeMeasure","path":"sprites/s_TapeMeasure/s_TapeMeasure.yy",},},
     {"id":{"name":"s_Tiles_Background","path":"sprites/s_Tiles_Background/s_Tiles_Background.yy",},},
@@ -104,7 +97,6 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
     {"roomId":{"name":"KeriaRoom","path":"rooms/KeriaRoom/KeriaRoom.yy",},},
     {"roomId":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
