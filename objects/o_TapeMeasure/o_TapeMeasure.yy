@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
   "%Name":"o_TapeMeasure",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"o_TapeMeasure",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pick Ups",
-    "path":"folders/Objects/Pick Ups.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
