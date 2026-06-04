@@ -52,6 +52,7 @@
     {"id":{"name":"o_Particle","path":"objects/o_Particle/o_Particle.yy",},},
     {"id":{"name":"o_Robot","path":"objects/o_Robot/o_Robot.yy",},},
     {"id":{"name":"o_TapeMeasure","path":"objects/o_TapeMeasure/o_TapeMeasure.yy",},},
+    {"id":{"name":"KeiraRoomTest","path":"rooms/KeiraRoomTest/KeiraRoomTest.yy",},},
     {"id":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
@@ -90,6 +91,7 @@
     {"id":{"name":"s_Robot_Torso","path":"sprites/s_Robot_Torso/s_Robot_Torso.yy",},},
     {"id":{"name":"s_Robot_Wheels","path":"sprites/s_Robot_Wheels/s_Robot_Wheels.yy",},},
     {"id":{"name":"s_Spring","path":"sprites/s_Spring/s_Spring.yy",},},
+    {"id":{"name":"s_TapeMeasure_UI","path":"sprites/s_TapeMeasure_UI/s_TapeMeasure_UI.yy",},},
     {"id":{"name":"s_TapeMeasure","path":"sprites/s_TapeMeasure/s_TapeMeasure.yy",},},
     {"id":{"name":"s_Tiles_Background","path":"sprites/s_Tiles_Background/s_Tiles_Background.yy",},},
     {"id":{"name":"s_Tiles_Foreground","path":"sprites/s_Tiles_Foreground/s_Tiles_Foreground.yy",},},
@@ -100,6 +102,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"KeiraRoomTest","path":"rooms/KeiraRoomTest/KeiraRoomTest.yy",},},
     {"roomId":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},

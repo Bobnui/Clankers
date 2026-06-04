@@ -9,8 +9,11 @@ moveSpeed = 1;
 gravityScale = 1;
 
 //Floor & ceiling checks
-isGrounded = false;
+isGrounded = true;
 isHanging = false;
+
+//Anims
+walkFrame = 0;
 
 //Player State
 enum states
@@ -22,3 +25,6 @@ enum states
 }
 
 state = states.idle;
+
+//Stretch
+currentStretchAmount = 0;
