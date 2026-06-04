@@ -48,6 +48,7 @@
     {"id":{"name":"o_Hydrolic","path":"objects/o_Hydrolic/o_Hydrolic.yy",},},
     {"id":{"name":"o_Lights","path":"objects/o_Lights/o_Lights.yy",},},
     {"id":{"name":"o_Magnet","path":"objects/o_Magnet/o_Magnet.yy",},},
+    {"id":{"name":"o_Moving_Platform","path":"objects/o_Moving_Platform/o_Moving_Platform.yy",},},
     {"id":{"name":"o_Particle","path":"objects/o_Particle/o_Particle.yy",},},
     {"id":{"name":"o_Robot","path":"objects/o_Robot/o_Robot.yy",},},
     {"id":{"name":"o_TapeMeasure","path":"objects/o_TapeMeasure/o_TapeMeasure.yy",},},
