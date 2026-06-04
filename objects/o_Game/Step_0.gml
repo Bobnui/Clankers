@@ -1,4 +1,4 @@
-if instance_number(o_Disk) == 0
+if instance_number(o_Magnet) == 0
 {
 	_room = room_next(room);
 	if room_exists(_room)

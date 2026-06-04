@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_Disk",
+  "%Name":"o_Magnet",
   "eventList":[],
   "managed":true,
-  "name":"o_Disk",
+  "name":"o_Magnet",
   "overriddenProperties":[],
   "parent":{
     "name":"Pick Ups",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Disk_UI",
-    "path":"sprites/s_Disk_UI/s_Disk_UI.yy",
+    "name":"s_Magnet",
+    "path":"sprites/s_Magnet/s_Magnet.yy",
   },
   "spriteMaskId":null,
   "visible":true,
