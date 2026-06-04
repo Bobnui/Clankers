@@ -48,6 +48,8 @@
     {"id":{"name":"o_Magnet","path":"objects/o_Magnet/o_Magnet.yy",},},
     {"id":{"name":"o_Particle","path":"objects/o_Particle/o_Particle.yy",},},
     {"id":{"name":"o_Robot","path":"objects/o_Robot/o_Robot.yy",},},
+    {"id":{"name":"o_TapeMeasure","path":"objects/o_TapeMeasure/o_TapeMeasure.yy",},},
+    {"id":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
     {"id":{"name":"KeriaRoom","path":"rooms/KeriaRoom/KeriaRoom.yy",},},
     {"id":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
@@ -96,6 +98,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
     {"roomId":{"name":"KeriaRoom","path":"rooms/KeriaRoom/KeriaRoom.yy",},},
     {"roomId":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
