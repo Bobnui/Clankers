@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_Disk",
+  "%Name":"o_Grapple",
   "eventList":[],
   "managed":true,
-  "name":"o_Disk",
+  "name":"o_Grapple",
   "overriddenProperties":[],
   "parent":{
     "name":"Pick Ups",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Disk_UI",
-    "path":"sprites/s_Disk_UI/s_Disk_UI.yy",
+    "name":"s_Grapple",
+    "path":"sprites/s_Grapple/s_Grapple.yy",
   },
   "spriteMaskId":null,
   "visible":true,

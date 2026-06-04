@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_Disk",
+  "%Name":"o_Lights",
   "eventList":[],
   "managed":true,
-  "name":"o_Disk",
+  "name":"o_Lights",
   "overriddenProperties":[],
   "parent":{
     "name":"Pick Ups",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Disk_UI",
-    "path":"sprites/s_Disk_UI/s_Disk_UI.yy",
+    "name":"s_Lights",
+    "path":"sprites/s_Lights/s_Lights.yy",
   },
   "spriteMaskId":null,
   "visible":true,
