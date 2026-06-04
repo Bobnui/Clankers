@@ -8,6 +8,10 @@ ySpeed = 0;
 moveSpeed = 1;
 gravityScale = 1;
 
+//Floor & ceiling checks
+isGrounded = false;
+isHanging = false;
+
 //Player State
 enum states
 {
@@ -15,7 +19,6 @@ enum states
 	walking, // 1
 	falling, // 2
 	stretching, // 3
-	hovering, // 4
 }
 
 state = states.idle;
