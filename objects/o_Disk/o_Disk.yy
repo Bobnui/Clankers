@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Disk",
-    "path":"sprites/s_Disk/s_Disk.yy",
+    "name":"s_Magnet",
+    "path":"sprites/s_Magnet/s_Magnet.yy",
   },
   "spriteMaskId":null,
   "visible":true,
