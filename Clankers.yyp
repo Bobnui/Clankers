@@ -76,6 +76,7 @@
     {"id":{"name":"s_Collision","path":"sprites/s_Collision/s_Collision.yy",},},
     {"id":{"name":"s_Disk_UI","path":"sprites/s_Disk_UI/s_Disk_UI.yy",},},
     {"id":{"name":"s_Disk","path":"sprites/s_Disk/s_Disk.yy",},},
+    {"id":{"name":"s_Grapple_UI","path":"sprites/s_Grapple_UI/s_Grapple_UI.yy",},},
     {"id":{"name":"s_Grapple","path":"sprites/s_Grapple/s_Grapple.yy",},},
     {"id":{"name":"s_Hydrolic_UI","path":"sprites/s_Hydrolic_UI/s_Hydrolic_UI.yy",},},
     {"id":{"name":"s_Hydrolic","path":"sprites/s_Hydrolic/s_Hydrolic.yy",},},
