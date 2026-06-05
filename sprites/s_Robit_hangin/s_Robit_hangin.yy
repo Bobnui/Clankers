@@ -26,7 +26,7 @@
   ],
   "name":"s_Robit_hangin",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":15,
-    "yorigin":30,
+    "yorigin":8,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
