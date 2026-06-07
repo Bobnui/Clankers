@@ -7,13 +7,13 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_1ED26F8E","path":"rooms/MyRoom/MyRoom.yy",},
-    {"name":"inst_35DBAD71","path":"rooms/MyRoom/MyRoom.yy",},
     {"name":"inst_1437EF01","path":"rooms/MyRoom/MyRoom.yy",},
     {"name":"inst_22905F89","path":"rooms/MyRoom/MyRoom.yy",},
     {"name":"inst_50E62657","path":"rooms/MyRoom/MyRoom.yy",},
     {"name":"inst_6084C25D","path":"rooms/MyRoom/MyRoom.yy",},
     {"name":"inst_45EE841D","path":"rooms/MyRoom/MyRoom.yy",},
     {"name":"inst_423EEB9B","path":"rooms/MyRoom/MyRoom.yy",},
+    {"name":"inst_D4807FF","path":"rooms/MyRoom/MyRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -32,7 +32,7 @@
           0,-17,-2147483648,1,0,-27,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"t_Foreground","path":"tilesets/t_Foreground/t_Foreground.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Robot","depth":300,"effectEnabled":true,"effectType":null,"gridX":6,"gridY":6,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_35DBAD71","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35DBAD71","objectId":{"name":"O__PlayerChar","path":"objects/O__PlayerChar/O__PlayerChar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":138.0,"y":84.0,},
+        {"$GMRInstance":"v4","%Name":"inst_D4807FF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D4807FF","objectId":{"name":"O_Player","path":"objects/O_Player/O_Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":120.0,"y":84.0,},
       ],"layers":[],"name":"Robot","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Pickups","depth":400,"effectEnabled":true,"effectType":null,"gridX":6,"gridY":6,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Pickups","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Level_Tiles","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Level_Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileCompressedData":[
