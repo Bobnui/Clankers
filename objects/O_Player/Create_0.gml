@@ -13,10 +13,23 @@ isRetracting = false;
 
 //Unlocks
 stretchUnlocked = true;
+hoverUnlocked = true;
 
 //Stretch
 canStretch = true;
+
 currentStretchAmount = 0;
+maxStretchAmount = 60;
+
+stretchSpeed = 1;
+retractSpeed = 2;
+
+shouldAutoRetract = true;
+canMoveWhileStretching = false;
+
+//Hover
+isHovering = false;
+
 
 #region FUNCTIONS
 
@@ -49,8 +62,14 @@ function CalculateSpeed()
 
 function ApplyMovement() //Add calculated speed to player's current position
 {
-	x += xSpeed;
-	y += ySpeed;
+	if currentStretchAmount == 0 || canMoveWhileStretching == true
+	{
+		x += xSpeed;	
+	}
+	if !isHovering
+	{
+		y += ySpeed;	
+	}
 }
 #endregion
 
@@ -158,6 +177,75 @@ function WallCheck()
 		xSpeed = 0;
 	}
 }
+
+#endregion
+
+#region Stretch
+
+function StretchCheck()
+{
+	var desiredStretchDirection = upKey - downKey;
+	switch(desiredStretchDirection)
+	{
+		case 1: //Is holding up key
+			if !isHanging
+			{
+				PerformStretch();
+			}
+			else
+			{
+				PerformRetract();
+			}
+		break;
+		
+		case 0: // is not pressing up/down OR if pressing both up/down
+			if shouldAutoRetract && currentStretchAmount > 0
+			{
+				PerformRetract();
+			}
+		break;
+		
+		case -1: // is holding down key
+			if isHanging
+			{
+				PerformStretch();
+			}
+			else
+			{
+				PerformRetract();
+			}
+		break;
+	}
+}
+
+function PerformStretch()
+{
+	isRetracting = false;
+	currentStretchAmount = clamp(currentStretchAmount + stretchSpeed, 0, maxStretchAmount);
+	if currentStretchAmount == maxStretchAmount 
+	{
+		isStretching = false;
+	}
+	else
+	{
+		isStretching = true;
+	}
+}
+
+function PerformRetract()
+{
+	isStretching = false;
+	currentStretchAmount = clamp(currentStretchAmount - retractSpeed, 0, maxStretchAmount);
+	if currentStretchAmount == 0
+	{
+		isRetracting = false;
+	}
+	else
+	{
+		isRetracting = true;
+	}
+}
+
 
 #endregion
 

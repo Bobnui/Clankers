@@ -18,10 +18,6 @@ else if isHanging
 {
 	draw_sprite_ext(S_Player_Hanging, 0, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
 }
-else 
-{
-	draw_sprite_ext(S_Player_Torso, 1, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
-}
 
 //Stretch midriff
 draw_sprite_ext(S_Player_Midriff, 0, x, y - 10, image_xscale, currentStretchAmount, 0, c_white, 1);

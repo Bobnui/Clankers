@@ -16,3 +16,6 @@ SetSpriteDirection();
 
 //Moves player
 ApplyMovement(); 
+
+//Stretch Ability
+StretchCheck();
