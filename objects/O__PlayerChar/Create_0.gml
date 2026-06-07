@@ -28,6 +28,7 @@ currentStretchAmount = 0;
 maxStretchAmount = 40;
 stretchSpeed = 1;
 retractSpeed = 2;
+currentlyPulling = false;
 
 #region FUNCTIONS
 
@@ -105,6 +106,36 @@ function WallCheck()
 		//Then prevent player passing through it
 		xSpeed = 0;
 	}
+	//Repeat collision for torso
+	else if collision_rectangle(bbox_left + 6 + xSpeed, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + xSpeed, bbox_bottom - 6, o_Collision, false, false)
+	{
+		var pixelCheckX = sign(xSpeed);
+		while !collision_rectangle(bbox_left + 6 + pixelCheckX, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + pixelCheckX, bbox_bottom - 6, o_Collision, false, false)
+		{
+			x += pixelCheckX;
+		}
+		xSpeed = 0;
+	}
+	//repeat collision for shoulders
+	else if collision_rectangle(bbox_left + 4 + xSpeed, bbox_top - 9 - currentStretchAmount, bbox_right - 4 + xSpeed, bbox_bottom - 12 - currentStretchAmount, o_Collision, false, false)
+	{
+		var pixelCheckX = sign(xSpeed);
+		while !collision_rectangle(bbox_left + 4 + pixelCheckX, bbox_top - 9 - currentStretchAmount, bbox_right - 4 + pixelCheckX, bbox_bottom - 12 - currentStretchAmount, o_Collision, false, false)
+		{
+			x += pixelCheckX;
+		}
+		xSpeed = 0;
+	}
+	//repeat collision for head
+	else if collision_rectangle(bbox_left + 7 + xSpeed, bbox_top - 16 - currentStretchAmount, bbox_right - 7 + xSpeed, bbox_bottom - 17 - currentStretchAmount, o_Collision, false, false)
+	{
+		var pixelCheckX = sign(xSpeed);
+		while !collision_rectangle(bbox_left + 7 + pixelCheckX, bbox_top - 16 - currentStretchAmount, bbox_right - 7 + pixelCheckX, bbox_bottom - 17 - currentStretchAmount, o_Collision, false, false)
+		{
+			x += pixelCheckX;
+		}
+		xSpeed = 0;
+	}
 }
 
 function FloorCheck()
@@ -124,9 +155,18 @@ function FloorCheck()
 
 function CeilingCheck()
 {
-	if collision_point(x - 7, GetTopOfHead(), o_Collision, false, false) || collision_point(x + 7, GetTopOfHead(), o_Collision, false, false)
+	if collision_point(x - 4, GetTopOfHead() - 1, o_Collision, false, false) || collision_point(x + 4, GetTopOfHead() - 1, o_Collision, false, false)
 	{
 		canStretch = false;
+		if collision_point(x - 7, GetTopOfHead() - 1, o_Collision, false, false) && collision_point(x + 7, GetTopOfHead() - 1, o_Collision, false, false)
+		{
+			if !currentlyPulling
+			{
+				currentlyPulling = true;
+				gravityScale = 0;
+				time_source_start(PullToCeilingTimer);
+			}
+		}
 	}
 	else
 	{
@@ -137,28 +177,6 @@ function CeilingCheck()
 #endregion
 
 #region Stretch
-
-function PerformStretch()
-{
-	if canStretch
-	{
-		currentStretchAmount = clamp(currentStretchAmount + stretchSpeed, 0, maxStretchAmount);
-		if currentStretchAmount = maxStretchAmount 
-		{
-			//StopStretch
-		}
-
-	}
-}
-
-function PerformRetract()
-{
-	currentStretchAmount = clamp(currentStretchAmount - retractSpeed, 0, maxStretchAmount);
-	if currentStretchAmount = 0
-	{
-		//stop retracting
-	}
-}
 
 function StretchCheck()
 {
@@ -175,8 +193,44 @@ function StretchCheck()
 			PerformStretch();
 		break;
 	}
-	
 }
+
+function PerformStretch()
+{
+	if canStretch
+	{
+		currentStretchAmount = clamp(currentStretchAmount + stretchSpeed, 0, maxStretchAmount);
+		if currentStretchAmount == maxStretchAmount 
+		{
+			//StopStretch
+		}
+
+	}
+}
+
+function PerformRetract()
+{
+	currentStretchAmount = clamp(currentStretchAmount - retractSpeed, 0, maxStretchAmount);
+	if currentStretchAmount == 0
+	{
+		//stop retracting
+	}
+}
+
+PullToCeiling = function()
+{
+	currentStretchAmount -= 1;
+	y -= 1;
+	if(currentStretchAmount == 0)
+	{
+		time_source_reset(PullToCeilingTimer);
+
+	}
+}
+
+PullToCeilingTimer = time_source_create(time_source_game, 1, time_source_units_frames, PullToCeiling, [], -1);
+
+
 
 #endregion
 

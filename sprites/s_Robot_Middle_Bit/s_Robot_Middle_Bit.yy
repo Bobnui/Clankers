@@ -1,7 +1,7 @@
 {
   "$GMSprite":"v2",
   "%Name":"s_Robot_Middle_Bit",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":0,
   "bbox_left":0,
   "bbox_right":9,
