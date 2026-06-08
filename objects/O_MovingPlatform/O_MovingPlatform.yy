@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_Moving_Platform",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"O_MovingPlatform",
+  "eventList":[],
   "managed":true,
-  "name":"o_Moving_Platform",
+  "name":"O_MovingPlatform",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Collision",
-    "path":"sprites/s_Collision/s_Collision.yy",
+    "name":"S_Platform",
+    "path":"sprites/S_Platform/S_Platform.yy",
   },
   "spriteMaskId":null,
   "visible":true,
