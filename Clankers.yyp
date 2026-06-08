@@ -104,6 +104,7 @@
     {"id":{"name":"S_Player_Wheels_weird","path":"sprites/S_Player_Wheels_weird/S_Player_Wheels_weird.yy",},},
     {"id":{"name":"S_Player_Wheels","path":"sprites/S_Player_Wheels/S_Player_Wheels.yy",},},
     {"id":{"name":"s_Spring","path":"sprites/s_Spring/s_Spring.yy",},},
+    {"id":{"name":"s_Stretch_Notification","path":"sprites/s_Stretch_Notification/s_Stretch_Notification.yy",},},
     {"id":{"name":"s_TapeMeasure_UI","path":"sprites/s_TapeMeasure_UI/s_TapeMeasure_UI.yy",},},
     {"id":{"name":"s_TapeMeasure","path":"sprites/s_TapeMeasure/s_TapeMeasure.yy",},},
     {"id":{"name":"s_Tiles_Background","path":"sprites/s_Tiles_Background/s_Tiles_Background.yy",},},

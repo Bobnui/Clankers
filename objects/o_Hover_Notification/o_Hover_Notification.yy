@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Hover_Notification",
-    "path":"sprites/s_Hover_Notification/s_Hover_Notification.yy",
+    "name":"s_Stretch_Notification",
+    "path":"sprites/s_Stretch_Notification/s_Stretch_Notification.yy",
   },
   "spriteMaskId":null,
   "visible":true,
