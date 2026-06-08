@@ -10,8 +10,8 @@
   "name":"o_Particle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Stef's Stuff",
+    "path":"folders/Objects/Stef's Stuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

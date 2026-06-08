@@ -14,6 +14,7 @@ CalculateSpeed();
 CeilingCheck();
 WallCheck();
 HangingGapCheck();
+PickUpCheck();
 
 //checks if player sprites need to be flipped
 SetSpriteDirection();

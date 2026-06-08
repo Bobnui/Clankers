@@ -88,7 +88,7 @@ function ApplyMovement() //Add calculated speed to player's current position
 	{
 		xSpeed = 0;
 	}
-	move_and_collide(xSpeed, ySpeed, o_Collision)
+	move_and_collide(xSpeed, ySpeed, O_Collision)
 	x += xSpeed;
 	y += ySpeed;
 }
@@ -237,15 +237,15 @@ function UpdateHangingSprite()
 
 function GroundedCheck()
 {
-	if place_meeting(x, y + 1, o_Collision) // If there is a floor directly below the player
+	if place_meeting(x, y + 1, O_Collision) // If there is a floor directly below the player
 	{
 		isGrounded = true;
 	}
-	else if place_meeting(x, y + ySpeed, o_Collision) //If there is a floor in the player's path
+	else if place_meeting(x, y + ySpeed, O_Collision) //If there is a floor in the player's path
 	{
 		//move player as close to floor as possible
 		var pixelCheckY = sign(ySpeed)
-		while !place_meeting(x, y + pixelCheckY, o_Collision)
+		while !place_meeting(x, y + pixelCheckY, O_Collision)
 		{
 			y += pixelCheckY;
 		}
@@ -262,7 +262,7 @@ function GroundedCheck()
 function CeilingCheck()
 {
 	//if both of the player's hands are touching the ceiling
-	if collision_point(x - 7, GetHeadLocation() - 1, o_Collision, false, false) && collision_point(x + 7, GetHeadLocation() - 1, o_Collision, false, false)
+	if collision_point(x - 7, GetHeadLocation() - 1, O_Collision, false, false) && collision_point(x + 7, GetHeadLocation() - 1, O_Collision, false, false)
 	{
 		isCeilingAbove = true; // then we are touching the ceiling
 	}
@@ -288,30 +288,30 @@ function WallCheck()
 	}
 	*/
 	//Repeat collision for torso
-	if collision_rectangle(bbox_left + 6 + xSpeed, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + xSpeed, bbox_bottom - 6, o_Collision, false, false)
+	if collision_rectangle(bbox_left + 6 + xSpeed, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + xSpeed, bbox_bottom - 6, O_Collision, false, false)
 	{
 		var pixelCheckX = sign(xSpeed);
-		while !collision_rectangle(bbox_left + 6 + pixelCheckX, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + pixelCheckX, bbox_bottom - 6, o_Collision, false, false)
+		while !collision_rectangle(bbox_left + 6 + pixelCheckX, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + pixelCheckX, bbox_bottom - 6, O_Collision, false, false)
 		{
 			x += pixelCheckX;
 		}
 		xSpeed = 0;
 	}
 	//repeat collision for shoulders
-	else if collision_rectangle(bbox_left + 4 + xSpeed, bbox_top - 9 - currentStretchAmount, bbox_right - 4 + xSpeed, bbox_bottom - 12 - currentStretchAmount, o_Collision, false, false)
+	else if collision_rectangle(bbox_left + 4 + xSpeed, bbox_top - 9 - currentStretchAmount, bbox_right - 4 + xSpeed, bbox_bottom - 12 - currentStretchAmount, O_Collision, false, false)
 	{
 		var pixelCheckX = sign(xSpeed);
-		while !collision_rectangle(bbox_left + 4 + pixelCheckX, bbox_top - 9 - currentStretchAmount, bbox_right - 4 + pixelCheckX, bbox_bottom - 12 - currentStretchAmount, o_Collision, false, false)
+		while !collision_rectangle(bbox_left + 4 + pixelCheckX, bbox_top - 9 - currentStretchAmount, bbox_right - 4 + pixelCheckX, bbox_bottom - 12 - currentStretchAmount, O_Collision, false, false)
 		{
 			x += pixelCheckX;
 		}
 		xSpeed = 0;
 	}
 	//repeat collision for head
-	else if collision_rectangle(bbox_left + 7 + xSpeed, bbox_top - 16 - currentStretchAmount, bbox_right - 7 + xSpeed, bbox_bottom - 17 - currentStretchAmount, o_Collision, false, false)
+	else if collision_rectangle(bbox_left + 7 + xSpeed, bbox_top - 16 - currentStretchAmount, bbox_right - 7 + xSpeed, bbox_bottom - 17 - currentStretchAmount, O_Collision, false, false)
 	{
 		var pixelCheckX = sign(xSpeed);
-		while !collision_rectangle(bbox_left + 7 + pixelCheckX, bbox_top - 16 - currentStretchAmount, bbox_right - 7 + pixelCheckX, bbox_bottom - 17 - currentStretchAmount, o_Collision, false, false)
+		while !collision_rectangle(bbox_left + 7 + pixelCheckX, bbox_top - 16 - currentStretchAmount, bbox_right - 7 + pixelCheckX, bbox_bottom - 17 - currentStretchAmount, O_Collision, false, false)
 		{
 			x += pixelCheckX;
 		}
@@ -324,7 +324,7 @@ function HangingGapCheck()
 	if isHanging // player is on the ceiling
 	{
 		// if moving would mean they cross a gap
-		if !collision_point(x + 7 + xSpeed, GetHeadLocation() - 1, o_Collision, false, false) || !collision_point(x - 7 + xSpeed, GetHeadLocation() - 1, o_Collision, false, false)
+		if !collision_point(x + 7 + xSpeed, GetHeadLocation() - 1, O_Collision, false, false) || !collision_point(x - 7 + xSpeed, GetHeadLocation() - 1, O_Collision, false, false)
 		{
 			xSpeed = 0; // stop them from moving
 		}
@@ -401,11 +401,11 @@ function AttachCheck()
 
 function StretchOffsetCheck()
 {
-	if isHanging && collision_point(x, GetHeadLocation(), o_Collision, false, false)
+	if isHanging && collision_point(x, GetHeadLocation(), O_Collision, false, false)
 	{
 		y += 1; // Prevents player clipping into ceiling
 	}
-	else if isGrounded && collision_point(x, y, o_Collision, false, false)
+	else if isGrounded && collision_point(x, y, O_Collision, false, false)
 	{
 		y -= 1; // prevents player from clipping through the floor
 	}

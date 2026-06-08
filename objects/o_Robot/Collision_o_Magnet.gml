@@ -1,2 +1,2 @@
-Pickup(other);
+Pickup(other, other.Type);
 

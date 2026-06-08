@@ -86,9 +86,9 @@ if o_Game.pause == false
 
 		if abs(h_speed) > 0
 		{
-			if !place_meeting(x + h_speed, y - 1, o_Collision) // not heading into a wall?
+			if !place_meeting(x + h_speed, y - 1, O_Collision) // not heading into a wall?
 			{
-				if collision_point(x + (4 * h_speed), y, o_Collision, false, false) // is there ground below?
+				if collision_point(x + (4 * h_speed), y, O_Collision, false, false) // is there ground below?
 				{
 					x += h_speed; // move the robot along
 			
@@ -192,7 +192,7 @@ if o_Game.pause == false
 			if keyboard_check(vk_space) && from_the_ground == false && no_space == false // is the player trying to go back down?
 			{
 				audio_stop_sound(snd_Air);
-				if collision_point(x - 3, y, o_Collision, false, false) && collision_point(x + 3, y, o_Collision, false, false)
+				if collision_point(x - 3, y, O_Collision, false, false) && collision_point(x + 3, y, O_Collision, false, false)
 				{
 					no_space = true;
 					hanging = false;
@@ -202,7 +202,7 @@ if o_Game.pause == false
 					lowering_amount = 0;
 					audio_play_sound(snd_Hit, 1, false, 1, 0, .6);
 				}
-				else if collision_point(x - 3, y, o_Collision, false, false) || collision_point(x + 3, y, o_Collision, false, false)
+				else if collision_point(x - 3, y, O_Collision, false, false) || collision_point(x + 3, y, O_Collision, false, false)
 				{
 					audio_play_sound(snd_Air, 1, false);
 					lowering_direction = -1;
@@ -285,7 +285,7 @@ if o_Game.pause == false
 			
 				if hanging_move_count mod 3 == 0
 				{
-					if !place_meeting(x + h_speed, y, o_Collision) && collision_point(x + (5 * h_speed), y - 13, o_Ceiling, true, false)
+					if !place_meeting(x + h_speed, y, O_Collision) && collision_point(x + (5 * h_speed), y - 13, o_Ceiling, true, false)
 					{
 						old_x = hanging_move_count;
 						torso_sprite += 1;
