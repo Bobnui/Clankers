@@ -55,7 +55,7 @@ function Pickup(_instance, PickUpType)
 			if O_Player.currentSuperFunHappySlidePickUp == O_Player.maxSuperFunHappySlidePickUp
 			{
 				O_Player.superFunHappySlideUnlocked = true;
-				show_message("Lazer Unlocked");
+				show_message("superFunHappySlide Unlocked");
 			}
 		break;
 	}

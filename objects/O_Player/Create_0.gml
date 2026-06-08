@@ -522,6 +522,7 @@ function PerformRetract()
 #endregion
 
 #region Timer functions
+
 AttachToCeiling = function()
 {
 	currentStretchAmount -= retractSpeed; //reduce stretch length
