@@ -56,7 +56,7 @@
     {"id":{"name":"o_Robot","path":"objects/o_Robot/o_Robot.yy",},},
     {"id":{"name":"o_TapeMeasure","path":"objects/o_TapeMeasure/o_TapeMeasure.yy",},},
     {"id":{"name":"KeiraRoomTest","path":"rooms/KeiraRoomTest/KeiraRoomTest.yy",},},
-    {"id":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
+    {"id":{"name":"MataRoom","path":"rooms/MataRoom/MataRoom.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Draw_Font","path":"scripts/Draw_Font/Draw_Font.yy",},},
@@ -105,7 +105,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"MyRoom","path":"rooms/MyRoom/MyRoom.yy",},},
+    {"roomId":{"name":"MataRoom","path":"rooms/MataRoom/MataRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"KeiraRoomTest","path":"rooms/KeiraRoomTest/KeiraRoomTest.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},

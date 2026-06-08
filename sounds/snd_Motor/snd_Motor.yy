@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.983646,
+  "duration":1.9836508,
   "exportDir":"",
   "name":"snd_Motor",
   "parent":{
