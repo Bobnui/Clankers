@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":9.322354,
+  "duration":9.322358,
   "exportDir":"",
   "name":"snd_Air",
   "parent":{

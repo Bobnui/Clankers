@@ -1,3 +1,6 @@
+//DEBUG
+DEBUG();
+
 // Get all relevant input for current frame
 GetInput(); 
 
@@ -7,22 +10,29 @@ GroundedCheck();
 //Calculates how the player should move
 CalculateSpeed(); 
 
-//Collision detection. Also alters player's speed if they would collide with something
-WallCheck(); 
-FloorCheck();
+//Collision Detection
 CeilingCheck();
+WallCheck();
+HangingGapCheck();
 
 //checks if player sprites need to be flipped
-DirectionCheck(); 
+SetSpriteDirection();
+UpdateHangingSprite();
 
 //Moves player
 ApplyMovement(); 
 
 //Stretch Ability
-StretchCheck();
+if stretchUnlocked
+{
+	StretchCheck();
+}
+AttachCheck();
+StretchOffsetCheck();
 
+//Hover Ability
+HoverCheck();
 
-
-
-
-
+//Audio
+XMoveAudio();
+StretchAudio();

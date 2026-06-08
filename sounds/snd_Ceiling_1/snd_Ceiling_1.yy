@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.149021,
+  "duration":0.14902495,
   "exportDir":"",
   "name":"snd_Ceiling_1",
   "parent":{

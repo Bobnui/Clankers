@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"O_PlayerChar",
+  "%Name":"O_Player_Weird_Wheels",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"O_PlayerChar",
+  "name":"O_Player_Weird_Wheels",
   "overriddenProperties":[],
   "parent":{
     "name":"Player",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_Player_Wheels",
-    "path":"sprites/S_Player_Wheels/S_Player_Wheels.yy",
+    "name":"S_Player_Wheels_weird",
+    "path":"sprites/S_Player_Wheels_weird/S_Player_Wheels_weird.yy",
   },
   "spriteMaskId":null,
   "visible":true,

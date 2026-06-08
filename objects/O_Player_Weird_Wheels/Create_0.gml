@@ -26,7 +26,6 @@ hoverUnlocked = true;
 
 //Stretch
 canStretch = true;
-canAttach = false;
 
 isStretching = false;
 isRetracting = false;
@@ -89,6 +88,7 @@ function ApplyMovement() //Add calculated speed to player's current position
 	{
 		xSpeed = 0;
 	}
+	move_and_collide(xSpeed, ySpeed, o_Collision)
 	x += xSpeed;
 	y += ySpeed;
 }
@@ -265,25 +265,16 @@ function CeilingCheck()
 	if collision_point(x - 7, GetHeadLocation() - 1, o_Collision, false, false) && collision_point(x + 7, GetHeadLocation() - 1, o_Collision, false, false)
 	{
 		isCeilingAbove = true; // then we are touching the ceiling
-		canAttach = true;
-	}
-	else if collision_point(x, GetHeadLocation() - 1, o_Collision, false, false) || collision_point(x + 3, GetHeadLocation() - 1, o_Collision, false, false) || collision_point(x - 3, GetHeadLocation() - 1, o_Collision, false, false)
-	{
-		isCeilingAbove = true;
-		canAttach = false;
 	}
 	else
 	{
 		isCeilingAbove = false; //otherwise we aren't
-		canAttach = false;
 	}
-	
-	
 }
 
 function WallCheck()
 {
-	
+	/*
 	if place_meeting(x + xSpeed, y, o_Collision) // If there is a wall where play is trying to move
 	{
 		//move player as close to wall as possible
@@ -295,6 +286,7 @@ function WallCheck()
 		//Then prevent player passing through it
 		xSpeed = 0;
 	}
+	*/
 	//Repeat collision for torso
 	if collision_rectangle(bbox_left + 6 + xSpeed, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + xSpeed, bbox_bottom - 6, o_Collision, false, false)
 	{
@@ -387,7 +379,7 @@ function StretchCheck()
 
 function AttachCheck()
 {
-	if !isHanging && isStretching && isCeilingAbove && canAttach // if not hanging, and stretching and player hits a ceiling
+	if !isHanging && isStretching && isCeilingAbove // if not hanging, and stretching and player hits a ceiling
 	{
 		playHitSound = true; // plays sound in audio function, then is set false once more
 		canStretch = false; // prevents player from stretching while they attach
@@ -413,7 +405,7 @@ function StretchOffsetCheck()
 	{
 		y += 1; // Prevents player clipping into ceiling
 	}
-	else if isGrounded && place_meeting(x, y, o_Collision)
+	else if isGrounded && collision_point(x, y, o_Collision, false, false)
 	{
 		y -= 1; // prevents player from clipping through the floor
 	}
@@ -427,10 +419,7 @@ function PerformStretch()
 {
 	audio_stop_sound(snd_Air); // stop retract audio
 	isRetracting = false; 
-	if !isCeilingAbove
-	{
 	currentStretchAmount = clamp(currentStretchAmount + stretchSpeed, 0, maxStretchAmount); //stops player from stretching beyond maxStrentchLength
-	}
 	if isHanging && canStretch //if hanging
 	{
 		y += stretchSpeed; // stretch player wheels down
@@ -522,11 +511,6 @@ function HoverCheck()
 	{
 		EndHover();
 	}
-	
-	if isGrounded || isHanging
-	{
-		canHover = true;
-	}
 }
 
 EndHover = function()
@@ -534,6 +518,11 @@ EndHover = function()
 	isHovering = false;
 	gravityScale = 0.2;
 	time_source_stop(HoverTimer);
+}
+
+if isGrounded || isHanging
+{
+	canHover = true;
 }
 
 HoverTimer = time_source_create(time_source_game, maxHoverTimer, time_source_units_seconds, EndHover);

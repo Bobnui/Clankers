@@ -1,3 +1,6 @@
+//DEBUG
+DEBUG();
+
 // Get all relevant input for current frame
 GetInput(); 
 
@@ -10,12 +13,26 @@ CalculateSpeed();
 //Collision Detection
 CeilingCheck();
 WallCheck();
+HangingGapCheck();
 
 //checks if player sprites need to be flipped
 SetSpriteDirection();
+UpdateHangingSprite();
 
 //Moves player
 ApplyMovement(); 
 
 //Stretch Ability
-StretchCheck();
+if stretchUnlocked
+{
+	StretchCheck();
+}
+AttachCheck();
+StretchOffsetCheck();
+
+//Hover Ability
+HoverCheck();
+
+//Audio
+XMoveAudio();
+StretchAudio();
