@@ -4,13 +4,11 @@ DEBUG();
 // Get all relevant input for current frame
 GetInput(); 
 
-// Checks if player is on the ground
-GroundedCheck(); 
-
 //Calculates how the player should move
 CalculateSpeed(); 
 
 //Collision Detection
+GroundedCheck(); 
 CeilingCheck();
 WallCheck();
 HangingGapCheck();
@@ -32,7 +30,10 @@ AttachCheck();
 StretchOffsetCheck();
 
 //Hover Ability
-HoverCheck();
+if hoverUnlocked
+{
+	HoverCheck();	
+}
 
 //Audio
 XMoveAudio();

@@ -275,7 +275,7 @@ function PickUpCheck()
 	}
 }
 
-	function GroundedCheck()
+function GroundedCheck()
 {
 	if place_meeting(x, y + 1, O_Collision) // If there is a floor directly below the player
 	{
@@ -307,7 +307,11 @@ function CeilingCheck()
 		isCeilingAbove = true; // then we are touching the ceiling
 		canAttach = true;
 	}
-	else if collision_point(x, GetHeadLocation() - 1, O_Collision, false, false) || collision_point(x + 3, GetHeadLocation() - 1, O_Collision, false, false) || collision_point(x - 3, GetHeadLocation() - 1, O_Collision, false, false)
+	else if collision_point(x, GetHeadLocation() - 1, O_Collision, false, false) 
+	|| collision_point(x + 3, GetHeadLocation() - 1, O_Collision, false, false) 
+	|| collision_point(x - 3, GetHeadLocation() - 1, O_Collision, false, false)
+	|| collision_point(x + 7, GetHeadLocation() - 1, O_Collision, false, false) 
+	|| collision_point(x - 7, GetHeadLocation() - 1, O_Collision, false, false)
 	{
 		isCeilingAbove = true;
 		canAttach = false;
@@ -345,10 +349,10 @@ function WallCheck()
 	}
 	
 	//repeat collision for shoulders
-	if collision_rectangle(bbox_left + 4 + xSpeed, bbox_top - 9 - currentStretchAmount, bbox_right - 4 + xSpeed, bbox_bottom - 12 - currentStretchAmount, O_Collision, false, false)
+	if collision_rectangle(bbox_left + xSpeed, bbox_top - 9 - currentStretchAmount, bbox_right + xSpeed, bbox_bottom - 12 - currentStretchAmount, O_Collision, false, false)
 	{
 		var pixelCheckX = sign(xSpeed);
-		while !collision_rectangle(bbox_left + 4 + pixelCheckX, bbox_top - 9 - currentStretchAmount, bbox_right - 4 + pixelCheckX, bbox_bottom - 12 - currentStretchAmount, O_Collision, false, false)
+		while !collision_rectangle(bbox_left + pixelCheckX, bbox_top - 9 - currentStretchAmount, bbox_right + pixelCheckX, bbox_bottom - 12 - currentStretchAmount, O_Collision, false, false)
 		{
 			x += pixelCheckX;
 		}
@@ -448,9 +452,18 @@ function AttachCheck()
 
 function StretchOffsetCheck()
 {
-	if isHanging && collision_point(x, GetHeadLocation(), O_Collision, false, false)
+	if isHanging 
 	{
-		y += 1; // Prevents player clipping into ceiling
+		if collision_point(x, GetHeadLocation(), O_Collision, false, false)
+		{
+			y += 1; // Prevents player clipping into ceiling
+		}
+		
+		else if !collision_point(x, GetHeadLocation() - 1, O_Collision, false, false)
+		{
+			y -= 1;
+		}
+		
 	}
 	else if isGrounded && place_meeting(x, y, O_Collision)
 	{
@@ -466,13 +479,17 @@ function PerformStretch()
 {
 	audio_stop_sound(snd_Air); // stop retract audio
 	isRetracting = false; 
-	if !isCeilingAbove
+	if canStretch
 	{
-	currentStretchAmount = clamp(currentStretchAmount + stretchSpeed, 0, maxStretchAmount); //stops player from stretching beyond maxStrentchLength
-	}
-	if isHanging && canStretch //if hanging
-	{
-		y += stretchSpeed; // stretch player wheels down
+		if  (isGrounded && !isCeilingAbove) || !isGrounded
+		{
+			currentStretchAmount = clamp(currentStretchAmount + stretchSpeed, 0, maxStretchAmount); //stops player from stretching beyond maxStrentchLength
+		}
+		
+		if isHanging  //if hanging
+		{
+			y += stretchSpeed; // stretch player wheels down
+		}
 	}
 	isStretching = true;
 }
@@ -491,7 +508,7 @@ function PerformRetract()
 		
 		if isRetracting && isHanging
 		{
-			y -= retractSpeed; //Fixes odd behaviour where robot would move down if retracting from ceiling
+			//y -= retractSpeed; //Fixes odd behaviour where robot would move down if retracting from ceiling
 		}
 		isRetracting = false;
 		playHitSound = true;
