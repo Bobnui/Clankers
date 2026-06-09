@@ -37,7 +37,7 @@ lazerUnlocked = false;
 currentLazerPickUp = 0;
 maxLazerPickUp = 2;
 
-extendoArmUnlocked = false;
+extendoArmUnlocked = true;
 currentExtendoArmPickUp = 0;
 maxExtendoArmPickUp = 2;
 
@@ -52,15 +52,20 @@ canAttach = false;
 
 isStretching = false;
 isRetracting = false;
+isExtending = false;
+isRecalling = false;
 
 currentStretchAmount = 0;
 maxStretchAmount = 100;
+currentExtendAmount = 0;
+maxExtendAmount = 80;
 
 stretchSpeed = 1;
 retractSpeed = 2;
 
 shouldAutoRetract = true;
 canMoveWhileStretching = true;
+canMoveWhileExtending = false;
 
 //Hover
 canHover = true;
@@ -451,6 +456,23 @@ function StretchCheck()
 	}
 }
 
+function ExtendoCheck()
+{
+	if canExtend && !playHitSound
+	{
+		//Stretch Direction
+		var desiredStretchDirection = image_xscale;
+		if !isHanging
+		{
+			PerformExtend(); // extend arms
+		}
+		else if currentStretchAmount != 0 // prevents extending through walls
+		{
+			PerformRecall(); // Retract arms
+		}
+	}
+}
+
 function AttachCheck()
 {
 	if !isHanging && isStretching && isCeilingAbove && canAttach // if not hanging, and stretching and player hits a ceiling
@@ -535,6 +557,43 @@ function PerformRetract()
 		}
 		isRetracting = false;
 		playHitSound = true;
+	}
+	else
+	{
+		isRetracting = true;
+	}
+}
+
+function PerformExtend()
+{
+	audio_stop_sound(snd_Air); // stop retract audio
+	isRecalling = false; 
+	
+	if canExtend
+	{
+		if  (isGrounded)
+		{
+			canExtend = true;
+			currentExtendAmount = clamp(currentExtendAmount + stretchSpeed, 0, maxExtendAmount); //stops player from extending beyond maxExtendLength
+			show_debug_message("HI")
+		}
+		
+		if isHanging  //if hanging
+		{
+			canExtend = false;
+		}
+	}
+	isExtending = true;
+}
+
+function PerformRecall()
+{
+	show_debug_message("BYE")
+	isExtending = false;
+	currentExtendAmount = clamp(currentExtendAmount - retractSpeed, 0, maxExtendAmount); //stops player from recalling lower than 0
+	if currentExtendAmount <= 0
+	{
+		currentExtendAmount = 0;
 	}
 	else
 	{
