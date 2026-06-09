@@ -1,1 +1,0 @@
-CollectableCount = 0;

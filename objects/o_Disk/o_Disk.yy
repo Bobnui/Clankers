@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Disk_UI",
-    "path":"sprites/s_Disk_UI/s_Disk_UI.yy",
+    "name":"s_Disk",
+    "path":"sprites/s_Disk/s_Disk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

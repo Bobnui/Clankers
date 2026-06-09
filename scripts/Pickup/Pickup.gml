@@ -61,8 +61,8 @@ function Pickup(_instance, PickUpType)
 		break;
 		
 		case PickUpType.Collectable:
-			O_RoomManager.CollectableCount ++;
-			show_debug_message(O_RoomManager.CollectableCount);
+			O_PickUpsManager.CollectableCount ++;
+			show_debug_message(O_PickUpsManager.CollectableCount);
 		break;
 	}
 }
