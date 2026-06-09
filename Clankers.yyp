@@ -81,6 +81,7 @@
     {"id":{"name":"snd_Motor","path":"sounds/snd_Motor/snd_Motor.yy",},},
     {"id":{"name":"snd_Pickup","path":"sounds/snd_Pickup/snd_Pickup.yy",},},
     {"id":{"name":"snd_Wheels","path":"sounds/snd_Wheels/snd_Wheels.yy",},},
+    {"id":{"name":"s_Arms_Notification","path":"sprites/s_Arms_Notification/s_Arms_Notification.yy",},},
     {"id":{"name":"s_Black_Pixel","path":"sprites/s_Black_Pixel/s_Black_Pixel.yy",},},
     {"id":{"name":"s_Border","path":"sprites/s_Border/s_Border.yy",},},
     {"id":{"name":"s_Ceiling","path":"sprites/s_Ceiling/s_Ceiling.yy",},},
