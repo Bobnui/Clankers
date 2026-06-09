@@ -382,6 +382,7 @@ function HangingGapCheck()
 	}
 }
 
+
 #endregion
 
 #region Stretch

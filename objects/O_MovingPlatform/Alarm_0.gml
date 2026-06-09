@@ -1,1 +1,1 @@
-currentSpeed = platformSpeed;
+currentSpeed = platformSpeed; // set speed back to default
