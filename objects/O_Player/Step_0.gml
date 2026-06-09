@@ -38,3 +38,4 @@ if hoverUnlocked
 //Audio
 XMoveAudio();
 StretchAudio();
+PlatformCheck();

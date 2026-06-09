@@ -327,7 +327,7 @@ if o_Game.pause == false
 	var _body_check = collision_point(x, y - lowering_amount - rise_amount - 8, o_Magnet, true, false);
 	if _body_check != noone
 	{
-		Pickup(_body_check);
+		//Pickup(_body_check);
 	}
 
 

@@ -274,7 +274,16 @@ function PickUpCheck()
 		Pickup(headCol, headCol.Type);
 	}
 }
-
+function PlatformCheck()
+{
+	if place_meeting(x, y + 1, O_MovingPlatform) // If there is a MP directly below the player
+	{
+		show_debug_message("Hello");
+		isGrounded = true;
+		xSpeed += O_MovingPlatform.moveX;
+		ySpeed += O_MovingPlatform.moveY;
+	}
+}
 function GroundedCheck()
 {
 	if place_meeting(x, y + 1, O_Collision) // If there is a floor directly below the player
