@@ -94,6 +94,7 @@
     {"id":{"name":"s_Hover_Notification","path":"sprites/s_Hover_Notification/s_Hover_Notification.yy",},},
     {"id":{"name":"s_Hydrolic_UI","path":"sprites/s_Hydrolic_UI/s_Hydrolic_UI.yy",},},
     {"id":{"name":"s_Hydrolic","path":"sprites/s_Hydrolic/s_Hydrolic.yy",},},
+    {"id":{"name":"s_Lasers_Notification","path":"sprites/s_Lasers_Notification/s_Lasers_Notification.yy",},},
     {"id":{"name":"s_Lights_UI","path":"sprites/s_Lights_UI/s_Lights_UI.yy",},},
     {"id":{"name":"s_Lights","path":"sprites/s_Lights/s_Lights.yy",},},
     {"id":{"name":"s_Magnet_UI","path":"sprites/s_Magnet_UI/s_Magnet_UI.yy",},},
