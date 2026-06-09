@@ -1,0 +1,1 @@
+CollectableCount = 0;

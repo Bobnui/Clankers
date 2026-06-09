@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"O_UnlocksManager",
+  "%Name":"O_PickUpsManager",
   "eventList":[],
   "managed":true,
-  "name":"O_UnlocksManager",
+  "name":"O_PickUpsManager",
   "overriddenProperties":[],
   "parent":{
     "name":"Managers",
