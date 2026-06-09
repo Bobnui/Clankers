@@ -14,6 +14,8 @@ WallCheck();
 HangingGapCheck();
 PickUpCheck();
 
+PlatformCheck();
+
 //checks if player sprites need to be flipped
 SetSpriteDirection();
 UpdateHangingSprite();
@@ -38,4 +40,3 @@ if hoverUnlocked
 //Audio
 XMoveAudio();
 StretchAudio();
-PlatformCheck();

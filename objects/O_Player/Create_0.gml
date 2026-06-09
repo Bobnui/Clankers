@@ -9,6 +9,10 @@ isGrounded = true;
 isCeilingAbove = false;
 isHanging = false;
 
+//Platform
+platformXSpeed = 0;
+platformYSpeed = 0;
+
 //Sprite
 animFrameLength = 5; //number of frames per animation
 hangingFrameCounter = 0;
@@ -107,6 +111,10 @@ function ApplyMovement() //Add calculated speed to player's current position
 	{
 		xSpeed = 0;
 	}
+	xSpeed += platformXSpeed;
+	ySpeed += platformYSpeed;
+	
+	
 	x += xSpeed;
 	y += ySpeed;
 }
@@ -276,13 +284,18 @@ function PickUpCheck()
 }
 function PlatformCheck()
 {
-	if place_meeting(x, y + 1, O_MovingPlatform) // If there is a MP directly below the player
+	var onPlatform = place_meeting(x, y + 2, O_MovingPlatform) // If there is a MP directly below the player
+	if onPlatform
 	{
-		show_debug_message("Hello");
-		isGrounded = true;
-		xSpeed += O_MovingPlatform.moveX;
-		ySpeed += O_MovingPlatform.moveY;
+		platformXSpeed = O_MovingPlatform.moveX;
+		platformYSpeed = O_MovingPlatform.moveY;
 	}
+	else
+	{
+		platformXSpeed = 0;
+		platformYSpeed = 0;
+	}
+		
 }
 function GroundedCheck()
 {
