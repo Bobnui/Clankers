@@ -27,7 +27,7 @@ playHitSound = false;
 //Ability Unlocks
 stretchUnlocked = false;
 currentStretchPickUp = 0;
-maxStretchPickUp = 2;
+maxStretchPickUp = 4;
 
 hoverUnlocked = false;
 currentHoverPickUp = 0;
@@ -54,7 +54,7 @@ isStretching = false;
 isRetracting = false;
 
 currentStretchAmount = 0;
-maxStretchAmount = 56;
+maxStretchAmount = 100;
 
 stretchSpeed = 1;
 retractSpeed = 2;
