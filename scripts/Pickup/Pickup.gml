@@ -4,7 +4,8 @@ enum PickUpType
 	Hover,
 	Lazer,
 	ExtendoArm,
-	SuperFunHappySlide
+	SuperFunHappySlide,
+	Collectable
 }
 
 function Pickup(_instance, PickUpType)
@@ -57,6 +58,11 @@ function Pickup(_instance, PickUpType)
 				O_Player.superFunHappySlideUnlocked = true;
 				show_message("superFunHappySlide Unlocked");
 			}
+		break;
+		
+		case PickUpType.Collectable:
+			O_RoomManager.CollectableCount ++;
+			show_debug_message(O_RoomManager.CollectableCount);
 		break;
 	}
 }
