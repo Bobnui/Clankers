@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"O_PickUpParent",
+  "%Name":"O_PauseManager",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"O_PickUpParent",
+  "name":"O_PauseManager",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pick Ups",
-    "path":"folders/Objects/Pick Ups.yy",
+    "name":"Managers",
+    "path":"folders/Objects/Managers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -224,7 +224,7 @@ function GetHeadLocation()
 
 function SetSpriteDirection()
 {
-	if abs(xSpeed) != 0 // If the player is currently moving
+	if abs(xSpeed) != 0 && !O_PauseManager.gamePaused // If the player is currently moving
 	{
 		image_xscale = rightKey - leftKey; //set their sprite facing the direction they are moving
 		if isGrounded

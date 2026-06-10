@@ -41,9 +41,11 @@ else if isRetracting
 //Stretch midriff
 draw_sprite_ext(S_Player_Midriff, 0, x, y - 10, image_xscale, currentStretchAmount, 0, c_white, 1);
 
+
+
 //DEBUG
 
-draw_sprite(S_DEBUG, 0, x, GetHeadLocation() - 1);
+//draw_sprite(S_DEBUG, 0, x, GetHeadLocation() - 1);
 //draw_sprite(S_DEBUG, 0, x - 7 + xSpeed, GetHeadLocation() - 1);
 //draw_set_colour(c_blue);
 //draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
