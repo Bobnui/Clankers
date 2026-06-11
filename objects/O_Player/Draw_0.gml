@@ -3,7 +3,7 @@ draw_self()
 
 #region Torso
 
-if !isStretching || !isRetracting // Not stretching or retracting
+if !isStretching || !isRetracting || !isExtending// Not stretching or retracting or Extending arms
 {
 	if isGrounded
 	{
@@ -20,6 +20,7 @@ if !isStretching || !isRetracting // Not stretching or retracting
 }
 else if isStretching
 {
+	
 	var stretchSprite = 1;
 	if isHanging
 	{

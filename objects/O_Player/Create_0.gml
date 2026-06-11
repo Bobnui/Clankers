@@ -25,7 +25,7 @@ retractSound = 0;
 playHitSound = false;
 
 //Ability Unlocks
-stretchUnlocked = false;
+stretchUnlocked = true;
 currentStretchPickUp = 0;
 maxStretchPickUp = 4;
 
