@@ -29,6 +29,12 @@ if !O_PauseManager.gamePaused
 	{
 		StretchCheck();
 	}
+	
+	if extendoArmUnlocked
+	{
+		ExtendoCheck();
+	}
+	
 	AttachCheck();
 	StretchOffsetCheck();
 
