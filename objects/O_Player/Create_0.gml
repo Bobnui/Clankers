@@ -465,17 +465,27 @@ function ExtendoCheck()
 {
 	if canExtend && !playHitSound
 	{
-		//Stretch Direction
-		var ExtendArm = extendoArmKey;
-		if isGrounded
+		//extend key pressed
+		var desiredExtendDirection = extendoArmKey;
+		switch(desiredExtendDirection)
 		{
-			canExtend = true
-			PerformExtend(); // extend arms
-			
-		}
-		else if !isGrounded // prevents extending on ceiling
-		{
-			canExtend = false
+			case 1: //Is holding E
+				if isGrounded
+				{
+					PerformExtend(); //extend
+				}
+				else if currentExtendAmount != 0 // prevents extending through wall
+				{
+					PerformRecall(); // Recall arnm
+				}
+			break;
+		
+			case 0: // is not pressing E
+				if shouldAutoRecall && currentExtendAmount > 0
+				{
+					PerformRecall(); // only auto recalls if shouldAutoRecall is true
+				}
+			break;
 		}
 	}
 }
@@ -573,32 +583,25 @@ function PerformRetract()
 
 function PerformExtend()
 {
-	audio_stop_sound(snd_Air); // stop retract audio
+	isRecalling = false; 
 	if canExtend
 	{
-		isRecalling = false
-		currentExtendAmount = clamp(currentExtendAmount + stretchSpeed, 0, maxExtendAmount); //stops player from extending beyond maxExtendLength
-		show_debug_message("HI")
-		isExtending = true;
+		currentExtendAmount = clamp(currentExtendAmount + extendSpeed, 0, maxExtendAmount); //stops player from Extending beyond maxExtendLength
 	}
-	else
-	{
-		isRecalling = true
-	}
+	isExtending = true;
 }
 
 function PerformRecall()
 {
-	show_debug_message("BYE")
 	isExtending = false;
-	currentExtendAmount = clamp(currentExtendAmount - retractSpeed, 0, maxExtendAmount); //stops player from recalling lower than 0
+	currentExtendAmount = clamp(currentExtendAmount - recallSpeed, 0, maxExtendAmount); //stops player from recalling through themself
 	if currentExtendAmount <= 0
 	{
 		currentExtendAmount = 0;
 	}
 	else
 	{
-		isRetracting = true;
+		isRecalling = true;
 	}
 }
 

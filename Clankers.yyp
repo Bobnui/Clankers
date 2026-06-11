@@ -113,6 +113,7 @@
     {"id":{"name":"S_Player_Hand","path":"sprites/S_Player_Hand/S_Player_Hand.yy",},},
     {"id":{"name":"S_Player_Hanging","path":"sprites/S_Player_Hanging/S_Player_Hanging.yy",},},
     {"id":{"name":"S_Player_Midriff","path":"sprites/S_Player_Midriff/S_Player_Midriff.yy",},},
+    {"id":{"name":"S_Player_stretch_down","path":"sprites/S_Player_stretch_down/S_Player_stretch_down.yy",},},
     {"id":{"name":"S_Player_Torso","path":"sprites/S_Player_Torso/S_Player_Torso.yy",},},
     {"id":{"name":"S_Player_Wheels_weird","path":"sprites/S_Player_Wheels_weird/S_Player_Wheels_weird.yy",},},
     {"id":{"name":"S_Player_Wheels","path":"sprites/S_Player_Wheels/S_Player_Wheels.yy",},},
