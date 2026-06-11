@@ -95,7 +95,7 @@ function GetInput() // returns all current input values
 	upKey = keyboard_check(ord("W"));
 	downKey = keyboard_check(ord("S"));
 	hoverKey = keyboard_check(vk_space);
-	extendoArmKey = keyboard_check_pressed(ord("E"));
+	extendoArmKey = keyboard_check(ord("E"));
 }
 
 #endregion
@@ -461,35 +461,6 @@ function StretchCheck()
 	}
 }
 
-function ExtendoCheck()
-{
-	if canExtend && !playHitSound
-	{
-		//extend key pressed
-		var desiredExtendDirection = extendoArmKey;
-		switch(desiredExtendDirection)
-		{
-			case 1: //Is holding E
-				if isGrounded
-				{
-					PerformExtend(); //extend
-				}
-				else if currentExtendAmount != 0 // prevents extending through wall
-				{
-					PerformRecall(); // Recall arnm
-				}
-			break;
-		
-			case 0: // is not pressing E
-				if shouldAutoRecall && currentExtendAmount > 0
-				{
-					PerformRecall(); // only auto recalls if shouldAutoRecall is true
-				}
-			break;
-		}
-	}
-}
-
 function AttachCheck()
 {
 	if !isHanging && isStretching && isCeilingAbove && canAttach // if not hanging, and stretching and player hits a ceiling
@@ -581,30 +552,6 @@ function PerformRetract()
 	}
 }
 
-function PerformExtend()
-{
-	isRecalling = false; 
-	if canExtend
-	{
-		currentExtendAmount = clamp(currentExtendAmount + extendSpeed, 0, maxExtendAmount); //stops player from Extending beyond maxExtendLength
-	}
-	isExtending = true;
-}
-
-function PerformRecall()
-{
-	isExtending = false;
-	currentExtendAmount = clamp(currentExtendAmount - recallSpeed, 0, maxExtendAmount); //stops player from recalling through themself
-	if currentExtendAmount <= 0
-	{
-		currentExtendAmount = 0;
-	}
-	else
-	{
-		isRecalling = true;
-	}
-}
-
 #endregion
 
 #region Timer functions
@@ -680,6 +627,63 @@ EndHover = function()
 }
 
 HoverTimer = time_source_create(time_source_game, maxHoverTimer, time_source_units_seconds, EndHover);
+
+#endregion
+
+#region Extendo Arm
+
+function ExtendoCheck()
+{
+	if canExtend
+	{
+		//extend key pressed
+		var desiredExtendDirection = extendoArmKey;
+		switch(desiredExtendDirection)
+		{
+			case 1: //Is holding E
+				if isGrounded
+				{
+					PerformExtend(); //extend
+				}
+				else if currentExtendAmount != 0 // prevents extending through wall
+				{
+					PerformRecall(); // Recall arnm
+				}
+			break;
+		
+			case 0: // is not pressing E
+				if shouldAutoRecall && currentExtendAmount > 0
+				{
+					PerformRecall(); // only auto recalls if shouldAutoRecall is true
+				}
+			break;
+		}
+	}
+}
+
+function PerformExtend()
+{
+	isRecalling = false; 
+	if canExtend
+	{
+		currentExtendAmount = clamp(currentExtendAmount + extendSpeed, 0, maxExtendAmount); //stops player from Extending beyond maxExtendLength
+	}
+	isExtending = true;
+}
+
+function PerformRecall()
+{
+	isExtending = false;
+	currentExtendAmount = clamp(currentExtendAmount - recallSpeed, 0, maxExtendAmount); //stops player from recalling through themself
+	if currentExtendAmount <= 0
+	{
+		currentExtendAmount = 0;
+	}
+	else
+	{
+		isRecalling = true;
+	}
+}
 
 #endregion
 
