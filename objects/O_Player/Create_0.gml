@@ -49,6 +49,7 @@ maxSuperFunHappySlidePickUp = 2;
 //Stretch
 canStretch = true;
 canAttach = false;
+canExtend = true
 
 isStretching = false;
 isRetracting = false;
@@ -62,9 +63,13 @@ maxExtendAmount = 80;
 
 stretchSpeed = 1;
 retractSpeed = 2;
+extendSpeed = 2;
+recallSpeed = 2;
+
 
 shouldAutoRetract = true;
 canMoveWhileStretching = true;
+shouldAutoRecall = true;
 canMoveWhileExtending = false;
 
 //Hover
@@ -461,14 +466,16 @@ function ExtendoCheck()
 	if canExtend && !playHitSound
 	{
 		//Stretch Direction
-		var desiredStretchDirection = image_xscale;
-		if !isHanging
+		var ExtendArm = extendoArmKey;
+		if isGrounded
 		{
+			canExtend = true
 			PerformExtend(); // extend arms
+			
 		}
-		else if currentStretchAmount != 0 // prevents extending through walls
+		else if !isGrounded // prevents extending on ceiling
 		{
-			PerformRecall(); // Retract arms
+			canExtend = false
 		}
 	}
 }
@@ -567,23 +574,17 @@ function PerformRetract()
 function PerformExtend()
 {
 	audio_stop_sound(snd_Air); // stop retract audio
-	isRecalling = false; 
-	
 	if canExtend
 	{
-		if  (isGrounded)
-		{
-			canExtend = true;
-			currentExtendAmount = clamp(currentExtendAmount + stretchSpeed, 0, maxExtendAmount); //stops player from extending beyond maxExtendLength
-			show_debug_message("HI")
-		}
-		
-		if isHanging  //if hanging
-		{
-			canExtend = false;
-		}
+		isRecalling = false
+		currentExtendAmount = clamp(currentExtendAmount + stretchSpeed, 0, maxExtendAmount); //stops player from extending beyond maxExtendLength
+		show_debug_message("HI")
+		isExtending = true;
 	}
-	isExtending = true;
+	else
+	{
+		isRecalling = true
+	}
 }
 
 function PerformRecall()

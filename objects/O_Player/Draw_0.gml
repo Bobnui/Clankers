@@ -15,7 +15,7 @@ if !isStretching || !isRetracting // Not stretching or retracting
 	}
 	else  // falling
 	{
-		draw_sprite_ext(S_Player_Torso, 1, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
+		draw_sprite_ext(S_Player_Torso, 2, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
 	}
 }
 else if isStretching
