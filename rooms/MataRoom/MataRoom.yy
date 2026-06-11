@@ -28,6 +28,9 @@
     {"name":"Platform1","path":"rooms/MataRoom/MataRoom.yy",},
     {"name":"inst_313302BB","path":"rooms/MataRoom/MataRoom.yy",},
     {"name":"inst_1970921F","path":"rooms/MataRoom/MataRoom.yy",},
+    {"name":"inst_9FB481A","path":"rooms/MataRoom/MataRoom.yy",},
+    {"name":"inst_8082692","path":"rooms/MataRoom/MataRoom.yy",},
+    {"name":"inst_15225487","path":"rooms/MataRoom/MataRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -54,6 +57,9 @@
       ],"layers":[],"name":"Collision","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Game_and_Camera","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_2A3D55","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2A3D55","objectId":{"name":"O_CameraManager","path":"objects/O_CameraManager/O_CameraManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":-32.0,},
+        {"$GMRInstance":"v4","%Name":"inst_9FB481A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9FB481A","objectId":{"name":"O_PickUpsManager","path":"objects/O_PickUpsManager/O_PickUpsManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":-32.0,},
+        {"$GMRInstance":"v4","%Name":"inst_8082692","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_8082692","objectId":{"name":"O_PauseManager","path":"objects/O_PauseManager/O_PauseManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":-32.0,},
+        {"$GMRInstance":"v4","%Name":"inst_15225487","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_15225487","objectId":{"name":"O_RoomManager","path":"objects/O_RoomManager/O_RoomManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":-32.0,},
       ],"layers":[],"name":"Game_and_Camera","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Foreground_Tiles","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Foreground_Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":20,"SerialiseWidth":40,"TileCompressedData":[
           -293,-2147483648,-2,0,-3,-2147483648,1,0,-26,-2147483648,-10,0,-3,-2147483648,1,0,-26,-2147483648,-10,

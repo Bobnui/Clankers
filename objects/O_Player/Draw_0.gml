@@ -3,7 +3,7 @@ draw_self()
 
 #region Torso
 
-if !isStretching || !isRetracting // Not stretching or retracting
+if !isStretching && !isRetracting && !isExtending// Not stretching or retracting or Extending arms
 {
 	if isGrounded
 	{
@@ -20,21 +20,25 @@ if !isStretching || !isRetracting // Not stretching or retracting
 }
 else if isStretching
 {
-	var stretchSprite = 1;
 	if isHanging
 	{
-		stretchSprite = 2;
+		draw_sprite_ext(S_Player_Hanging, hangingSpriteIndex, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
 	}
-	draw_sprite_ext(S_Player_Torso, stretchSprite, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
+	else
+	{
+		draw_sprite_ext(S_Player_Torso, 1, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
+	}
 }
 else if isRetracting
 {
-	var retractSprite = 2;
 	if isHanging
 	{
-		retractSprite = 1;
+		draw_sprite_ext(S_Player_Hanging, hangingSpriteIndex, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
 	}
-	draw_sprite_ext(S_Player_Torso, retractSprite, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
+	else
+	{
+		draw_sprite_ext(S_Player_Torso, 2, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
+	}
 }
 #endregion
 
