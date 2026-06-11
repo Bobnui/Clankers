@@ -109,6 +109,8 @@
     {"id":{"name":"s_Magnet","path":"sprites/s_Magnet/s_Magnet.yy",},},
     {"id":{"name":"s_Particle","path":"sprites/s_Particle/s_Particle.yy",},},
     {"id":{"name":"S_Platform","path":"sprites/S_Platform/S_Platform.yy",},},
+    {"id":{"name":"S_Player_Arm","path":"sprites/S_Player_Arm/S_Player_Arm.yy",},},
+    {"id":{"name":"S_Player_Hand","path":"sprites/S_Player_Hand/S_Player_Hand.yy",},},
     {"id":{"name":"S_Player_Hanging","path":"sprites/S_Player_Hanging/S_Player_Hanging.yy",},},
     {"id":{"name":"S_Player_Midriff","path":"sprites/S_Player_Midriff/S_Player_Midriff.yy",},},
     {"id":{"name":"S_Player_Torso","path":"sprites/S_Player_Torso/S_Player_Torso.yy",},},
