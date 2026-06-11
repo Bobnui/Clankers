@@ -92,6 +92,8 @@
     {"id":{"name":"snd_Motor","path":"sounds/snd_Motor/snd_Motor.yy",},},
     {"id":{"name":"snd_Pickup","path":"sounds/snd_Pickup/snd_Pickup.yy",},},
     {"id":{"name":"snd_Wheels","path":"sounds/snd_Wheels/snd_Wheels.yy",},},
+    {"id":{"name":"R1_Building_foot","path":"sprites/R1_Building_foot/R1_Building_foot.yy",},},
+    {"id":{"name":"R1_Building","path":"sprites/R1_Building/R1_Building.yy",},},
     {"id":{"name":"s_Arms_Notification","path":"sprites/s_Arms_Notification/s_Arms_Notification.yy",},},
     {"id":{"name":"s_Black_Pixel","path":"sprites/s_Black_Pixel/s_Black_Pixel.yy",},},
     {"id":{"name":"s_Border","path":"sprites/s_Border/s_Border.yy",},},
