@@ -63,7 +63,7 @@ maxExtendAmount = 80;
 
 stretchSpeed = 1;
 retractSpeed = 2;
-extendSpeed = 2;
+extendSpeed = 1
 recallSpeed = 2;
 
 
@@ -678,6 +678,7 @@ function PerformRecall()
 	if currentExtendAmount <= 0
 	{
 		currentExtendAmount = 0;
+		isRecalling = false
 	}
 	else
 	{
