@@ -16,46 +16,46 @@ function Pickup(_instance, PickUpType)
 	switch PickUpType
 	{
 		case PickUpType.Stretch:
-			O_Player.currentStretchPickUp ++;
-			if O_Player.currentStretchPickUp == O_Player.maxStretchPickUp
+			O_PickUpsManager.currentStretchPickUp ++;
+			if O_PickUpsManager.currentStretchPickUp == O_PickUpsManager.maxStretchPickUp
 			{
-				O_Player.stretchUnlocked = true
+				O_PickUpsManager.stretchUnlocked = true
 				show_message("Stretch Unlocked");
 			}
 		break;
 		
 		case PickUpType.Hover:
-			O_Player.currentHoverPickUp ++;
-			if O_Player.currentHoverPickUp == O_Player.maxHoverPickUp
+			O_PickUpsManager.currentHoverPickUp ++;
+			if O_PickUpsManager.currentHoverPickUp == O_PickUpsManager.maxHoverPickUp
 			{
-				O_Player.hoverUnlocked = true;
+				O_PickUpsManager.hoverUnlocked = true;
 				show_message("Hover Unlocked");
 			}
 		break;
 		
 		case PickUpType.Lazer:
-			O_Player.currentLazerPickUp ++;
-			if O_Player.currentLazerPickUp == O_Player.maxLazerPickUp
+			O_PickUpsManager.currentLazerPickUp ++;
+			if O_PickUpsManager.currentLazerPickUp == O_PickUpsManager.maxLazerPickUp
 			{
-				O_Player.lazerUnlocked = true;
+				O_PickUpsManager.lazerUnlocked = true;
 				show_message("Lazer Unlocked");
 			}
 		break;
 		
 		case PickUpType.ExtendoArm:
-			O_Player.currentExtendoArmPickUp ++;
-			if O_Player.currentExtendoArmPickUp == O_Player.maxExtendoArmPickUp
+			O_PickUpsManager.currentExtendoArmPickUp ++;
+			if O_PickUpsManager.currentExtendoArmPickUp == O_PickUpsManager.maxExtendoArmPickUp
 			{
-				O_Player.extendoArmUnlocked = true;
+				O_PickUpsManager.extendoArmUnlocked = true;
 				show_message("ExtendoArm Unlocked");
 			}
 		break;
 		
 		case PickUpType.SuperFunHappySlide:
-			O_Player.currentSuperFunHappySlidePickUp ++;
-			if O_Player.currentSuperFunHappySlidePickUp == O_Player.maxSuperFunHappySlidePickUp
+			O_PickUpsManager.currentSuperFunHappySlidePickUp ++;
+			if O_PickUpsManager.currentSuperFunHappySlidePickUp == O_PickUpsManager.maxSuperFunHappySlidePickUp
 			{
-				O_Player.superFunHappySlideUnlocked = true;
+				O_PickUpsManager.superFunHappySlideUnlocked = true;
 				show_message("superFunHappySlide Unlocked");
 			}
 		break;

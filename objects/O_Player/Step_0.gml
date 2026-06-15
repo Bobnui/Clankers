@@ -25,12 +25,12 @@ if !O_PauseManager.gamePaused
 	ApplyMovement(); 
 
 	//Stretch Ability
-	if stretchUnlocked
+	if O_PickUpsManager.stretchUnlocked
 	{
 		StretchCheck();
 	}
 	
-	if extendoArmUnlocked
+	if O_PickUpsManager.extendoArmUnlocked
 	{
 		ExtendoCheck();
 	}
@@ -39,7 +39,7 @@ if !O_PauseManager.gamePaused
 	StretchOffsetCheck();
 
 	//Hover Ability
-	if hoverUnlocked
+	if O_PickUpsManager.hoverUnlocked
 	{
 		HoverCheck();	
 	}
