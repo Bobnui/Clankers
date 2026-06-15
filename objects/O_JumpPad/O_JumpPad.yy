@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Hydrolic",
-    "path":"sprites/s_Hydrolic/s_Hydrolic.yy",
+    "name":"S_JumpPad",
+    "path":"sprites/S_JumpPad/S_JumpPad.yy",
   },
   "spriteMaskId":null,
   "visible":true,
