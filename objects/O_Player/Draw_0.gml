@@ -40,7 +40,7 @@ else if isRetracting
 		draw_sprite_ext(S_Player_Torso, 2, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
 	}
 }
-else if isExtending
+else if isExtending || isRecalling
 {
 	draw_sprite_ext(S_Player_Torso, 3, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
 }
@@ -48,7 +48,16 @@ else if isExtending
 
 //Stretch midriff
 draw_sprite_ext(S_Player_Midriff, 0, x, y - 10, image_xscale, currentStretchAmount, 0, c_white, 1);
-draw_sprite_ext(S_Player_Arm,0,x,y,currentExtendAmount,image_yscale,0, c_white, 1);
+//Extend arm
+if image_xscale>0
+{
+	draw_sprite_ext(S_Player_Arm,0,x+8,y-13,currentExtendAmount,image_yscale,0, c_white, 1);
+}
+else if image_xscale<0
+{
+	draw_sprite_ext(S_Player_Arm,0,x-currentExtendAmount,y-13,currentExtendAmount,image_yscale,0, c_white, 1);
+}
+
 
 
 
