@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"O_Collision",
+  "%Name":"O_JumpPad",
   "eventList":[],
   "managed":true,
-  "name":"O_Collision",
+  "name":"O_JumpPad",
   "overriddenProperties":[],
   "parent":{
     "name":"LevelDesign",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Collision",
-    "path":"sprites/s_Collision/s_Collision.yy",
+    "name":"s_Hydrolic",
+    "path":"sprites/s_Hydrolic/s_Hydrolic.yy",
   },
   "spriteMaskId":null,
   "visible":true,
