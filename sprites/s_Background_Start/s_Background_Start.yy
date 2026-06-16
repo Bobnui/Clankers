@@ -19,7 +19,8 @@
   "height":400,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"ed7e6cab-6662-4fc4-b5e4-f0a048da4e32","blendMode":0,"displayName":"Guides","isLocked":false,"name":"ed7e6cab-6662-4fc4-b5e4-f0a048da4e32","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"ed7e6cab-6662-4fc4-b5e4-f0a048da4e32","blendMode":0,"displayName":"Guides","isLocked":false,"name":"ed7e6cab-6662-4fc4-b5e4-f0a048da4e32","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"a40dadbe-0512-44c1-bc6a-67df3982b54c","blendMode":0,"displayName":"Entrance","isLocked":false,"name":"a40dadbe-0512-44c1-bc6a-67df3982b54c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"beccce03-4a1a-40fd-9320-9de8a3ccf0f2","blendMode":0,"displayName":"Chute","isLocked":false,"name":"beccce03-4a1a-40fd-9320-9de8a3ccf0f2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"577e3fdc-18b4-4503-bfb0-3273e72c6cc7","blendMode":0,"displayName":"Background","isLocked":false,"name":"577e3fdc-18b4-4503-bfb0-3273e72c6cc7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"71caa253-6ad9-49da-b628-1fe237007dc3","blendMode":0,"displayName":"Piles (3)","isLocked":false,"name":"71caa253-6ad9-49da-b628-1fe237007dc3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
