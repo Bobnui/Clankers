@@ -8,8 +8,8 @@
   "name":"O_PlatformPoint",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"LevelDesign",
+    "path":"folders/Objects/LevelDesign.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -11,8 +11,8 @@
   "name":"O_MovingPlatform",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"LevelDesign",
+    "path":"folders/Objects/LevelDesign.yy",
   },
   "parentObjectId":{
     "name":"O_Collision",
