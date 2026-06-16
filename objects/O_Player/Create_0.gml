@@ -48,7 +48,6 @@ recallSpeed = 2;
 shouldAutoRetract = true;
 canMoveWhileStretching = true;
 shouldAutoRecall = true;
-canMoveWhileExtending = false;
 
 //Hover
 canHover = true;
@@ -642,11 +641,16 @@ function ExtendoCheck()
 function PerformExtend()
 {
 	isRecalling = false; 
+	
 	if canExtend
 	{
 		currentExtendAmount = clamp(currentExtendAmount + extendSpeed, 0, maxExtendAmount); //stops player from Extending beyond maxExtendLength
 	}
 	isExtending = true;
+	if currentExtendAmount>0
+	{
+		moveSpeed = 0;
+	}
 }
 
 function PerformRecall()
@@ -657,6 +661,7 @@ function PerformRecall()
 	{
 		currentExtendAmount = 0;
 		isRecalling = false
+		moveSpeed = 1;
 	}
 	else
 	{

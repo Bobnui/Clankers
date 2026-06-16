@@ -52,10 +52,19 @@ draw_sprite_ext(S_Player_Midriff, 0, x, y - 10, image_xscale, currentStretchAmou
 if image_xscale>0
 {
 	draw_sprite_ext(S_Player_Arm,0,x+8,y-13,currentExtendAmount,image_yscale,0, c_white, 1);
+	if isExtending || isRecalling
+	{
+		draw_sprite_ext(S_Player_Hand,0,x-5+currentExtendAmount,y-26,image_xscale,image_yscale,0, c_white, 1);
+	}
+	
 }
 else if image_xscale<0
 {
-	draw_sprite_ext(S_Player_Arm,0,x-currentExtendAmount,y-13,currentExtendAmount,image_yscale,0, c_white, 1);
+	draw_sprite_ext(S_Player_Arm,0,x-8-currentExtendAmount,y-13,currentExtendAmount,image_yscale,0, c_white, 1);
+	if isExtending || isRecalling
+	{
+		draw_sprite_ext(S_Player_Hand,0,x+5-currentExtendAmount,y-26,image_xscale,image_yscale,0, c_white, 1);
+	}
 }
 
 
