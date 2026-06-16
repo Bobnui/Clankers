@@ -86,7 +86,7 @@ function CalculateSpeed()
 	{
 		ySpeed += gravityScale //if the player isn't on the ground or hanging from ceiling, apply gravity
 	}
-	else
+	else if ySpeed > 0
 	{
 		ySpeed = 0; //otherwise stop them from clipping through the floor
 	}
