@@ -27,7 +27,7 @@ playHitSound = false;
 //Stretch
 canStretch = true;
 canAttach = false;
-canExtend = true
+canExtend = true;
 
 isStretching = false;
 isRetracting = false;
@@ -36,26 +36,44 @@ isRecalling = false;
 
 currentStretchAmount = 0;
 maxStretchAmount = 100;
-currentExtendAmount = 0;
-maxExtendAmount = 80;
 
 stretchSpeed = 1;
 retractSpeed = 2;
-extendSpeed = 1
-recallSpeed = 2;
 
 
 shouldAutoRetract = true;
 canMoveWhileStretching = true;
-shouldAutoRecall = true;
 
+//ExtendoArms
+canExtend = true
+
+isExtending = false;
+isRecalling = false;
+
+currentExtendAmount = 0;
+maxExtendAmount = 80;
+
+extendSpeed = 1;
+recallSpeed = 2;
+
+shouldAutoRecall = true;
 //Hover
 canHover = true;
 isHovering = false;
 
 maxHoverTimer = 4;
 
+//Laser
+canLaser = true
 
+isLasering = false;
+isEnding = false;
+
+currentLaserLength = 0;
+maxLaserLength = 50;
+
+laserSpeed = 3;
+endSpeed = 4;
 #region FUNCTIONS
 
 function DEBUG()
@@ -73,6 +91,7 @@ function GetInput() // returns all current input values
 	downKey = keyboard_check(ord("S"));
 	hoverKey = keyboard_check(vk_space);
 	extendoArmKey = keyboard_check(ord("E"));
+	laserEyeKey = keyboard_check(ord(vk_shift));
 }
 
 #endregion
@@ -634,10 +653,6 @@ function ExtendoCheck()
 				{
 					PerformExtend(); //extend
 				}
-				else if currentExtendAmount != 0 // prevents extending through wall
-				{
-					PerformRecall(); // Recall arnm
-				}
 			break;
 		
 			case 0: // is not pressing E
@@ -711,6 +726,67 @@ function ExtendoCollision()
 	}
 	
 }
+function LaserEyeCheck()
+{
+	if isGrounded && !isStretching && !isRetracting && !isHanging && !isExtending && !isRecalling
+	{
+		//extend key pressed
+		var desiredExtendDirection = laserEyeKey;
+		switch(desiredExtendDirection)
+		{
+			case 1: //Is holding Shift
+				if isGrounded
+				{
+					ShootLasers(); //ShootLaser
+				}
+				
+			break;
+		
+			case 0: // is not pressing Shift
+				if shouldAutoRecall && currentExtendAmount > 0
+				{
+					EndLasers(); // only auto recalls if shouldAutoRecall is true
+				}
+			break;
+		}
+	}
+}
+
+function ShootLasers()
+{
+	isEnding = false; 
+	
+	if canLaser
+	{
+		currentLaserLength = clamp(currentLaserLength + laserSpeed, 0, maxLaserLength); //stops player from Lasering beyond maxLaserLength
+	}
+	isLasering = true;
+	if currentLaserLength>0
+	{
+		moveSpeed = 0;
+		canStretch = false
+		canExtend = false
+	}
+}
+
+function EndLasers()
+{
+	isLasering = false;
+	currentLaserLength = clamp(currentLaserLength - endSpeed, 0, maxLaserLength); //stops player from recalling through themself
+	if currentLaserLength <= 0
+	{
+		currentLaserLength = 0;
+		isEnding = false
+		moveSpeed = 1;
+		canStretch = true
+		canExtend = true
+	}
+	else
+	{
+		isEnding = true;
+	}
+}
+
 #endregion
 
 #endregion

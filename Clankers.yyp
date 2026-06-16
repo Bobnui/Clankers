@@ -116,6 +116,7 @@
     {"id":{"name":"s_Hydrolic_UI","path":"sprites/s_Hydrolic_UI/s_Hydrolic_UI.yy",},},
     {"id":{"name":"s_Hydrolic","path":"sprites/s_Hydrolic/s_Hydrolic.yy",},},
     {"id":{"name":"S_JumpPad","path":"sprites/S_JumpPad/S_JumpPad.yy",},},
+    {"id":{"name":"S_Laser","path":"sprites/S_Laser/S_Laser.yy",},},
     {"id":{"name":"s_Lasers_Notification","path":"sprites/s_Lasers_Notification/s_Lasers_Notification.yy",},},
     {"id":{"name":"s_Lights_UI","path":"sprites/s_Lights_UI/s_Lights_UI.yy",},},
     {"id":{"name":"s_Lights","path":"sprites/s_Lights/s_Lights.yy",},},
@@ -156,9 +157,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
     {"roomId":{"name":"OurGame","path":"rooms/OurGame/OurGame.yy",},},
     {"roomId":{"name":"MataRoom","path":"rooms/MataRoom/MataRoom.yy",},},
+    {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
     {"roomId":{"name":"KeiraRoomTest","path":"rooms/KeiraRoomTest/KeiraRoomTest.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
