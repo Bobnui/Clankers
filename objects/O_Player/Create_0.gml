@@ -82,7 +82,7 @@ function GetInput() // returns all current input values
 function CalculateSpeed()
 {
 	xSpeed = (rightKey - leftKey) * moveSpeed; //Sets xSpeed variable based on input & moveSpeed
-	if !isGrounded && !isHanging
+	if !isGrounded && !isHanging && !isCeilingAbove
 	{
 		ySpeed += gravityScale //if the player isn't on the ground or hanging from ceiling, apply gravity
 	}
@@ -311,10 +311,10 @@ function GroundedCheck()
 
 function CeilingCheck()
 {
-	//if both of the player's hands are touching the ceiling
+	//if both of the player's hands are touching the pixelYCheck
 	if collision_point(x - 7, GetHeadLocation() - 1, O_Collision, false, false) && collision_point(x + 7, GetHeadLocation() - 1, O_Collision, false, false)
 	{
-		isCeilingAbove = true; // then we are touching the ceiling
+		isCeilingAbove = true; // then we are touching the 1
 		canAttach = true;
 	}
 	else if collision_point(x, GetHeadLocation() - 1, O_Collision, false, false) 
@@ -322,8 +322,8 @@ function CeilingCheck()
 	|| collision_point(x - 3, GetHeadLocation() - 1, O_Collision, false, false)
 	|| collision_point(x + 7, GetHeadLocation() - 1, O_Collision, false, false) 
 	|| collision_point(x - 7, GetHeadLocation() - 1, O_Collision, false, false)
-	|| collision_point(x + 11, GetHeadLocation() - 1, O_Collision, false, false) 
-	|| collision_point(x - 11, GetHeadLocation() - 1, O_Collision, false, false)
+	|| collision_point(x + 10, GetHeadLocation() - 1, O_Collision, false, false) 
+	|| collision_point(x - 10, GetHeadLocation() - 1, O_Collision, false, false)
 	{
 		isCeilingAbove = true;
 		canAttach = false;
@@ -332,6 +332,15 @@ function CeilingCheck()
 	{
 		isCeilingAbove = false; //otherwise we aren't
 		canAttach = false;
+	}
+	if ySpeed < 0 && place_meeting(x, GetHeadLocation() + 6 + ySpeed, O_Collision)
+	{
+		var pixelYCheck = sign(ySpeed);
+		while !place_meeting(x, GetHeadLocation() - pixelYCheck, O_Collision)
+		{
+			y += pixelYCheck;
+		}
+		ySpeed = 0;
 	}
 }
 

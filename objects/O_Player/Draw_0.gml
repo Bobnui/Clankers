@@ -75,11 +75,11 @@ else if image_xscale<0
 //DEBUG
 
 /*
-draw_sprite(S_DEBUG, 0, x, GetHeadLocation() - 1);
+
+draw_sprite(S_DEBUG, 0, x, GetHeadLocation() + ySpeed);
 draw_sprite(S_DEBUG, 0, x + 3, GetHeadLocation() - 1);
 draw_sprite(S_DEBUG, 0, x - 3, GetHeadLocation() - 1);
 draw_sprite(S_DEBUG, 0, x + 7, GetHeadLocation() - 1);
 draw_sprite(S_DEBUG, 0, x - 7, GetHeadLocation() - 1);
-draw_sprite(S_DEBUG, 0, x + 11, GetHeadLocation() - 1);
-draw_sprite(S_DEBUG, 0, x - 11, GetHeadLocation() - 1);
-*/
+draw_sprite(S_DEBUG, 0, x + 10, GetHeadLocation() - 1);
+draw_sprite(S_DEBUG, 0, x - 10, GetHeadLocation() - 1);
