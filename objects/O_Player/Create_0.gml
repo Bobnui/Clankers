@@ -86,7 +86,7 @@ function CalculateSpeed()
 	{
 		ySpeed += gravityScale //if the player isn't on the ground or hanging from ceiling, apply gravity
 	}
-	else
+	else if ySpeed > 0
 	{
 		ySpeed = 0; //otherwise stop them from clipping through the floor
 	}
@@ -272,7 +272,8 @@ function PickUpCheck()
 function PlatformCheck()
 {
 	var onPlatform = place_meeting(x, y + 2, O_MovingPlatform) // If there is a MP directly below the player
-	if onPlatform
+	var underPlatform = place_meeting(x, GetHeadLocation() - 1, O_MovingPlatform)
+	if onPlatform || underPlatform
 	{
 		platformXSpeed = O_MovingPlatform.moveX;
 		platformYSpeed = O_MovingPlatform.moveY;
@@ -321,6 +322,8 @@ function CeilingCheck()
 	|| collision_point(x - 3, GetHeadLocation() - 1, O_Collision, false, false)
 	|| collision_point(x + 7, GetHeadLocation() - 1, O_Collision, false, false) 
 	|| collision_point(x - 7, GetHeadLocation() - 1, O_Collision, false, false)
+	|| collision_point(x + 11, GetHeadLocation() - 1, O_Collision, false, false) 
+	|| collision_point(x - 11, GetHeadLocation() - 1, O_Collision, false, false)
 	{
 		isCeilingAbove = true;
 		canAttach = false;

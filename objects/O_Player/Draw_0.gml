@@ -72,10 +72,12 @@ else if image_xscale<0
 
 //DEBUG
 
-//draw_sprite(S_DEBUG, 0, x, GetHeadLocation() - 1);
-//draw_sprite(S_DEBUG, 0, x - 7 + xSpeed, GetHeadLocation() - 1);
-//draw_set_colour(c_blue);
-//draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
-//draw_rectangle(bbox_left + 6 + xSpeed, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + xSpeed, bbox_bottom - 6, true);
-//draw_rectangle(bbox_left + 4 + xSpeed, bbox_top - 9 - currentStretchAmount, bbox_right - 4 + xSpeed, bbox_bottom - 12 - currentStretchAmount, true);
-//draw_rectangle(bbox_left + 7 + xSpeed, bbox_top - 16 - currentStretchAmount, bbox_right - 8 + xSpeed, bbox_bottom - 17 - currentStretchAmount, true);
+/*
+draw_sprite(S_DEBUG, 0, x, GetHeadLocation() - 1);
+draw_sprite(S_DEBUG, 0, x + 3, GetHeadLocation() - 1);
+draw_sprite(S_DEBUG, 0, x - 3, GetHeadLocation() - 1);
+draw_sprite(S_DEBUG, 0, x + 7, GetHeadLocation() - 1);
+draw_sprite(S_DEBUG, 0, x - 7, GetHeadLocation() - 1);
+draw_sprite(S_DEBUG, 0, x + 11, GetHeadLocation() - 1);
+draw_sprite(S_DEBUG, 0, x - 11, GetHeadLocation() - 1);
+*/
