@@ -48,7 +48,9 @@ else if isExtending || isRecalling
 
 //Stretch midriff
 draw_sprite_ext(S_Player_Midriff, 0, x, y - 10, image_xscale, currentStretchAmount, 0, c_white, 1);
-//Extend arm
+
+
+//Extend arm based on direction facing
 if image_xscale>0
 {
 	draw_sprite_ext(S_Player_Arm,0,x+8,y-13,currentExtendAmount,image_yscale,0, c_white, 1);
