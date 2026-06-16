@@ -43,6 +43,10 @@ if !O_PauseManager.gamePaused
 	{
 		HoverCheck();	
 	}
+	if O_PickUpsManager.laserUnlocked
+	{
+		LaserEyeCheck();	
+	}
 
 	//Audio
 	XMoveAudio();
