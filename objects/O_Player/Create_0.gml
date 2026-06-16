@@ -614,7 +614,7 @@ HoverTimer = time_source_create(time_source_game, maxHoverTimer, time_source_uni
 
 function ExtendoCheck()
 {
-	if canExtend
+	if isGrounded && !isStretching && !isRetracting && !isHanging
 	{
 		//extend key pressed
 		var desiredExtendDirection = extendoArmKey;
@@ -653,6 +653,7 @@ function PerformExtend()
 	if currentExtendAmount>0
 	{
 		moveSpeed = 0;
+		canStretch = false
 	}
 }
 
@@ -665,13 +666,42 @@ function PerformRecall()
 		currentExtendAmount = 0;
 		isRecalling = false
 		moveSpeed = 1;
+		canStretch = true
 	}
 	else
 	{
 		isRecalling = true;
 	}
 }
-
+//Check for a wall in the way while extending arm depending on direction faced
+function ExtendoCollision()
+{
+	//if facing Right
+	if image_xscale>0
+	{
+		if place_meeting(x + currentExtendAmount, y, O_Collision) // If there is a wall where player is extending their arm
+		{
+		maxExtendAmount = currentExtendAmount;
+		}
+		else
+		{
+			maxExtendAmount = 80;
+		}
+	}
+	//if facing Left
+	if image_xscale<0
+	{
+		if place_meeting(x - currentExtendAmount, y, O_Collision) // If there is a wall where player is extending their arm
+		{
+		maxExtendAmount = currentExtendAmount;
+		}
+		else
+		{
+			maxExtendAmount = 80;
+		}
+	}
+	
+}
 #endregion
 
 #endregion
