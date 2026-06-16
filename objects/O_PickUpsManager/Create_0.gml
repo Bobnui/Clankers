@@ -5,9 +5,9 @@ stretchUnlocked = true;
 currentStretchPickUp = 0;
 maxStretchPickUp = 4;
 
-hoverUnlocked = true;
+hoverUnlocked = false;
 currentHoverPickUp = 0;
-maxHoverPickUp = 2;
+maxHoverPickUp = 4;
 
 laserUnlocked = true;
 currentLaserPickUp = 0;
