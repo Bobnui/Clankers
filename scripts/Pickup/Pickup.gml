@@ -2,7 +2,7 @@ enum PickUpType
 {
 	Stretch,
 	Hover,
-	Lazer,
+	Laser,
 	ExtendoArm,
 	SuperFunHappySlide,
 	Collectable
@@ -33,11 +33,11 @@ function Pickup(_instance, PickUpType)
 			}
 		break;
 		
-		case PickUpType.Lazer:
-			O_PickUpsManager.currentLazerPickUp ++;
-			if O_PickUpsManager.currentLazerPickUp == O_PickUpsManager.maxLazerPickUp
+		case PickUpType.Laser:
+			O_PickUpsManager.currentLaserPickUp ++;
+			if O_PickUpsManager.currentLaserPickUp == O_PickUpsManager.maxLaserPickUp
 			{
-				O_PickUpsManager.lazerUnlocked = true;
+				O_PickUpsManager.laserUnlocked = true;
 				show_message("Lazer Unlocked");
 			}
 		break;

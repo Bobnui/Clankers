@@ -69,6 +69,17 @@ else if image_xscale<0
 	}
 }
 
+//Shoot Lasers based on direction facing
+if image_xscale>0
+{
+	draw_sprite_ext(S_Laser,0,x-1+currentLaserLength,y-19,currentLaserLength,image_yscale,0, c_white, 1);
+	
+}
+else if image_xscale<0
+{
+	draw_sprite_ext(S_Laser,0,x+1-currentLaserLength,y-19,currentLaserLength,image_yscale,0, c_white, 1);
+}
+
 
 
 

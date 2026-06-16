@@ -1,1 +1,1 @@
-Type = PickUpType.Lazer;
+Type = PickUpType.Laser;

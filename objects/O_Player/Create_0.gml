@@ -64,7 +64,7 @@ isHovering = false;
 maxHoverTimer = 4;
 
 //Laser
-canLaser = true
+canLaser = true;
 
 isLasering = false;
 isEnding = false;
@@ -91,7 +91,7 @@ function GetInput() // returns all current input values
 	downKey = keyboard_check(ord("S"));
 	hoverKey = keyboard_check(vk_space);
 	extendoArmKey = keyboard_check(ord("E"));
-	laserEyeKey = keyboard_check(ord(vk_shift));
+	laserEyeKey = keyboard_check(vk_shift);
 }
 
 #endregion
@@ -270,7 +270,7 @@ function UpdateHangingSprite()
 function PickUpCheck()
 {
 	//Torso
-	var torsoCol = collision_rectangle(bbox_left + 6 + xSpeed, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + xSpeed, bbox_bottom - 6, O_PickUpParent, false, false);
+	var torsoCol = collision_rectangle(bbox_left + 6 + xSpeed - currentExtendAmount, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + xSpeed + currentExtendAmount, bbox_bottom - 6, O_PickUpParent, false, false);
 	if torsoCol != noone
 	{
 		Pickup(torsoCol, torsoCol.Type);
@@ -677,7 +677,8 @@ function PerformExtend()
 	if currentExtendAmount>0
 	{
 		moveSpeed = 0;
-		canStretch = false
+		canStretch = false;
+		canLaser = false;
 	}
 }
 
@@ -688,9 +689,10 @@ function PerformRecall()
 	if currentExtendAmount <= 0
 	{
 		currentExtendAmount = 0;
-		isRecalling = false
+		isRecalling = false;
 		moveSpeed = 1;
-		canStretch = true
+		canStretch = true;
+		canLaser = true;
 	}
 	else
 	{
@@ -743,7 +745,7 @@ function LaserEyeCheck()
 			break;
 		
 			case 0: // is not pressing Shift
-				if shouldAutoRecall && currentExtendAmount > 0
+				if shouldAutoRecall && currentLaserLength > 0
 				{
 					EndLasers(); // only auto recalls if shouldAutoRecall is true
 				}
@@ -764,8 +766,8 @@ function ShootLasers()
 	if currentLaserLength>0
 	{
 		moveSpeed = 0;
-		canStretch = false
-		canExtend = false
+		canStretch = false;
+		canExtend = false;
 	}
 }
 
@@ -776,10 +778,10 @@ function EndLasers()
 	if currentLaserLength <= 0
 	{
 		currentLaserLength = 0;
-		isEnding = false
+		isEnding = false;
 		moveSpeed = 1;
-		canStretch = true
-		canExtend = true
+		canStretch = true;
+		canExtend = true;
 	}
 	else
 	{
