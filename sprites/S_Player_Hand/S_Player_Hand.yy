@@ -3,7 +3,7 @@
   "%Name":"S_Player_Hand",
   "bboxMode":0,
   "bbox_bottom":15,
-  "bbox_left":13,
+  "bbox_left":10,
   "bbox_right":15,
   "bbox_top":11,
   "collisionKind":1,
