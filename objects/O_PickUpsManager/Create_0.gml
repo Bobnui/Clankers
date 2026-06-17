@@ -11,11 +11,11 @@ maxHoverPickUp = 4;
 
 laserUnlocked = true;
 currentLaserPickUp = 0;
-maxLaserPickUp = 2;
+maxLaserPickUp = 4;
 
 extendoArmUnlocked = true;
 currentExtendoArmPickUp = 0;
-maxExtendoArmPickUp = 2;
+maxExtendoArmPickUp = 4;
 
 superFunHappySlideUnlocked = false;
 currentSuperFunHappySlidePickUp = 0;
