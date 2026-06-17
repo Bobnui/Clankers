@@ -13,6 +13,9 @@ isHanging = false;
 platformXSpeed = 0;
 platformYSpeed = 0;
 
+//Checkpoint
+currentCheckpoint = noone;
+
 //Sprite
 animFrameLength = 5; //number of frames per animation
 hangingFrameCounter = 0;
@@ -39,7 +42,6 @@ maxStretchAmount = 100;
 
 stretchSpeed = 1;
 retractSpeed = 2;
-
 
 shouldAutoRetract = true;
 canMoveWhileStretching = true;
@@ -426,6 +428,27 @@ function HangingGapCheck()
 
 #endregion
 
+#region Death
+
+function Die()
+{
+	currentStretchAmount = 0;
+	currentExtendAmount = 0;
+	currentLaserLength = 0;
+	isHanging = false;
+	if currentCheckpoint != noone
+	{
+		x = currentCheckpoint.x;
+		y = currentCheckpoint.y;
+	} 
+	else
+	{
+		show_debug_message("Respawn at beningin");
+	}
+}
+
+#endregion
+
 #region Stretch
 
 #region Checks
@@ -747,6 +770,10 @@ function ExtendoCollision()
 	}
 }
 
+#endregion
+
+#region Lasers
+
 function LaserEyeCheck()
 {
 	if isGrounded && !isStretching && !isRetracting && !isHanging && !isExtending && !isRecalling
@@ -830,6 +857,7 @@ function DestructoCheck()
 		}
 	}
 }
+
 function LaserCollision()
 {
 	//if facing Right

@@ -1,4 +1,4 @@
-O//Tells engine that this event will handle drawing sprites
+//Tells engine that this event will handle drawing sprites
 draw_self()
 
 #region Torso

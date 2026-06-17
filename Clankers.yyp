@@ -57,7 +57,7 @@
     {"id":{"name":"O_Checkpoint","path":"objects/O_Checkpoint/O_Checkpoint.yy",},},
     {"id":{"name":"o_Close_Button","path":"objects/o_Close_Button/o_Close_Button.yy",},},
     {"id":{"name":"O_Collision","path":"objects/O_Collision/O_Collision.yy",},},
-    {"id":{"name":"O_DeathBox","path":"objects/O_DeathBox/O_DeathBox.yy",},},
+    {"id":{"name":"O_DeathBoxParent","path":"objects/O_DeathBoxParent/O_DeathBoxParent.yy",},},
     {"id":{"name":"O_DetructoDoor","path":"objects/O_DetructoDoor/O_DetructoDoor.yy",},},
     {"id":{"name":"o_Disk","path":"objects/o_Disk/o_Disk.yy",},},
     {"id":{"name":"o_Game","path":"objects/o_Game/o_Game.yy",},},

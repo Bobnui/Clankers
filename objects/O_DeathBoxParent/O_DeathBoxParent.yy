@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"O_DeathBox",
+  "%Name":"O_DeathBoxParent",
   "eventList":[],
   "managed":true,
-  "name":"O_DeathBox",
+  "name":"O_DeathBoxParent",
   "overriddenProperties":[],
   "parent":{
     "name":"LevelDesign",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"S_DEBUG",
+    "path":"sprites/S_DEBUG/S_DEBUG.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
