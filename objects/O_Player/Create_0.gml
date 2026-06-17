@@ -729,9 +729,9 @@ function ExtendoCollision()
 	//if facing Right
 	if image_xscale>0
 	{
-		if place_meeting(x + currentExtendAmount, y, O_Collision) // If there is a wall where player is extending their arm max length becomes current length
+		if isExtending && place_meeting(x + currentExtendAmount+5, y, O_Collision) // If there is a wall where player is extending their arm max length becomes current length
 		{
-		maxExtendAmount = currentExtendAmount;
+			maxExtendAmount = currentExtendAmount;
 		}
 		else
 		{
@@ -750,7 +750,7 @@ function ExtendoCollision()
 	//if facing Left
 	if image_xscale<0
 	{
-		if place_meeting(x - currentExtendAmount, y, O_Collision) // If there is a wall where player is extending their arm max length becomes current length
+		if isExtending && place_meeting(x - currentExtendAmount - 5, y, O_Collision) // If there is a wall where player is extending their arm max length becomes current length
 		{
 		maxExtendAmount = currentExtendAmount;
 		}
@@ -865,7 +865,7 @@ function LaserCollision()
 	{
 		if place_meeting(x + currentLaserLength, y, O_Collision) // If there is a wall where player is Lasering their laser max length becomes current length
 		{
-		maxLaserLength = currentLaserLength;
+			maxLaserLength = currentLaserLength;
 		}
 		else
 		{
@@ -877,7 +877,7 @@ function LaserCollision()
 	{
 		if place_meeting(x - currentLaserLength, y, O_Collision) // If there is a wall where player is Lasering their laser max length becomes current length
 		{
-		maxLaserLength = currentLaserLength;
+			maxLaserLength = currentLaserLength;
 		}
 		else
 		{
