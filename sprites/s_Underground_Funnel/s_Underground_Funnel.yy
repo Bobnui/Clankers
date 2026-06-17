@@ -5,7 +5,7 @@
   "bbox_bottom":92,
   "bbox_left":28,
   "bbox_right":328,
-  "bbox_top":13,
+  "bbox_top":12,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -20,6 +20,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"97423a29-044f-4259-bec8-93dd29628f39","blendMode":0,"displayName":"Test multi","isLocked":false,"name":"97423a29-044f-4259-bec8-93dd29628f39","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"aefbddea-2f7a-420f-807c-e1b319d69ae4","blendMode":0,"displayName":"Test multi (2)","isLocked":false,"name":"aefbddea-2f7a-420f-807c-e1b319d69ae4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_Underground_Funnel",
   "nineSlice":null,
