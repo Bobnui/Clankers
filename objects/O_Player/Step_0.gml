@@ -15,9 +15,8 @@ if !O_PauseManager.gamePaused
 	HangingGapCheck();
 	PickUpCheck();
 	PlatformCheck();
-	ExtendoCollision();
-	DestructoCheck();
-
+	
+	
 	//checks if player sprites need to be flipped
 	SetSpriteDirection();
 	UpdateHangingSprite();
@@ -34,6 +33,7 @@ if !O_PauseManager.gamePaused
 	if O_PickUpsManager.extendoArmUnlocked
 	{
 		ExtendoCheck();
+		ExtendoCollision();
 	}
 	
 	AttachCheck();
@@ -47,6 +47,8 @@ if !O_PauseManager.gamePaused
 	if O_PickUpsManager.laserUnlocked
 	{
 		LaserEyeCheck();	
+		DestructoCheck();
+		LaserCollision();
 	}
 
 	//Audio
