@@ -20,7 +20,9 @@ function Pickup(_instance, PickUpType)
 			if O_PickUpsManager.currentStretchPickUp == O_PickUpsManager.maxStretchPickUp
 			{
 				O_PickUpsManager.stretchUnlocked = true
-				show_message("Stretch Unlocked");
+				//show_message("Stretch Unlocked");
+				O_PauseManager.gamePaused = true
+				instance_create_layer(O_Player.x,O_Player.y,"Notifications",o_Hover_Notification)
 			}
 		break;
 		

@@ -52,6 +52,7 @@
   "name":"Clankers",
   "resources":[
     {"id":{"name":"f_X_Button","path":"fonts/f_X_Button/f_X_Button.yy",},},
+    {"id":{"name":"o_Arms_Notification","path":"objects/o_Arms_Notification/o_Arms_Notification.yy",},},
     {"id":{"name":"O_CameraManager","path":"objects/O_CameraManager/O_CameraManager.yy",},},
     {"id":{"name":"o_Ceiling","path":"objects/o_Ceiling/o_Ceiling.yy",},},
     {"id":{"name":"O_Checkpoint","path":"objects/O_Checkpoint/O_Checkpoint.yy",},},
@@ -65,6 +66,7 @@
     {"id":{"name":"o_Hover_Notification","path":"objects/o_Hover_Notification/o_Hover_Notification.yy",},},
     {"id":{"name":"o_Hydrolic","path":"objects/o_Hydrolic/o_Hydrolic.yy",},},
     {"id":{"name":"O_JumpPad","path":"objects/O_JumpPad/O_JumpPad.yy",},},
+    {"id":{"name":"o_Lasers_Notification","path":"objects/o_Lasers_Notification/o_Lasers_Notification.yy",},},
     {"id":{"name":"o_Lights","path":"objects/o_Lights/o_Lights.yy",},},
     {"id":{"name":"o_Magnet","path":"objects/o_Magnet/o_Magnet.yy",},},
     {"id":{"name":"O_MovingPlatform","path":"objects/O_MovingPlatform/O_MovingPlatform.yy",},},
@@ -77,6 +79,7 @@
     {"id":{"name":"o_Quit_Game","path":"objects/o_Quit_Game/o_Quit_Game.yy",},},
     {"id":{"name":"o_Resume","path":"objects/o_Resume/o_Resume.yy",},},
     {"id":{"name":"o_Robot","path":"objects/o_Robot/o_Robot.yy",},},
+    {"id":{"name":"o_Stretch_Notification","path":"objects/o_Stretch_Notification/o_Stretch_Notification.yy",},},
     {"id":{"name":"o_TapeMeasure","path":"objects/o_TapeMeasure/o_TapeMeasure.yy",},},
     {"id":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
     {"id":{"name":"KeiraRoomTest","path":"rooms/KeiraRoomTest/KeiraRoomTest.yy",},},
