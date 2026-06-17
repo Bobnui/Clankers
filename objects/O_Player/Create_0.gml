@@ -291,6 +291,7 @@ function PickUpCheck()
 		Pickup(headCol, headCol.Type);
 	}
 }
+
 function PlatformCheck()
 {
 	var onPlatform = place_meeting(x, y + 2, O_MovingPlatform) // If there is a MP directly below the player
@@ -307,6 +308,7 @@ function PlatformCheck()
 	}
 		
 }
+
 function GroundedCheck()
 {
 	if place_meeting(x, y + 1, O_Collision) // If there is a floor directly below the player
@@ -355,7 +357,7 @@ function CeilingCheck()
 		isCeilingAbove = false; //otherwise we aren't
 		canAttach = false;
 	}
-	if ySpeed < 0 && place_meeting(x, GetHeadLocation() + 6 + ySpeed, O_Collision)
+	if ySpeed < 0 && place_meeting(x, GetHeadLocation() + 6 + ySpeed, O_Collision) // Stops player from flying through ceiling
 	{
 		var pixelYCheck = sign(ySpeed);
 		while !place_meeting(x, GetHeadLocation() - pixelYCheck, O_Collision)
