@@ -64,7 +64,6 @@
     {"name":"inst_1707FF46","path":"rooms/OurGame/OurGame.yy",},
     {"name":"inst_54E34D14","path":"rooms/OurGame/OurGame.yy",},
     {"name":"inst_3A1D6EA7","path":"rooms/OurGame/OurGame.yy",},
-    {"name":"inst_2F12D8A4","path":"rooms/OurGame/OurGame.yy",},
     {"name":"inst_10413707","path":"rooms/OurGame/OurGame.yy",},
     {"name":"inst_2397CA9F","path":"rooms/OurGame/OurGame.yy",},
     {"name":"inst_3C7B45A1","path":"rooms/OurGame/OurGame.yy",},
@@ -96,6 +95,7 @@
     {"name":"TestPlat","path":"rooms/OurGame/OurGame.yy",},
     {"name":"inst_6AC805C9","path":"rooms/OurGame/OurGame.yy",},
     {"name":"inst_67041DAE","path":"rooms/OurGame/OurGame.yy",},
+    {"name":"inst_3E3B359","path":"rooms/OurGame/OurGame.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -206,7 +206,6 @@
         {"$GMRInstance":"v4","%Name":"inst_1707FF46","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1707FF46","objectId":{"name":"O_Checkpoint","path":"objects/O_Checkpoint/O_Checkpoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":719.0,"y":800.0,},
         {"$GMRInstance":"v4","%Name":"inst_54E34D14","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_54E34D14","objectId":{"name":"O_DeathBoxParent","path":"objects/O_DeathBoxParent/O_DeathBoxParent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":81.0,"scaleY":22.0,"x":944.0,"y":858.0,},
         {"$GMRInstance":"v4","%Name":"inst_3A1D6EA7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3A1D6EA7","objectId":{"name":"O_DeathBoxParent","path":"objects/O_DeathBoxParent/O_DeathBoxParent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":81.0,"scaleY":22.0,"x":944.0,"y":724.0,},
-        {"$GMRInstance":"v4","%Name":"inst_2F12D8A4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2F12D8A4","objectId":{"name":"O_DeathBoxParent","path":"objects/O_DeathBoxParent/O_DeathBoxParent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":57.5,"scaleY":16.0,"x":393.5,"y":720.0,},
         {"$GMRInstance":"v4","%Name":"inst_10413707","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_10413707","objectId":{"name":"O_DeathBoxParent","path":"objects/O_DeathBoxParent/O_DeathBoxParent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":56.5,"scaleY":22.0,"x":392.5,"y":1055.0,},
         {"$GMRInstance":"v4","%Name":"inst_725B94A1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_725B94A1","objectId":{"name":"O_DetructoDoor","path":"objects/O_DetructoDoor/O_DetructoDoor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":12.0,"scaleY":65.0,"x":1364.0,"y":655.0,},
         {"$GMRInstance":"v4","%Name":"inst_D47911F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D47911F","objectId":{"name":"O_DetructoDoor","path":"objects/O_DetructoDoor/O_DetructoDoor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":12.0,"scaleY":64.0,"x":1504.0,"y":656.0,},
@@ -222,6 +221,7 @@
         {"$GMRInstance":"v4","%Name":"inst_67041DAE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_67041DAE","objectId":{"name":"O_PlatformPoint","path":"objects/O_PlatformPoint/O_PlatformPoint.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_PlatformPoint","path":"objects/O_PlatformPoint/O_PlatformPoint.yy",},"propertyId":{"name":"PlatformID","path":"objects/O_PlatformPoint/O_PlatformPoint.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"TestPlat",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1601.0,"y":495.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3E3B359","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E3B359","objectId":{"name":"O_DeathBox_Spike","path":"objects/O_DeathBox_Spike/O_DeathBox_Spike.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":334.0,"y":703.0,},
       ],"layers":[],"name":"Level_Objects","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Level_Tiles_Industrial","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Level_Tiles_Industrial","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":78,"SerialiseWidth":225,"TileCompressedData":[
           -11,-2147483648,1,0,-214,-2147483648,-17,0,-208,-2147483648,1,0,-4,-2147483648,-2,0,-4,-2147483648,1,
