@@ -70,7 +70,7 @@ isLasering = false;
 isEnding = false;
 
 currentLaserLength = 0;
-maxLaserLength = 50;
+maxLaserLength = 40;
 
 laserSpeed = 3;
 endSpeed = 4;
@@ -270,10 +270,21 @@ function UpdateHangingSprite()
 function PickUpCheck()
 {
 	//Torso
-	var torsoCol = collision_rectangle(bbox_left + 6 + xSpeed - currentExtendAmount, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + xSpeed + currentExtendAmount, bbox_bottom - 6, O_PickUpParent, false, false);
-	if torsoCol != noone
+	if image_xscale>0
 	{
-		Pickup(torsoCol, torsoCol.Type);
+		var torsoCol = collision_rectangle(bbox_left + 6 + xSpeed, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + xSpeed + currentExtendAmount, bbox_bottom - 6, O_PickUpParent, false, false);
+		if torsoCol != noone
+		{
+			Pickup(torsoCol, torsoCol.Type);
+		}
+	}
+	else if image_xscale<0
+	{
+		var torsoCol = collision_rectangle(bbox_left + 6 + xSpeed - currentExtendAmount, bbox_top - 4 - currentStretchAmount, bbox_right - 6 + xSpeed, bbox_bottom - 6, O_PickUpParent, false, false);
+		if torsoCol != noone
+		{
+			Pickup(torsoCol, torsoCol.Type);
+		}
 	}
 	//Shoulder
 	var shoulderCol = collision_rectangle(bbox_left + 4 + xSpeed, bbox_top - 9 - currentStretchAmount, bbox_right - 4 + xSpeed, bbox_bottom - 12 - currentStretchAmount, O_PickUpParent, false, false);
@@ -642,7 +653,7 @@ HoverTimer = time_source_create(time_source_game, maxHoverTimer, time_source_uni
 
 function ExtendoCheck()
 {
-	if isGrounded && !isStretching && !isRetracting && !isHanging
+	if isGrounded && !isStretching && !isRetracting && !isHanging && !isLasering && !isEnding
 	{
 		//extend key pressed
 		var desiredExtendDirection = extendoArmKey;
@@ -788,7 +799,32 @@ function EndLasers()
 		isEnding = true;
 	}
 }
-
+//Laser Collision
+function DestructoCheck()
+{
+	if isLasering
+	{	//Determines which way the player is facing/moving so when extending arms collision only increases in the currently faced direction
+		if image_xscale>0
+		{
+			var LaserCol = collision_rectangle (bbox_left,bbox_top,bbox_right + 25 + currentLaserLength,bbox_bottom,O_DetructoDoor, false, false);
+			if LaserCol != noone
+			{
+				DestructoWall(LaserCol,LaserCol.Type);
+			}
+		}
+		else if image_xscale<0
+		{
+			var LaserCol = collision_rectangle (bbox_left - 25 - currentLaserLength,bbox_top,bbox_right,bbox_bottom,O_DetructoDoor, false, false);
+			if LaserCol != noone
+			{
+				DestructoWall(LaserCol,LaserCol.Type);
+			}
+		}
+	}
+}
 #endregion
+
+
+
 
 #endregion
