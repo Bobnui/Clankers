@@ -34,6 +34,7 @@ if !O_PauseManager.gamePaused
 	{
 		ExtendoCheck();
 		ExtendoCollision();
+		ButtonCheck();
 	}
 	
 	AttachCheck();
