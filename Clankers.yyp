@@ -153,6 +153,7 @@
     {"id":{"name":"S_Tiles_Junkyard","path":"sprites/S_Tiles_Junkyard/S_Tiles_Junkyard.yy",},},
     {"id":{"name":"S_Truck","path":"sprites/S_Truck/S_Truck.yy",},},
     {"id":{"name":"s_UI_Font","path":"sprites/s_UI_Font/s_UI_Font.yy",},},
+    {"id":{"name":"s_Underground_Funnel","path":"sprites/s_Underground_Funnel/s_Underground_Funnel.yy",},},
     {"id":{"name":"Sprite29","path":"sprites/Sprite29/Sprite29.yy",},},
     {"id":{"name":"Sprite30","path":"sprites/Sprite30/Sprite30.yy",},},
     {"id":{"name":"t_Background","path":"tilesets/t_Background/t_Background.yy",},},
