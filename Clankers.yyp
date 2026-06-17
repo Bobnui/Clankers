@@ -105,6 +105,7 @@
     {"id":{"name":"s_Black_Pixel","path":"sprites/s_Black_Pixel/s_Black_Pixel.yy",},},
     {"id":{"name":"s_Border","path":"sprites/s_Border/s_Border.yy",},},
     {"id":{"name":"s_Ceiling","path":"sprites/s_Ceiling/s_Ceiling.yy",},},
+    {"id":{"name":"S_Checkpoint","path":"sprites/S_Checkpoint/S_Checkpoint.yy",},},
     {"id":{"name":"s_Close_Button","path":"sprites/s_Close_Button/s_Close_Button.yy",},},
     {"id":{"name":"s_Collision","path":"sprites/s_Collision/s_Collision.yy",},},
     {"id":{"name":"S_DEBUG","path":"sprites/S_DEBUG/S_DEBUG.yy",},},
