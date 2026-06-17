@@ -3,6 +3,7 @@
   "%Name":"O_DeathBox_Spike",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"O_DeathBox_Spike",
@@ -30,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_Spike",
-    "path":"sprites/S_Spike/S_Spike.yy",
+    "name":"S_Spike_Editor",
+    "path":"sprites/S_Spike_Editor/S_Spike_Editor.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

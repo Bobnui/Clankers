@@ -43,6 +43,7 @@
   "height":100,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"3e9c3239-5292-4eb0-8dd6-64464f0127d6","blendMode":0,"displayName":"Writing","isLocked":false,"name":"3e9c3239-5292-4eb0-8dd6-64464f0127d6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"9f2f952f-7ba0-40c8-afc0-bc498ccec6b4","blendMode":0,"displayName":"default","isLocked":false,"name":"9f2f952f-7ba0-40c8-afc0-bc498ccec6b4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_Arms_Notification",

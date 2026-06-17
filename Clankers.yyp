@@ -153,6 +153,7 @@
     {"id":{"name":"S_R1Background","path":"sprites/S_R1Background/S_R1Background.yy",},},
     {"id":{"name":"S_R1Building","path":"sprites/S_R1Building/S_R1Building.yy",},},
     {"id":{"name":"s_Resume","path":"sprites/s_Resume/s_Resume.yy",},},
+    {"id":{"name":"S_Spike_Editor","path":"sprites/S_Spike_Editor/S_Spike_Editor.yy",},},
     {"id":{"name":"S_Spike","path":"sprites/S_Spike/S_Spike.yy",},},
     {"id":{"name":"s_Spring","path":"sprites/s_Spring/s_Spring.yy",},},
     {"id":{"name":"s_Stretch_Notification","path":"sprites/s_Stretch_Notification/s_Stretch_Notification.yy",},},
