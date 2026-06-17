@@ -15,7 +15,8 @@ if !O_PauseManager.gamePaused
 	HangingGapCheck();
 	PickUpCheck();
 	PlatformCheck();
-	ExtendoCollision()
+	ExtendoCollision();
+	DestructoCheck();
 
 	//checks if player sprites need to be flipped
 	SetSpriteDirection();

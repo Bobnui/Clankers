@@ -83,6 +83,7 @@
     {"id":{"name":"R_1","path":"rooms/R_1/R_1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"Destroy","path":"scripts/Destroy/Destroy.yy",},},
     {"id":{"name":"Draw_Font","path":"scripts/Draw_Font/Draw_Font.yy",},},
     {"id":{"name":"Pickup","path":"scripts/Pickup/Pickup.yy",},},
     {"id":{"name":"Spawn_Particles","path":"scripts/Spawn_Particles/Spawn_Particles.yy",},},

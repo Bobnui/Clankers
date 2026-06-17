@@ -38,7 +38,7 @@ function Pickup(_instance, PickUpType)
 			if O_PickUpsManager.currentLaserPickUp == O_PickUpsManager.maxLaserPickUp
 			{
 				O_PickUpsManager.laserUnlocked = true;
-				show_message("Lazer Unlocked");
+				show_message("Laser Unlocked");
 			}
 		break;
 		
