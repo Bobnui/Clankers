@@ -12,7 +12,10 @@
     "name":"LevelDesign",
     "path":"folders/Objects/LevelDesign.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"O_DeathBoxParent",
+    "path":"objects/O_DeathBoxParent/O_DeathBoxParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

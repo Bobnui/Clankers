@@ -15,6 +15,8 @@ platformYSpeed = 0;
 
 //Checkpoint
 currentCheckpoint = noone;
+startingLocationX = x;
+startingLocationY = y;
 
 //Sprite
 animFrameLength = 5; //number of frames per animation
@@ -427,6 +429,14 @@ function HangingGapCheck()
 	}
 }
 
+function DeathBoxCheck()
+{
+	if place_meeting(x, GetHeadLocation() + 6, O_DeathBoxParent)
+	{
+		Die();
+	}
+}
+
 
 #endregion
 
@@ -438,6 +448,8 @@ function Die()
 	currentExtendAmount = 0;
 	currentLaserLength = 0;
 	isHanging = false;
+	ySpeed = 0;
+	xSpeed = 0;
 	if currentCheckpoint != noone
 	{
 		x = currentCheckpoint.x;
@@ -445,7 +457,8 @@ function Die()
 	} 
 	else
 	{
-		show_debug_message("Respawn at beningin");
+		x = startingLocationX;
+		y = startingLocationY;
 	}
 }
 
