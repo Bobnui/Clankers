@@ -4,6 +4,7 @@ if (clicked)
 	show_debug_message("Here")
 	clicked = false
 	instance_destroy()
+
 } 
 else 
 {

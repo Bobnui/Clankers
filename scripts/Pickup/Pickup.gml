@@ -22,7 +22,7 @@ function Pickup(_instance, PickUpType)
 				O_PickUpsManager.stretchUnlocked = true
 				//show_message("Stretch Unlocked");
 				O_PauseManager.gamePaused = true
-				instance_create_layer(O_Player.x,O_Player.y-10,"Notifications",o_Stretch_Notification)
+				instance_create_layer(O_Player.x,O_Player.y-10 - (O_Player.currentStretchAmount * .5),"Notifications",o_Stretch_Notification)
 			}
 		break;
 		
@@ -33,7 +33,7 @@ function Pickup(_instance, PickUpType)
 				O_PickUpsManager.hoverUnlocked = true;
 				//show_message("Hover Unlocked");
 				O_PauseManager.gamePaused = true
-				instance_create_layer(O_Player.x,O_Player.y-10,"Notifications",o_Hover_Notification)
+				instance_create_layer(O_Player.x,O_Player.y-10 - (O_Player.currentStretchAmount * .5),"Notifications",o_Hover_Notification)
 			}
 		break;
 		
@@ -44,7 +44,7 @@ function Pickup(_instance, PickUpType)
 				O_PickUpsManager.laserUnlocked = true;
 				//show_message("Laser Unlocked");
 				O_PauseManager.gamePaused = true
-				instance_create_layer(O_Player.x,O_Player.y-10,"Notifications",o_Lasers_Notification)
+				instance_create_layer(O_Player.x,O_Player.y-10 - (O_Player.currentStretchAmount * .5),"Notifications",o_Lasers_Notification)
 			}
 		break;
 		
@@ -55,7 +55,7 @@ function Pickup(_instance, PickUpType)
 				O_PickUpsManager.extendoArmUnlocked = true;
 				//show_message("ExtendoArm Unlocked");
 				O_PauseManager.gamePaused = true
-				instance_create_layer(O_Player.x,O_Player.y-10,"Notifications",o_Arms_Notification)
+				instance_create_layer(O_Player.x,O_Player.y-10 - (O_Player.currentStretchAmount * .5),"Notifications",o_Arms_Notification)
 			}
 		break;
 		
