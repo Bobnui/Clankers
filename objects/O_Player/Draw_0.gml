@@ -74,10 +74,9 @@ else if image_xscale<0
 	}
 }
 
-
 //DEBUG
 
-//draw_sprite(S_Player_Wheels, 0, x, GetHeadLocation() + 6);
+//draw_sprite(S_DEBUG, 0, x + currentLaserLength, y - 19);
 /*
 
 draw_sprite(S_DEBUG, 0, x, GetHeadLocation() + ySpeed);
