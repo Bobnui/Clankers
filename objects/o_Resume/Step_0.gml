@@ -4,6 +4,9 @@ if (clicked)
 	show_debug_message("Here")
 	clicked = false
 	instance_destroy()
+	instance_destroy(Box)
+	instance_destroy(o_Quit_Game)
+	O_PauseManager.gamePaused = false
 } 
 else 
 {
