@@ -74,7 +74,7 @@ isLasering = false;
 isEnding = false;
 
 currentLaserLength = 0;
-maxLaserLength = 40;
+maxLaserLength = 80;
 
 laserSpeed = 3;
 endSpeed = 4;
@@ -919,7 +919,7 @@ function ButtonCheck()
 		}
 		else if image_xscale<0
 		{
-			var ButtonCol = collision_rectangle (bbox_left + 2 - currentExtendAmount, bbox_top - 4, bbox_right, bbox_bottom - 6,O_Button.DoorID, false, false);
+			var ButtonCol = collision_rectangle (bbox_left + 2 - currentExtendAmount, bbox_top - 4, bbox_right, bbox_bottom - 6,O_Button, false, false);
 			if ButtonCol != noone
 			{
 				PressButton(ButtonCol,ButtonCol.Type);

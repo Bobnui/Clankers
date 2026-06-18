@@ -54,7 +54,8 @@ if image_xscale>0
 {	//Extend arm based on direction facing
 	draw_sprite_ext(S_Player_Arm,0,x+8,y-13,currentExtendAmount,image_yscale,0, c_white, 1);
 	//Shoot Lasers based on direction facing
-	draw_sprite_ext(S_Laser,0,x-1+currentLaserLength,y-19,currentLaserLength,image_yscale,0, c_white, 1);
+	draw_sprite_ext(S_Laser,0,x-1,y-19,currentLaserLength,image_yscale,0, c_white, 1);
+	draw_sprite_ext(S_Laser,0,x-1,y-20,currentLaserLength,image_yscale,0, c_white, 1);
 	if isExtending || isRecalling
 	{
 		draw_sprite_ext(S_Player_Hand,0,x-2+currentExtendAmount,y-26,image_xscale,image_yscale,0, c_white, 1);
@@ -66,6 +67,7 @@ else if image_xscale<0
 	draw_sprite_ext(S_Player_Arm,0,x-8-currentExtendAmount,y-13,currentExtendAmount,image_yscale,0, c_white, 1);
 	//Shoot Lasers based on direction facing
 	draw_sprite_ext(S_Laser,0,x+1-currentLaserLength,y-19,currentLaserLength,image_yscale,0, c_white, 1);
+	draw_sprite_ext(S_Laser,0,x+1-currentLaserLength,y-20,currentLaserLength,image_yscale,0, c_white, 1);
 	if isExtending || isRecalling
 	{
 		draw_sprite_ext(S_Player_Hand,0,x+2-currentExtendAmount,y-26,image_xscale,image_yscale,0, c_white, 1);
