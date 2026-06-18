@@ -76,6 +76,8 @@ else if image_xscale<0
 
 //DEBUG
 
+//Euan** This is how to draw_rectangle(bbox_left + 8, bbox_top - 9, bbox_right + currentExtendAmount+2, bbox_bottom - 11, true)
+
 //draw_sprite(S_DEBUG, 0, x + currentLaserLength, y - 19);
 /*
 

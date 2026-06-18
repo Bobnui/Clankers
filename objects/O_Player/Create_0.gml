@@ -744,39 +744,38 @@ function ExtendoCollision()
 	//if facing Right
 	if image_xscale>0
 	{
-		if isExtending && place_meeting(x + currentExtendAmount+4, y+13, O_Collision) // If there is a wall where player is extending their arm max length becomes current length
+		var ExtendCol = collision_rectangle (bbox_left + 8, bbox_top - 9, bbox_right + currentExtendAmount+4, bbox_bottom - 11,O_Collision, false, false);
+		if ExtendCol != noone
 		{
 			maxExtendAmount = currentExtendAmount;
 		}
 		else
 		{
-			maxExtendAmount = 80; // If no wall max entend stays the same/resets
+			maxExtendAmount = 80;
 		}
-		//ArmPickups
 		if isExtending
 		{
-			var armCol = collision_rectangle(bbox_left + 6, bbox_top - 4, bbox_right + currentExtendAmount, bbox_bottom - 6, O_PickUpParent, false, false);
+			var armCol = collision_rectangle(bbox_left + 8, bbox_top - 9, bbox_right + currentExtendAmount+4, bbox_bottom - 11, O_PickUpParent, false, false);
 			if armCol != noone
 			{
 				Pickup(armCol, armCol.Type);
 			}
 		}
 	}
-	//if facing Left
-	if image_xscale<0
+	else if image_xscale<0
 	{
-		if isExtending && place_meeting(x - currentExtendAmount - 4, y+13, O_Collision) // If there is a wall where player is extending their arm max length becomes current length
+		var ExtendCol = collision_rectangle (bbox_left - currentExtendAmount-4, bbox_top - 9, bbox_right-8, bbox_bottom - 11,O_Collision, false, false);
+		if ExtendCol != noone
 		{
-		maxExtendAmount = currentExtendAmount;
+			maxExtendAmount = currentExtendAmount;
 		}
 		else
 		{
-			maxExtendAmount = 80; // If no wall max entend stays the same/resets
+			maxExtendAmount = 80;
 		}
-		//ArmPickups
 		if isExtending
 		{
-			var armCol = collision_rectangle(bbox_left + 2 - currentExtendAmount, bbox_top - 4, bbox_right, bbox_bottom - 6, O_PickUpParent, false, false);
+			var armCol = collision_rectangle(bbox_left - currentExtendAmount-4, bbox_top - 9, bbox_right-8, bbox_bottom - 11, O_PickUpParent, false, false);
 			if armCol != noone
 			{
 				Pickup(armCol, armCol.Type);
@@ -895,9 +894,14 @@ function LaserCollision()
 	//if facing Left
 	if image_xscale<0
 	{
-		if place_meeting(x+6 - currentLaserLength, y, O_Collision) // If there is a wall where player is Lasering their laser max length becomes current length
+		if collision_point(x - currentLaserLength, y - 19, O_Collision, false, false) // If there is a wall where player is Lasering their laser max length becomes current length
 		{
-			maxLaserLength = currentLaserLength;
+			var laserAss = 1;
+			while !collision_point(x + laserAss, y - 19, O_Collision, false, false)
+			{
+				laserAss += 1;
+			}
+			maxLaserLength = laserAss;
 		}
 		else
 		{
@@ -923,10 +927,6 @@ function ButtonCheck()
 				PressButton(ButtonCol,ButtonCol.Type);
 				maxExtendAmount=currentExtendAmount;
 			}			
-			else
-			{
-				maxExtendAmount = 80
-			}
 		}
 		else if image_xscale<0
 		{
