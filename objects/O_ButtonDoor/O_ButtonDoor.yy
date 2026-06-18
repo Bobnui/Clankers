@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"O_DeathBox_Spike",
+  "%Name":"O_ButtonDoor",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"O_DeathBox_Spike",
+  "name":"O_ButtonDoor",
   "overriddenProperties":[],
   "parent":{
     "name":"LevelDesign",
     "path":"folders/Objects/LevelDesign.yy",
   },
   "parentObjectId":{
-    "name":"O_DeathBoxParent",
-    "path":"objects/O_DeathBoxParent/O_DeathBoxParent.yy",
+    "name":"O_Collision",
+    "path":"objects/O_Collision/O_Collision.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_Spike_Editor",
-    "path":"sprites/S_Spike_Editor/S_Spike_Editor.yy",
+    "name":"S_ButtonDoor",
+    "path":"sprites/S_ButtonDoor/S_ButtonDoor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

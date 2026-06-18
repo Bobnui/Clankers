@@ -15,6 +15,8 @@ platformYSpeed = 0;
 
 //Checkpoint
 currentCheckpoint = noone;
+startingLocationX = x;
+startingLocationY = y;
 
 //Sprite
 animFrameLength = 5; //number of frames per animation
@@ -427,6 +429,14 @@ function HangingGapCheck()
 	}
 }
 
+function DeathBoxCheck()
+{
+	if place_meeting(x, GetHeadLocation() + 6, O_DeathBoxParent)
+	{
+		Die();
+	}
+}
+
 
 #endregion
 
@@ -438,6 +448,8 @@ function Die()
 	currentExtendAmount = 0;
 	currentLaserLength = 0;
 	isHanging = false;
+	ySpeed = 0;
+	xSpeed = 0;
 	if currentCheckpoint != noone
 	{
 		x = currentCheckpoint.x;
@@ -445,7 +457,8 @@ function Die()
 	} 
 	else
 	{
-		show_debug_message("Respawn at beningin");
+		x = startingLocationX;
+		y = startingLocationY;
 	}
 }
 
@@ -890,5 +903,31 @@ function LaserCollision()
 
 #endregion
 
+#region Buttons
+
+function ButtonCheck()
+{
+	if isExtending
+	{	//Determines which way the player is facing/moving so when extending arms collision only increases in the currently faced direction
+		if image_xscale>0
+		{
+			var ButtonCol = collision_rectangle (bbox_left + 6, bbox_top - 4, bbox_right + currentExtendAmount, bbox_bottom - 6, O_Button, false, false);
+			if ButtonCol != noone
+			{
+				PressButton(ButtonCol,ButtonCol.Type);
+			}
+		}
+		else if image_xscale<0
+		{
+			var ButtonCol = collision_rectangle (bbox_left + 2 - currentExtendAmount, bbox_top - 4, bbox_right, bbox_bottom - 6,O_Button.DoorID, false, false);
+			if ButtonCol != noone
+			{
+				PressButton(ButtonCol,ButtonCol.Type);
+			}
+		}
+	}
+}
+
+#endregion
 
 #endregion
