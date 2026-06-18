@@ -72,6 +72,7 @@
     {"id":{"name":"o_Magnet","path":"objects/o_Magnet/o_Magnet.yy",},},
     {"id":{"name":"O_MovingPlatform","path":"objects/O_MovingPlatform/O_MovingPlatform.yy",},},
     {"id":{"name":"o_Particle","path":"objects/o_Particle/o_Particle.yy",},},
+    {"id":{"name":"o_Pause_Menu","path":"objects/o_Pause_Menu/o_Pause_Menu.yy",},},
     {"id":{"name":"O_PauseManager","path":"objects/O_PauseManager/O_PauseManager.yy",},},
     {"id":{"name":"O_PickUpParent","path":"objects/O_PickUpParent/O_PickUpParent.yy",},},
     {"id":{"name":"O_PickUpsManager","path":"objects/O_PickUpsManager/O_PickUpsManager.yy",},},
