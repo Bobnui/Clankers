@@ -121,6 +121,7 @@
     {"id":{"name":"S_DestructoDoor","path":"sprites/S_DestructoDoor/S_DestructoDoor.yy",},},
     {"id":{"name":"s_Disk_UI","path":"sprites/s_Disk_UI/s_Disk_UI.yy",},},
     {"id":{"name":"s_Disk","path":"sprites/s_Disk/s_Disk.yy",},},
+    {"id":{"name":"S_End","path":"sprites/S_End/S_End.yy",},},
     {"id":{"name":"S_EndGate","path":"sprites/S_EndGate/S_EndGate.yy",},},
     {"id":{"name":"s_Flag","path":"sprites/s_Flag/s_Flag.yy",},},
     {"id":{"name":"s_Grapple_UI","path":"sprites/s_Grapple_UI/s_Grapple_UI.yy",},},
