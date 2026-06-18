@@ -74,10 +74,10 @@ isLasering = false;
 isEnding = false;
 
 currentLaserLength = 0;
-maxLaserLength = 40;
+maxLaserLength = 60;
 
-laserSpeed = 3;
-endSpeed = 4;
+laserSpeed = 8;
+endSpeed = 6;
 #region FUNCTIONS
 
 function DEBUG()
@@ -744,7 +744,7 @@ function ExtendoCollision()
 	//if facing Right
 	if image_xscale>0
 	{
-		if isExtending && place_meeting(x + currentExtendAmount+5, y, O_Collision) // If there is a wall where player is extending their arm max length becomes current length
+		if isExtending && place_meeting(x + currentExtendAmount+4, y+13, O_Collision) // If there is a wall where player is extending their arm max length becomes current length
 		{
 			maxExtendAmount = currentExtendAmount;
 		}
@@ -765,7 +765,7 @@ function ExtendoCollision()
 	//if facing Left
 	if image_xscale<0
 	{
-		if isExtending && place_meeting(x - currentExtendAmount - 5, y, O_Collision) // If there is a wall where player is extending their arm max length becomes current length
+		if isExtending && place_meeting(x - currentExtendAmount - 4, y+13, O_Collision) // If there is a wall where player is extending their arm max length becomes current length
 		{
 		maxExtendAmount = currentExtendAmount;
 		}
@@ -878,25 +878,31 @@ function LaserCollision()
 	//if facing Right
 	if image_xscale>0
 	{
-		if place_meeting(x + currentLaserLength, y, O_Collision) // If there is a wall where player is Lasering their laser max length becomes current length
+		if collision_point(x + currentLaserLength, y - 19, O_Collision, false, false) // If there is a wall where player is Lasering their laser max length becomes current length
 		{
-			maxLaserLength = currentLaserLength;
+			var laserAss = 1;
+			while !collision_point(x + laserAss, y - 19, O_Collision, false, false)
+			{
+				laserAss += 1;
+			}
+			maxLaserLength = laserAss;
 		}
 		else
 		{
-			maxLaserLength = 40; // If no wall max length stays the same/resets
+			maxLaserLength = 60; // If no wall max length stays the same/resets
 		}
 	}
 	//if facing Left
 	if image_xscale<0
 	{
-		if place_meeting(x - currentLaserLength, y, O_Collision) // If there is a wall where player is Lasering their laser max length becomes current length
+		if place_meeting(x+6 - currentLaserLength, y, O_Collision) // If there is a wall where player is Lasering their laser max length becomes current length
 		{
 			maxLaserLength = currentLaserLength;
 		}
 		else
 		{
-			maxLaserLength = 40; // If no wall max entend stays the same/resets
+			maxLaserLength = 60; // If no wall max entend stays the same/resets
+			maxLaserLength = 60; // If no wall max entend stays the same/resets
 		}
 	}
 }
@@ -911,15 +917,20 @@ function ButtonCheck()
 	{	//Determines which way the player is facing/moving so when extending arms collision only increases in the currently faced direction
 		if image_xscale>0
 		{
-			var ButtonCol = collision_rectangle (bbox_left + 6, bbox_top - 4, bbox_right + currentExtendAmount, bbox_bottom - 6, O_Button, false, false);
+			var ButtonCol = collision_rectangle (bbox_left + 6, bbox_top - 4, bbox_right + currentExtendAmount+4, bbox_bottom - 6, O_Button, false, false);
 			if ButtonCol != noone
 			{
 				PressButton(ButtonCol,ButtonCol.Type);
+				maxExtendAmount=currentExtendAmount;
+			}			
+			else
+			{
+				maxExtendAmount = 80
 			}
 		}
 		else if image_xscale<0
 		{
-			var ButtonCol = collision_rectangle (bbox_left + 2 - currentExtendAmount, bbox_top - 4, bbox_right, bbox_bottom - 6,O_Button.DoorID, false, false);
+			var ButtonCol = collision_rectangle (bbox_left + 2 - currentExtendAmount-4, bbox_top - 4, bbox_right, bbox_bottom - 6,O_Button, false, false);
 			if ButtonCol != noone
 			{
 				PressButton(ButtonCol,ButtonCol.Type);
