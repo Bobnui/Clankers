@@ -141,6 +141,7 @@
     {"id":{"name":"s_Lower_Rollars","path":"sprites/s_Lower_Rollars/s_Lower_Rollars.yy",},},
     {"id":{"name":"s_Magnet_UI","path":"sprites/s_Magnet_UI/s_Magnet_UI.yy",},},
     {"id":{"name":"s_Magnet","path":"sprites/s_Magnet/s_Magnet.yy",},},
+    {"id":{"name":"s_Menu_Screen","path":"sprites/s_Menu_Screen/s_Menu_Screen.yy",},},
     {"id":{"name":"s_Particle","path":"sprites/s_Particle/s_Particle.yy",},},
     {"id":{"name":"s_Pause_Menu","path":"sprites/s_Pause_Menu/s_Pause_Menu.yy",},},
     {"id":{"name":"S_Platform","path":"sprites/S_Platform/S_Platform.yy",},},

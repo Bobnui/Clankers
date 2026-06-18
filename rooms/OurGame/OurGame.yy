@@ -328,7 +328,7 @@
           -15,9,1,28,-7,-2147483648,1,8,-24,9,1,28,-4,0,-172,-2147483648,-15,9,1,28,-7,-2147483648,1,8,-24,9,1,
           28,-4,0,-172,-2147483648,-15,9,1,28,-7,-2147483648,1,8,-24,9,1,28,-4,0,-204,-2147483648,-21,0,-392,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"T_Industrial","path":"tilesets/T_Industrial/T_Industrial.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"Level_Tiles_Junk","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Level_Tiles_Junk","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":78,"SerialiseWidth":225,"TileCompressedData":[
+    {"$GMRTileLayer":"","%Name":"Level_Tiles_Junk","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Level_Tiles_Junk","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":78,"SerialiseWidth":225,"TileCompressedData":[
           -4118,-2147483648,-66,0,-159,-2147483648,-66,0,-159,-2147483648,-66,0,-159,-2147483648,-66,0,-159,-2147483648,
           -66,0,-159,-2147483648,-44,0,3,3,4,5,-19,0,-159,-2147483648,-39,0,8,3,0,4,5,0,13,14,15,-19,0,-159,-2147483648,
           -39,0,21,13,54,14,15,0,23,24,25,0,23,46,14,44,61,62,63,64,65,66,67,68,-6,0,-159,-2147483648,-39,0,4,
