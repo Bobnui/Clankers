@@ -108,6 +108,7 @@
     {"id":{"name":"snd_Pickup","path":"sounds/snd_Pickup/snd_Pickup.yy",},},
     {"id":{"name":"snd_Wheels","path":"sounds/snd_Wheels/snd_Wheels.yy",},},
     {"id":{"name":"Cans","path":"sprites/Cans/Cans.yy",},},
+    {"id":{"name":"Clankers___Pipes","path":"sprites/Clankers___Pipes/Clankers___Pipes.yy",},},
     {"id":{"name":"R1_Building_foot","path":"sprites/R1_Building_foot/R1_Building_foot.yy",},},
     {"id":{"name":"R1_Building","path":"sprites/R1_Building/R1_Building.yy",},},
     {"id":{"name":"Road_Cone","path":"sprites/Road_Cone/Road_Cone.yy",},},
