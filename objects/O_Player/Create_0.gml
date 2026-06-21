@@ -921,7 +921,7 @@ function ButtonCheck()
 	{	//Determines which way the player is facing/moving so when extending arms collision only increases in the currently faced direction
 		if image_xscale>0
 		{
-			var ButtonCol = collision_rectangle (bbox_left + 6, bbox_top - 4, bbox_right + currentExtendAmount+4, bbox_bottom - 6, O_Button, false, false);
+			var ButtonCol = collision_rectangle (bbox_left + 8, bbox_top - 9, bbox_right + currentExtendAmount+4, bbox_bottom - 11, O_Button, false, false);
 			if ButtonCol != noone
 			{
 				PressButton(ButtonCol,ButtonCol.Type);
@@ -930,10 +930,11 @@ function ButtonCheck()
 		}
 		else if image_xscale<0
 		{
-			var ButtonCol = collision_rectangle (bbox_left + 2 - currentExtendAmount-4, bbox_top - 4, bbox_right, bbox_bottom - 6,O_Button, false, false);
+			var ButtonCol = collision_rectangle (bbox_left - currentExtendAmount-4, bbox_top - 9, bbox_right-8, bbox_bottom - 11,O_Button, false, false);
 			if ButtonCol != noone
 			{
 				PressButton(ButtonCol,ButtonCol.Type);
+				maxExtendAmount=currentExtendAmount;
 			}
 		}
 	}
