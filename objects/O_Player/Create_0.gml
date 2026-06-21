@@ -855,7 +855,7 @@ function DestructoCheck()
 	{	//Determines which way the player is facing/moving so when extending arms collision only increases in the currently faced direction
 		if image_xscale>0
 		{
-			var LaserCol = collision_rectangle (bbox_left,bbox_top,bbox_right + 25 + currentLaserLength,bbox_bottom,O_DetructoDoor, false, false);
+			var LaserCol = collision_rectangle (x - 1 + currentLaserLength, y - 20,x-2,y-19,O_DetructoDoor, false, false);
 			if LaserCol != noone
 			{
 				DestructoWall(LaserCol,LaserCol.Type);
@@ -863,7 +863,7 @@ function DestructoCheck()
 		}
 		else if image_xscale<0
 		{
-			var LaserCol = collision_rectangle (bbox_left - 25 - currentLaserLength,bbox_top,bbox_right,bbox_bottom,O_DetructoDoor, false, false);
+			var LaserCol = collision_rectangle (x + 1 - currentLaserLength, y - 20,x,y-19,O_DetructoDoor, false, false);
 			if LaserCol != noone
 			{
 				DestructoWall(LaserCol,LaserCol.Type);
@@ -877,14 +877,14 @@ function LaserCollision()
 	//if facing Right
 	if image_xscale>0
 	{
-		if collision_point(x + currentLaserLength, y - 19, O_Collision, false, false) // If there is a wall where player is Lasering their laser max length becomes current length
+		if collision_rectangle(x - 1 + currentLaserLength, y - 20,x-2,y-19, O_Collision, false, false) // If there is a wall where player is Lasering their laser max length becomes current length
 		{
-			var laserAss = 1;
-			while !collision_point(x + laserAss, y - 19, O_Collision, false, false)
+			var laserLength = 1;
+			while !collision_rectangle(x - 1 + laserLength, y - 20,x-2,y-19,O_Collision, false, false)
 			{
-				laserAss += 1;
+				laserLength += 1;
 			}
-			maxLaserLength = laserAss;
+			maxLaserLength = laserLength;
 		}
 		else
 		{
@@ -894,18 +894,17 @@ function LaserCollision()
 	//if facing Left
 	if image_xscale<0
 	{
-		if collision_point(x - currentLaserLength, y - 19, O_Collision, false, false) // If there is a wall where player is Lasering their laser max length becomes current length
+		if collision_rectangle(x + 1 - currentLaserLength, y - 20,x-2,y-19, O_Collision, false, false) // If there is a wall where player is Lasering their laser max length becomes current length
 		{
-			var laserAss = 1;
-			while !collision_point(x + laserAss, y - 19, O_Collision, false, false)
+			var laserLength = 1;
+			while !collision_rectangle(x + 1 - laserLength, y - 20,x-2,y-19,O_Collision, false, false)
 			{
-				laserAss += 1;
+				laserLength += 1;
 			}
-			maxLaserLength = laserAss;
+			maxLaserLength = laserLength;
 		}
 		else
 		{
-			maxLaserLength = 60; // If no wall max entend stays the same/resets
 			maxLaserLength = 60; // If no wall max entend stays the same/resets
 		}
 	}
