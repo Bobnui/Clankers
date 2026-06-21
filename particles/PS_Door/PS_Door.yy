@@ -1,0 +1,25 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"PS_Door",
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"Emitter","additiveBlend":false,"directionIncrease":0.0,"directionMax":360.0,"directionMin":0.0,"directionWiggle":5.0,"distribution":1,"editorColour":1090519039,"editorDrawShape":true,"emitCount":100,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":4294967295,"GMPresetName":null,"gravityDirection":280.0,"gravityForce":0.1,"headPosition":0.0,"lifetimeMax":80.0,"lifetimeMin":60.0,"linkedEmitter":null,"locked":false,"midColour":4294967295,"mode":1,"name":"Emitter","orientationIncrease":0.0,"orientationMax":80.0,"orientationMin":300.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":64.0,"regionW":64.0,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.0,"scaleY":1.0,"shape":0,"sizeIncrease":0.0,"sizeMax":3.0,"sizeMin":1.0,"sizeWiggle":0.0,"spawnOnDeathCount":8,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":2,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":5.0,"speedMin":1.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":{"name":"S_ParticleDoor","path":"sprites/S_ParticleDoor/S_ParticleDoor.yy",},"spriteRandom":false,"spriteStretch":true,"startColour":4294967295,"texture":-1,},
+  ],
+  "name":"PS_Door",
+  "parent":{
+    "name":"Particle Systems",
+    "path":"folders/Particle Systems.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":false,
+  "xorigin":0,
+  "yorigin":0,
+}

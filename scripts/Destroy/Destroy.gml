@@ -6,6 +6,7 @@ enum DestroyType
 function DestructoWall(_wall, DestroyType)
 {
 	instance_destroy(_wall);
+	DoorParticles();
 	switch(irandom(3))
 	{
 	    case 0 : audio_play_sound(snd_woodbreak_1,0,false); break;
