@@ -698,7 +698,6 @@ function HoverCheck()
 	else if isGrounded && gravityScale == 0
 	{
 		EndHover();
-		show_debug_message("Still Hovering")
 	}
 	
 	if isGrounded || isHanging

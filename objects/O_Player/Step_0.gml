@@ -1,5 +1,6 @@
-//DEBUG
 DEBUG();
+
+
 if !O_PauseManager.gamePaused
 {
 	// Get all relevant input for current frame
