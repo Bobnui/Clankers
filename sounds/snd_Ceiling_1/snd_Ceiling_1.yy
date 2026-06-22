@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_Ceiling_1",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Movement",
+    "path":"folders/Sounds/Player/Movement.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

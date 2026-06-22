@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_Clang",
+  "%Name":"snd_Checkpoint",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.015601,
+  "duration":1.7142857,
   "exportDir":"",
-  "name":"snd_Clang",
+  "name":"snd_Checkpoint",
   "parent":{
-    "name":"Stretch",
-    "path":"folders/Sounds/Player/Stretch.yy",
+    "name":"Checkpoint",
+    "path":"folders/Sounds/Checkpoint.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_Clang.wav",
-  "volume":0.65,
+  "soundFile":"snd_Checkpoint.wav",
+  "volume":1.0,
 }

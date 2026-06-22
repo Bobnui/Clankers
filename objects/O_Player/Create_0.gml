@@ -134,10 +134,10 @@ function ApplyMovement() //Add calculated speed to player's current position
 
 function XMoveAudio()
 {
-	if xSpeed != 0 && !audio_is_playing(snd_Wheels) && !isHanging // when player moves while not hanging
+	if xSpeed != 0 && !audio_is_playing(snd_Wheels) && !isHanging && isGrounded // when player moves while not hanging
 	{				
-		audio_play_sound(snd_Wheels, 1, true, 1, 0, 0.9);	//play wheel sound
-		motorSound = audio_play_sound(snd_Motor, 1, false, 1, 0, .9);	//start motor sound
+		audio_play_sound(snd_Wheels, 1, true, .7, 0, 0.9);	//play wheel sound
+		motorSound = audio_play_sound(snd_Motor, 1, true, .5, 0, .9);	//start motor sound
 	}
 	else if xSpeed != 0 && isHanging //player moves while hanging
 	{
@@ -150,7 +150,7 @@ function XMoveAudio()
 			audio_play_sound(snd_Ceiling_2, 1, false);	//and second ceiling sound
 		}
 	}
-	else if xSpeed == 0 // if player stops moving
+	else if xSpeed == 0 || (!isGrounded && !isHanging) // if player stops moving
 	{
 		audio_stop_sound(snd_Wheels); //stop wheel
 		audio_stop_sound(snd_Motor); // and motor sounds
@@ -216,6 +216,22 @@ function StretchAudio()
 		}
 	}
 	
+}
+
+function HoverAudio()
+{
+	if isHovering && !audio_is_playing(snd_Hover) 
+	{
+		audio_play_sound(snd_Hover, 1, false);
+	}
+	else if audio_is_playing(snd_Hover)
+	{
+		if !isHovering || isHanging || isGrounded
+		{
+			isHovering = false;
+			audio_stop_sound(snd_Hover);
+		}
+	}
 }
 
 #endregion
@@ -645,7 +661,7 @@ function HoverCheck()
 {
 	if hoverKey
 	{
-		if !isHanging && canHover
+		if !isHanging && canHover && !isGrounded
 		{
 			canHover = false;
 			isHovering = true;

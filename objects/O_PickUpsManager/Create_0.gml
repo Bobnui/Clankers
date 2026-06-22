@@ -1,11 +1,11 @@
 CollectableCount = 0;
 
 //Ability Unlocks
-stretchUnlocked = false;
+stretchUnlocked = true;
 currentStretchPickUp = 0;
 maxStretchPickUp = 4;
 
-hoverUnlocked = false;
+hoverUnlocked = true;
 currentHoverPickUp = 0;
 maxHoverPickUp = 4;
 

@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_Extend",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Stretch",
+    "path":"folders/Sounds/Player/Stretch.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

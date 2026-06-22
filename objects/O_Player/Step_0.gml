@@ -55,6 +55,7 @@ if !O_PauseManager.gamePaused
 	//Audio
 	XMoveAudio();
 	StretchAudio();
+	HoverAudio();
 }
 else
 {
