@@ -61,11 +61,14 @@ extendSpeed = 1;
 recallSpeed = 2;
 
 shouldAutoRecall = true;
+
 //Hover
 canHover = true;
 isHovering = false;
 
 maxHoverTimer = 4;
+
+HoverParticles = part_system_create_layer("Particle_Layer", true, PS_Hover);
 
 //Laser
 canLaser = true;
@@ -252,6 +255,10 @@ function SetSpriteDirection()
 		{
 			image_speed = moveSpeed * 0.5; //Animate wheels
 		}
+		else
+		{
+			image_speed = 0; //Stop wheels from moving
+		}
 	}
 	else
 	{
@@ -383,6 +390,10 @@ function CeilingCheck()
 			y += pixelYCheck;
 		}
 		ySpeed = 0;
+	}
+	if ySpeed == 0 && !isHanging && isCeilingAbove
+	{
+		ySpeed = 1;
 	}
 }
 
@@ -676,6 +687,12 @@ function HoverCheck()
 		EndHover();
 	}
 	
+	else if isGrounded && gravityScale == 0
+	{
+		EndHover();
+		show_debug_message("Still Hovering")
+	}
+	
 	if isGrounded || isHanging
 	{
 		canHover = true;
@@ -687,6 +704,19 @@ EndHover = function()
 	isHovering = false;
 	gravityScale = 0.2;
 	time_source_stop(HoverTimer);
+}
+
+function ControlHoverParticles()
+{
+	part_system_position(HoverParticles, x, y + 1);
+	if isHovering
+	{
+		part_system_colour(HoverParticles, c_white, 1);
+	}
+	else
+	{
+		part_system_colour(HoverParticles, c_white, 0);
+	}
 }
 
 HoverTimer = time_source_create(time_source_game, maxHoverTimer, time_source_units_seconds, EndHover);

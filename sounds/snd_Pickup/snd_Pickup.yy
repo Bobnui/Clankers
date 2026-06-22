@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_Pickup",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Pickup",
+    "path":"folders/Sounds/Pickup.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

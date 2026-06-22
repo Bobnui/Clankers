@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Scatter",
-    "path":"folders/Sprites/Scatter.yy",
+    "name":"Garbage",
+    "path":"folders/Sprites/Scatter/Garbage.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

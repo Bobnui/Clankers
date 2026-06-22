@@ -56,6 +56,9 @@ if !O_PauseManager.gamePaused
 	XMoveAudio();
 	StretchAudio();
 	HoverAudio();
+	
+	//Particles
+	ControlHoverParticles();
 }
 else
 {

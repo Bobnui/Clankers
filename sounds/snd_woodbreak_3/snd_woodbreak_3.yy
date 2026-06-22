@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_woodbreak_3",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"BreakableWall",
+    "path":"folders/Sounds/BreakableWall.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

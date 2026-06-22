@@ -9,11 +9,11 @@ hoverUnlocked = true;
 currentHoverPickUp = 0;
 maxHoverPickUp = 4;
 
-laserUnlocked = false;
+laserUnlocked = true;
 currentLaserPickUp = 0;
 maxLaserPickUp = 4;
 
-extendoArmUnlocked = false;
+extendoArmUnlocked = true;
 currentExtendoArmPickUp = 0;
 maxExtendoArmPickUp = 4;
 
