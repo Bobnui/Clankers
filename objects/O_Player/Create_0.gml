@@ -588,6 +588,9 @@ function PerformStretch()
 	isRetracting = false; 
 	if canStretch
 	{
+		
+		canLaser=false;
+		canExtend=false;
 		if  (isGrounded && !isCeilingAbove) || !isGrounded
 		{
 			currentStretchAmount = clamp(currentStretchAmount + stretchSpeed, 0, maxStretchAmount); //stops player from stretching beyond maxStrentchLength
@@ -612,7 +615,8 @@ function PerformRetract()
 	if currentStretchAmount <= 0
 	{
 		currentStretchAmount = 0;
-		
+		canExtend=true;
+		canLaser=true;
 		if isRetracting && isHanging
 		{
 			//y -= retractSpeed; //Fixes odd behaviour where robot would move down if retracting from ceiling
@@ -656,6 +660,8 @@ AttachToFloor = function()
 		isRetracting = false;
 		time_source_reset(AttachToFloorTimer);//stops this function from repeating
 		canStretch = true;// ensures player completes this action before they can stretch again
+		canLaser=true;
+		canExtend=true;
 	}
 }
 
@@ -679,6 +685,8 @@ function HoverCheck()
 			gravityScale = 0;
 			ySpeed = 0;
 			time_source_start(HoverTimer);
+			canLaser=false;
+			canExtend=false;
 		}
 	}	
 	
@@ -704,6 +712,8 @@ EndHover = function()
 	isHovering = false;
 	gravityScale = 0.2;
 	time_source_stop(HoverTimer);
+	canLaser=true;
+	canExtend=true;
 }
 
 function ControlHoverParticles()
@@ -712,6 +722,8 @@ function ControlHoverParticles()
 	if isHovering
 	{
 		part_system_colour(HoverParticles, c_white, 1);
+		canExtend=false;
+		canLaser=false;
 	}
 	else
 	{
@@ -727,7 +739,7 @@ HoverTimer = time_source_create(time_source_game, maxHoverTimer, time_source_uni
 
 function ExtendoCheck()
 {
-	if isGrounded && !isStretching && !isRetracting && !isHanging && !isLasering && !isEnding
+	if canExtend
 	{
 		//extend key pressed
 		var desiredExtendDirection = extendoArmKey;
@@ -787,6 +799,19 @@ function PerformRecall()
 //Check for a wall in the way while extending arm depending on direction faced
 function ExtendoCollision()
 {
+	var wallArmCol = collision_rectangle(bbox_left - 4 + xSpeed, bbox_top - 9, bbox_right + 4 + xSpeed, bbox_bottom - 11, O_Collision, false, false);
+	if wallArmCol != noone
+	{
+		canExtend=false;
+		if extendoArmKey
+		{
+			audio_play_sound(snd_ArmError,0,false)
+		}
+	}
+	else
+	{
+		canExtend=true;
+	}
 	//if facing Right
 	if image_xscale>0
 	{
@@ -836,7 +861,7 @@ function ExtendoCollision()
 
 function LaserEyeCheck()
 {
-	if isGrounded && !isStretching && !isRetracting && !isHanging && !isExtending && !isRecalling
+	if canLaser=true
 	{
 		//extend key pressed
 		var desiredExtendDirection = laserEyeKey;

@@ -10,3 +10,4 @@ BounceSounds =
 	snd_Boing_04,
 	snd_Boing_05
 ]
+delay=70;
