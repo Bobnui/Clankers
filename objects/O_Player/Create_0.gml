@@ -214,7 +214,10 @@ function StretchAudio()
 		}
 		else // the player isn't stretching
 		{
-			audio_play_sound(snd_Clang, 1, false); //so play a clang sound instead
+			if(audio_is_playing(snd_Clang) == false) 
+			{
+			    audio_play_sound(snd_Clang, 1, false);
+			} //so play a clang sound instead
 			audio_stop_sound(stretchSound); //and stop the stretch sound (which should now have a higher pitch)
 		}
 	}
@@ -802,9 +805,12 @@ function ExtendoCollision()
 	if wallArmCol != noone
 	{
 		canExtend=false;
-		if extendoArmKey
+		if keyboard_check_direct(extendoArmKey) 
 		{
-			audio_play_sound(snd_ArmError,0,false)
+			if(audio_is_playing(snd_ArmError) == false) 
+			{
+			    audio_play_sound(snd_ArmError, 0, false);
+			}
 		}
 	}
 	else
