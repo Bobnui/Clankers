@@ -1,5 +1,2 @@
-if shouldPlay
-{
-	image_speed = 0;
-	shouldPlay = false;
-}
+
+image_speed = 0; // stop the animation when \it gets to the end

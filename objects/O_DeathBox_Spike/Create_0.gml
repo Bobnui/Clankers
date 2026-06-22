@@ -1,1 +1,1 @@
-image_alpha = 0;
+image_alpha = 0; // so we can't see the red sprite in game
