@@ -68,7 +68,8 @@ isHovering = false;
 
 maxHoverTimer = 4;
 
-HoverParticles = part_system_create_layer("Particle_Layer", true, PS_Hover);
+HoverParticles01 = part_system_create_layer("Particle_Layer_Background", true, PS_Hover);
+HoverParticles02 = part_system_create_layer("Particle_Layer_Foreground", true, PS_Hover02);
 
 //Laser
 canLaser = true;
@@ -81,6 +82,9 @@ maxLaserLength = 60;
 
 laserSpeed = 8;
 endSpeed = 6;
+
+//DEBUG
+testVar = 0
 #region FUNCTIONS
 
 function DEBUG()
@@ -139,8 +143,8 @@ function XMoveAudio()
 {
 	if xSpeed != 0 && !audio_is_playing(snd_Wheels) && !isHanging && isGrounded // when player moves while not hanging
 	{				
-		audio_play_sound(snd_Wheels, 1, true, .7, 0, 0.9);	//play wheel sound
-		motorSound = audio_play_sound(snd_Motor, 1, true, .5, 0, .9);	//start motor sound
+		audio_play_sound(snd_Wheels, 1, true, .3, 0, 0.9);	//play wheel sound
+		motorSound = audio_play_sound(snd_Motor, 1, true, .2, 0, .9);	//start motor sound
 	}
 	else if xSpeed != 0 && isHanging //player moves while hanging
 	{
@@ -649,6 +653,8 @@ AttachToCeiling = function()
 		currentStretchAmount = 0;
 		time_source_reset(AttachToCeilingTimer); //stops this function from repeating
 		canStretch = true; // ensures player completes this action before they can stretch again
+		canLaser = true;
+		canExtend = true;
 	}
 }
 
@@ -720,16 +726,19 @@ EndHover = function()
 
 function ControlHoverParticles()
 {
-	part_system_position(HoverParticles, x, y + 1);
+	part_system_position(HoverParticles01, x, y + 1);
+	part_system_position(HoverParticles02, x, y + 1);
 	if isHovering
 	{
-		part_system_colour(HoverParticles, c_white, 1);
+		part_system_colour(HoverParticles01, c_white, 1);
+		part_system_colour(HoverParticles02, c_white, 1);
 		canExtend=false;
 		canLaser=false;
 	}
 	else
 	{
-		part_system_colour(HoverParticles, c_white, 0);
+		part_system_colour(HoverParticles01, c_white, 0);
+		part_system_colour(HoverParticles02, c_white, 0);
 	}
 }
 
@@ -748,7 +757,7 @@ function ExtendoCheck()
 		switch(desiredExtendDirection)
 		{
 			case 1: //Is holding E
-				if isGrounded
+				if currentStretchAmount == 0 && (isGrounded || isHanging)
 				{
 					PerformExtend(); //extend
 				}
@@ -866,14 +875,14 @@ function ExtendoCollision()
 
 function LaserEyeCheck()
 {
-	if canLaser=true
+	if canLaser = true
 	{
 		//extend key pressed
 		var desiredExtendDirection = laserEyeKey;
 		switch(desiredExtendDirection)
 		{
 			case 1: //Is holding Shift
-				if isGrounded
+				if isGrounded || isHanging
 				{
 					ShootLasers(); //ShootLaser
 				}

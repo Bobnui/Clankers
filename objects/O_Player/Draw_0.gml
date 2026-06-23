@@ -42,7 +42,14 @@ else if isRetracting
 }
 else if isExtending || isRecalling
 {
-	draw_sprite_ext(S_Player_Torso, 3, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
+	if isGrounded
+	{
+		draw_sprite_ext(S_Player_Torso, 3, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
+	}
+	else if isHanging
+	{
+		draw_sprite_ext(S_Player_Hanging_Extending, hangingSpriteIndex, x, GetHeadLocation(), image_xscale, 1, 0, c_white, 1);
+	}
 }
 #endregion
 
