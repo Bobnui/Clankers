@@ -227,8 +227,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
     {"roomId":{"name":"OurGame","path":"rooms/OurGame/OurGame.yy",},},
+    {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
     {"roomId":{"name":"MataRoom","path":"rooms/MataRoom/MataRoom.yy",},},
     {"roomId":{"name":"KeiraRoomTest","path":"rooms/KeiraRoomTest/KeiraRoomTest.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
