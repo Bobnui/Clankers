@@ -5,7 +5,7 @@ enum PressType
 
 function PressButton(_butt,PressType)
 {
-	if _butt.DoorID.image_yscale != 0
+	if _butt.DoorID.image_yscale > 0
 	{
 		_butt.DoorID.image_yscale -= 0.1;
 	}
