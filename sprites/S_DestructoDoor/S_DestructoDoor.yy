@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"S_DestructoDoor",
   "bboxMode":0,
-  "bbox_bottom":29,
+  "bbox_bottom":28,
   "bbox_left":0,
   "bbox_right":13,
   "bbox_top":0,
@@ -12,18 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"5639de03-21ab-455a-8af2-85bc8e1658f4","name":"5639de03-21ab-455a-8af2-85bc8e1658f4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"845e6d92-6c63-41f3-83c2-22a08e5c910c","name":"845e6d92-6c63-41f3-83c2-22a08e5c910c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":30,
+  "height":29,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"408f8e01-a23c-43de-b76b-41c58f094974","blendMode":0,"displayName":"default","isLocked":false,"name":"408f8e01-a23c-43de-b76b-41c58f094974","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5bae7ba4-490e-48f2-857d-4d3d9cccff95","blendMode":0,"displayName":"default","isLocked":false,"name":"5bae7ba4-490e-48f2-857d-4d3d9cccff95","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"S_DestructoDoor",
   "nineSlice":null,
-  "origin":4,
+  "origin":0,
   "parent":{
     "name":"LevelDesign",
     "path":"folders/Sprites/LevelDesign.yy",
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5639de03-21ab-455a-8af2-85bc8e1658f4","path":"sprites/S_DestructoDoor/S_DestructoDoor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"09d9bbe9-8602-4d18-a474-061dda63884a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"845e6d92-6c63-41f3-83c2-22a08e5c910c","path":"sprites/S_DestructoDoor/S_DestructoDoor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"bb47055d-548d-4217-88c6-653c18b806ab","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":8,
-    "yorigin":15,
+    "xorigin":0,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":16,
+  "width":14,
 }
