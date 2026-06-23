@@ -202,6 +202,7 @@
     {"id":{"name":"S_R1Background","path":"sprites/S_R1Background/S_R1Background.yy",},},
     {"id":{"name":"S_R1Building","path":"sprites/S_R1Building/S_R1Building.yy",},},
     {"id":{"name":"s_Resume","path":"sprites/s_Resume/s_Resume.yy",},},
+    {"id":{"name":"s_Robit_Start","path":"sprites/s_Robit_Start/s_Robit_Start.yy",},},
     {"id":{"name":"S_SawBlade","path":"sprites/S_SawBlade/S_SawBlade.yy",},},
     {"id":{"name":"S_Spike_Editor","path":"sprites/S_Spike_Editor/S_Spike_Editor.yy",},},
     {"id":{"name":"S_Spike","path":"sprites/S_Spike/S_Spike.yy",},},
