@@ -20,6 +20,9 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"db825922-4e82-4f13-a87d-76ba4dbea1ba","blendMode":0,"displayName":"Claw thing rollars","isLocked":false,"name":"db825922-4e82-4f13-a87d-76ba4dbea1ba","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0168eca8-d963-484e-b1c0-a9e7f0cae104","blendMode":0,"displayName":"Arm thing","isLocked":false,"name":"0168eca8-d963-484e-b1c0-a9e7f0cae104","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"61660eb4-f3ca-425a-8762-32c03c5efe88","blendMode":0,"displayName":"Claw Peice","isLocked":false,"name":"61660eb4-f3ca-425a-8762-32c03c5efe88","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"81443240-6f6e-40c3-95c2-71baed612ff4","blendMode":0,"displayName":"Arm thing pt2","isLocked":false,"name":"81443240-6f6e-40c3-95c2-71baed612ff4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"2448732b-5d7f-48b2-a884-805e019a0f5c","blendMode":0,"displayName":"Claw","isLocked":false,"name":"2448732b-5d7f-48b2-a884-805e019a0f5c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"60acc746-55f1-4bcf-94b6-5a281f3c857b","blendMode":0,"displayName":"Behind metial stuff","isLocked":false,"name":"60acc746-55f1-4bcf-94b6-5a281f3c857b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"ed7e6cab-6662-4fc4-b5e4-f0a048da4e32","blendMode":0,"displayName":"GRound","isLocked":false,"name":"ed7e6cab-6662-4fc4-b5e4-f0a048da4e32","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -87,7 +90,16 @@
     "xorigin":0,
     "yorigin":0,
   },
-  "swatchColours":null,
+  "swatchColours":[
+    4278190335,4278255615,4278255360,4294967040,4294901760,4294902015,4294967295,4293717228,4293059298,4292335575,
+    4291677645,4290230199,4287993237,4280556782,4278252287,4283540992,4293963264,4287770926,4287365357,4287203721,
+    4286414205,4285558896,4284703587,4283782485,4281742902,4278190080,4286158839,4286688762,4287219453,4288280831,
+    4288405444,4288468131,4288465538,4291349882,4294430829,4292454269,4291466115,4290675079,4290743485,4290943732,
+    4288518390,4283395315,4283862775,4284329979,4285068799,4285781164,4285973884,4286101564,4290034460,4294164224,
+    4291529796,4289289312,4289290373,4289291432,4289359601,4286410226,4280556782,4280444402,4280128760,4278252287,
+    4282369933,4283086137,4283540992,4288522496,4293963264,4290540032,4289423360,4289090560,4287770926,4287704422,
+    4287571858,4287365357,4284159214,4279176094,4279058848,4278870691,4278231211,4281367321,
+  ],
   "swfPrecision":0.5,
   "textureGroupId":{
     "name":"Default",
