@@ -1,8 +1,6 @@
-image_speed = 0;
+image_speed = 0; // stop the animation from playing
 
-shouldPlay = false;
-
-BounceSounds = 
+BounceSounds = //an array with all of the possible bounce sounds inside it
 [
 	snd_Boing_01,
 	snd_Boing_02,
@@ -10,3 +8,4 @@ BounceSounds =
 	snd_Boing_04,
 	snd_Boing_05
 ]
+delay=70;
