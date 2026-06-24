@@ -101,6 +101,7 @@
     {"id":{"name":"o_Robot","path":"objects/o_Robot/o_Robot.yy",},},
     {"id":{"name":"o_Stretch_Notification","path":"objects/o_Stretch_Notification/o_Stretch_Notification.yy",},},
     {"id":{"name":"o_TapeMeasure","path":"objects/o_TapeMeasure/o_TapeMeasure.yy",},},
+    {"id":{"name":"Robit","path":"objects/Robit/Robit.yy",},},
     {"id":{"name":"StartMenu_Background","path":"objects/StartMenu_Background/StartMenu_Background.yy",},},
     {"id":{"name":"PS_Door","path":"particles/PS_Door/PS_Door.yy",},},
     {"id":{"name":"PS_Hover","path":"particles/PS_Hover/PS_Hover.yy",},},
@@ -235,6 +236,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
     {"roomId":{"name":"OurGame","path":"rooms/OurGame/OurGame.yy",},},
     {"roomId":{"name":"MataRoom","path":"rooms/MataRoom/MataRoom.yy",},},
     {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
@@ -243,7 +245,6 @@
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"R_1","path":"rooms/R_1/R_1.yy",},},
     {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
-    {"roomId":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
