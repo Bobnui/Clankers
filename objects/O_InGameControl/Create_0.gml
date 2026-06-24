@@ -1,22 +1,7 @@
-switch UnlockNumber
-{
-	case 0:
-		show_message(self);
-	break;
-	
-	case 1:
-	
-	break;
-	
-	case 2:
-	
-	break;
-	
-	case 3:
-	
-	break;
-	
-	case 4:
-	
-	break;
-}
+ControlSprites = [0, S_Hold_Space]
+
+DisplaySprite = array_get_index(ControlSprites, Unlock_Number);
+
+object_set_sprite(object_index, DisplaySprite);
+
+show_message(object_index)

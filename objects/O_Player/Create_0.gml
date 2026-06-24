@@ -58,7 +58,7 @@ currentExtendAmount = 0;
 maxExtendAmount = 80;
 
 extendSpeed = 1;
-recallSpeed = 2;
+recallSpeed = 3;
 
 shouldAutoRecall = true;
 
@@ -811,7 +811,7 @@ function PerformRecall()
 function ExtendoCollision()
 {
 	var wallArmCol = collision_rectangle(bbox_left - 4 + xSpeed, bbox_top - 9, bbox_right + 4 + xSpeed, bbox_bottom - 11, O_Collision, false, false);
-	if wallArmCol != noone
+	if wallArmCol != noone && !isRecalling
 	{
 		canExtend=false;
 		if keyboard_check_direct(extendoArmKey) 
