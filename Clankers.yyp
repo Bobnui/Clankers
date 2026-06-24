@@ -101,6 +101,7 @@
     {"id":{"name":"o_Robot","path":"objects/o_Robot/o_Robot.yy",},},
     {"id":{"name":"o_Stretch_Notification","path":"objects/o_Stretch_Notification/o_Stretch_Notification.yy",},},
     {"id":{"name":"o_TapeMeasure","path":"objects/o_TapeMeasure/o_TapeMeasure.yy",},},
+    {"id":{"name":"StartMenu_Background","path":"objects/StartMenu_Background/StartMenu_Background.yy",},},
     {"id":{"name":"PS_Door","path":"particles/PS_Door/PS_Door.yy",},},
     {"id":{"name":"PS_Hover","path":"particles/PS_Hover/PS_Hover.yy",},},
     {"id":{"name":"PS_Hover02","path":"particles/PS_Hover02/PS_Hover02.yy",},},
@@ -111,6 +112,7 @@
     {"id":{"name":"R_1","path":"rooms/R_1/R_1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
     {"id":{"name":"Button","path":"scripts/Button/Button.yy",},},
     {"id":{"name":"Destroy","path":"scripts/Destroy/Destroy.yy",},},
     {"id":{"name":"Draw_Font","path":"scripts/Draw_Font/Draw_Font.yy",},},
@@ -241,6 +243,7 @@
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"R_1","path":"rooms/R_1/R_1.yy",},},
     {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
+    {"roomId":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
