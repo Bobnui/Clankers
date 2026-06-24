@@ -902,12 +902,11 @@ function LaserEyeCheck()
 function ShootLasers()
 {
 	isEnding = false; 
-	
+	isLasering = true;
 	if canLaser
 	{
 		currentLaserLength = clamp(currentLaserLength + laserSpeed, 0, maxLaserLength); //stops player from Lasering beyond maxLaserLength
 	}
-	isLasering = true;
 	if currentLaserLength>0
 	{
 		moveSpeed = 0;
@@ -919,6 +918,7 @@ function ShootLasers()
 function EndLasers()
 {
 	isLasering = false;
+	canExtend=false
 	currentLaserLength = clamp(currentLaserLength - endSpeed, 0, maxLaserLength); //stops player from recalling through themself
 	if currentLaserLength <= 0
 	{
