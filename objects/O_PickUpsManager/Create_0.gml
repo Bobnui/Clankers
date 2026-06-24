@@ -13,7 +13,7 @@ laserUnlocked = true;
 currentLaserPickUp = 0;
 maxLaserPickUp = 4;
 
-extendoArmUnlocked = false;
+extendoArmUnlocked = true;
 currentExtendoArmPickUp = 0;
 maxExtendoArmPickUp = 4;
 
