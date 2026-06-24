@@ -236,7 +236,6 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
     {"roomId":{"name":"OurGame","path":"rooms/OurGame/OurGame.yy",},},
     {"roomId":{"name":"MataRoom","path":"rooms/MataRoom/MataRoom.yy",},},
     {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
@@ -245,6 +244,7 @@
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"R_1","path":"rooms/R_1/R_1.yy",},},
     {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
+    {"roomId":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
