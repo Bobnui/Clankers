@@ -12,6 +12,7 @@ if collision_point(x - 8, y - 16, O_Player, false, false) && collision_point(x +
 	O_Player.PerformRecall();
 	O_Player.canLaser=false;
 	O_Player.canExtend=false;
+	O_Player.canHover = true;
 	alarm[0] = delay;
 }
 
