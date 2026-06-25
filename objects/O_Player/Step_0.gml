@@ -17,6 +17,7 @@ if !O_PauseManager.gamePaused
 	PickUpCheck();
 	PlatformCheck();
 	DeathBoxCheck();
+	EndCheck();
 	
 	//checks if player sprites need to be flipped
 	SetSpriteDirection();

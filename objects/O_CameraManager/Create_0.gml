@@ -13,3 +13,4 @@ view_wport[0] = 1920;
 view_hport[0] = 1080;
 
 view_camera[0] = camera_create_view(0, 0, 240, 135);
+finished = false

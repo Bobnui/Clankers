@@ -1025,5 +1025,14 @@ function ButtonCheck()
 }
 
 #endregion
-
+#region End
+function EndCheck()
+{
+	var endCol = collision_rectangle(bbox_left + 4 + xSpeed, bbox_top - 4, bbox_right - 5 + xSpeed, bbox_bottom - 6,O_CannonCol, false, false);
+	if endCol != noone
+	{
+		O_Cannon.EndGame();
+	}
+}
+#endregion
 #endregion

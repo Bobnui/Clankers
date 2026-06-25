@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"O_Cannon",
+  "%Name":"O_EndAnim",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"O_Cannon",
+  "name":"O_EndAnim",
   "overriddenProperties":[],
   "parent":{
     "name":"LevelDesign",
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_Cannon",
-    "path":"sprites/S_Cannon/S_Cannon.yy",
+    "name":"S_EndAnim",
+    "path":"sprites/S_EndAnim/S_EndAnim.yy",
   },
   "spriteMaskId":null,
   "visible":true,

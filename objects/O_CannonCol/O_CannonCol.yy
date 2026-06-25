@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"O_Cannon",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"O_CannonCol",
+  "eventList":[],
   "managed":true,
-  "name":"O_Cannon",
+  "name":"O_CannonCol",
   "overriddenProperties":[],
   "parent":{
     "name":"LevelDesign",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_Cannon",
-    "path":"sprites/S_Cannon/S_Cannon.yy",
+    "name":"s_Collision",
+    "path":"sprites/s_Collision/s_Collision.yy",
   },
   "spriteMaskId":null,
   "visible":true,
