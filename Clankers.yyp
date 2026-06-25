@@ -70,6 +70,7 @@
   "resources":[
     {"id":{"name":"f_X_Button","path":"fonts/f_X_Button/f_X_Button.yy",},},
     {"id":{"name":"o_Arms_Notification","path":"objects/o_Arms_Notification/o_Arms_Notification.yy",},},
+    {"id":{"name":"o_Begin_Button","path":"objects/o_Begin_Button/o_Begin_Button.yy",},},
     {"id":{"name":"O_Button","path":"objects/O_Button/O_Button.yy",},},
     {"id":{"name":"O_ButtonDoor","path":"objects/O_ButtonDoor/O_ButtonDoor.yy",},},
     {"id":{"name":"O_CameraManager","path":"objects/O_CameraManager/O_CameraManager.yy",},},

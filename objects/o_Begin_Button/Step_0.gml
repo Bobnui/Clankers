@@ -4,7 +4,7 @@ if (clicked)
 	//show_debug_message("Here")
 	clicked = false
 	instance_destroy()
-
+	room_goto_next()
 } 
 else 
 {
