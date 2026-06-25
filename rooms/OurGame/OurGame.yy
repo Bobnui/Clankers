@@ -470,6 +470,7 @@
     {"name":"inst_4407E4FF","path":"rooms/OurGame/OurGame.yy",},
     {"name":"inst_2BF4625F","path":"rooms/OurGame/OurGame.yy",},
     {"name":"inst_6C907852","path":"rooms/OurGame/OurGame.yy",},
+    {"name":"inst_7A4363F2","path":"rooms/OurGame/OurGame.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -558,6 +559,7 @@
         {"$GMRInstance":"v4","%Name":"inst_118FC0CF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_118FC0CF","objectId":{"name":"O_Collision","path":"objects/O_Collision/O_Collision.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":38.004234,"scaleY":7.6666646,"x":1118.0001,"y":145.0,},
         {"$GMRInstance":"v4","%Name":"inst_7794C629","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7794C629","objectId":{"name":"O_Collision","path":"objects/O_Collision/O_Collision.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":4.66,"scaleY":2.3299997,"x":1154.0,"y":225.64253,},
         {"$GMRInstance":"v4","%Name":"inst_18F916E9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_18F916E9","objectId":{"name":"O_Collision","path":"objects/O_Collision/O_Collision.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":16.66667,"scaleY":2.798545,"x":1246.0,"y":321.18872,},
+        {"$GMRInstance":"v4","%Name":"inst_7A4363F2","colour":4294960384,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7A4363F2","objectId":{"name":"O_CannonCol","path":"objects/O_CannonCol/O_CannonCol.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.1666667,"scaleY":8.166667,"x":852.0,"y":287.0,},
       ],"layers":[],"name":"Collision","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRInstanceLayer":"","%Name":"Notifications","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Notifications","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Managers","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
