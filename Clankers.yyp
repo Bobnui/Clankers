@@ -58,7 +58,9 @@
   "ForcedPrefabProjectReferences":[
     {"link":"io.gamemaker.gmparticlepresets-1.0.0","name":"io.gamemaker.gmparticlepresets-1.0.0","path":"io.gamemaker.gmparticlepresets-1.0.0.yyp",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"FuseBox.aseprite","CopyToMask":-1,"filePath":"datafiles","name":"FuseBox.aseprite","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -151,6 +153,7 @@
     {"id":{"name":"Apple_Core","path":"sprites/Apple_Core/Apple_Core.yy",},},
     {"id":{"name":"Apple_Whole","path":"sprites/Apple_Whole/Apple_Whole.yy",},},
     {"id":{"name":"Cans","path":"sprites/Cans/Cans.yy",},},
+    {"id":{"name":"FuseBox","path":"sprites/FuseBox/FuseBox.yy",},},
     {"id":{"name":"Menu_Screen","path":"sprites/Menu_Screen/Menu_Screen.yy",},},
     {"id":{"name":"R1_Building_foot","path":"sprites/R1_Building_foot/R1_Building_foot.yy",},},
     {"id":{"name":"R1_Building","path":"sprites/R1_Building/R1_Building.yy",},},
@@ -248,6 +251,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
     {"roomId":{"name":"OurGame","path":"rooms/OurGame/OurGame.yy",},},
     {"roomId":{"name":"MataRoom","path":"rooms/MataRoom/MataRoom.yy",},},
     {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
@@ -256,7 +260,6 @@
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"R_1","path":"rooms/R_1/R_1.yy",},},
     {"roomId":{"name":"EuanRoom","path":"rooms/EuanRoom/EuanRoom.yy",},},
-    {"roomId":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
