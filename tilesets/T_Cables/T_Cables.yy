@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"T_Pipes",
+  "%Name":"T_Cables",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"T_Pipes",
-  "out_columns":9,
+  "name":"T_Cables",
+  "out_columns":4,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"S_Tiles_Pipes",
-    "path":"sprites/S_Tiles_Pipes/S_Tiles_Pipes.yy",
+    "name":"S_Tiles_Cable",
+    "path":"sprites/S_Tiles_Cable/S_Tiles_Cable.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":75,
+  "tile_count":16,
 }
