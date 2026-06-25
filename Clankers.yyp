@@ -234,6 +234,7 @@
     {"id":{"name":"S_Truck","path":"sprites/S_Truck/S_Truck.yy",},},
     {"id":{"name":"s_UI_Font","path":"sprites/s_UI_Font/s_UI_Font.yy",},},
     {"id":{"name":"s_Underground_Funnel","path":"sprites/s_Underground_Funnel/s_Underground_Funnel.yy",},},
+    {"id":{"name":"s_UPPER_INNER","path":"sprites/s_UPPER_INNER/s_UPPER_INNER.yy",},},
     {"id":{"name":"s_Upper_Spikes","path":"sprites/s_Upper_Spikes/s_Upper_Spikes.yy",},},
     {"id":{"name":"Smoke_Line01","path":"sprites/Smoke_Line01/Smoke_Line01.yy",},},
     {"id":{"name":"Smoke_Line02","path":"sprites/Smoke_Line02/Smoke_Line02.yy",},},
