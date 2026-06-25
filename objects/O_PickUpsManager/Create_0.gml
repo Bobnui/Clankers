@@ -1,19 +1,19 @@
 CollectableCount = 0;
 
 //Ability Unlocks
-stretchUnlocked = true;
+stretchUnlocked = false;
 currentStretchPickUp = 0;
 maxStretchPickUp = 4;
 
-hoverUnlocked = true;
+hoverUnlocked = false;
 currentHoverPickUp = 0;
 maxHoverPickUp = 4;
 
-laserUnlocked = true;
+laserUnlocked = false;
 currentLaserPickUp = 0;
 maxLaserPickUp = 4;
 
-extendoArmUnlocked = true;
+extendoArmUnlocked = false;
 currentExtendoArmPickUp = 0;
 maxExtendoArmPickUp = 4;
 
