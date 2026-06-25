@@ -602,10 +602,32 @@
           -2147483648,-14,0,-286,-2147483648,-14,0,-286,-2147483648,-14,0,-5652,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"t_Foreground","path":"tilesets/t_Foreground/t_Foreground.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Particle_Layer_Foreground","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Particle_Layer_Foreground","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"Robot","depth":600,"effectEnabled":true,"effectType":null,"gridX":6,"gridY":6,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"$GMRTileLayer":"","%Name":"ForegroundTiles","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
+        {"$GMRTileLayer":"","%Name":"Cable_Ties","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Cable_Ties","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":78,"SerialiseWidth":225,"TileCompressedData":[
+              -2762,-2147483648,-30,0,-195,-2147483648,-30,0,-195,-2147483648,-30,0,-195,-2147483648,-30,0,-195,-2147483648,
+              -30,0,-195,-2147483648,-30,0,-195,-2147483648,-30,0,-195,-2147483648,-30,0,-195,-2147483648,-23,0,4,
+              15,0,0,7,-3,0,-195,-2147483648,-5,0,7,15,0,0,7,15,0,7,-3,0,7,15,0,0,7,15,0,7,-8,0,-200,-2147483648,-18,
+              0,-438,-2147483648,10,11,-2147483648,15,0,7,-2147483648,15,-2147483648,0,7,-1566,-2147483648,8,15,0,
+              0,7,15,-2147483648,-2147483648,7,-28,-2147483648,1,1,-224,-2147483648,4,15,0,0,7,-193,-2147483648,1,
+              2,-449,-2147483648,1,2,-694,-2147483648,2,11,0,-8896,-2147483648,
+            ],"TileDataFormat":1,},"tilesetId":{"name":"T_Cables","path":"tilesets/T_Cables/T_Cables.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        {"$GMRTileLayer":"","%Name":"Cables","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Cables","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":78,"SerialiseWidth":225,"TileCompressedData":[
+              -3214,-2147483648,4,4,10,10,5,-221,-2147483648,4,6,-2147483648,-2147483648,6,-221,-2147483648,4,0,-2147483648,
+              -2147483648,6,-224,-2147483648,1,6,-224,-2147483648,1,6,-22,-2147483648,1,6,-201,-2147483648,1,6,-22,
+              -2147483648,1,6,-201,-2147483648,1,6,-16,-2147483648,7,4,10,12,13,10,10,9,-201,-2147483648,6,8,12,13,
+              10,10,14,-5,10,7,12,13,10,10,14,10,9,-661,-2147483648,1,4,-4,10,1,14,-3,10,5,12,13,10,10,5,-8,-2147483648,
+              7,0,10,14,12,13,10,5,-199,-2147483648,1,0,-9,-2147483648,1,6,-14,-2147483648,1,6,-200,-2147483648,-2,
+              0,-7,-2147483648,2,8,0,-248,-2147483648,2,0,5,-185,-2147483648,3,0,10,5,-36,-2147483648,1,6,-186,-2147483648,
+              2,0,6,-36,-2147483648,1,6,-186,-2147483648,2,0,6,-36,-2147483648,1,6,-186,-2147483648,11,0,8,10,12,13,
+              10,10,12,13,10,5,-27,-2147483648,1,6,-196,-2147483648,1,6,-27,-2147483648,5,8,12,13,10,5,-192,-2147483648,
+              1,6,-31,-2147483648,1,6,-192,-2147483648,1,6,-224,-2147483648,1,6,-224,-2147483648,1,6,-243,-2147483648,
+              1,6,-224,-2147483648,3,8,10,0,-8896,-2147483648,
+            ],"TileDataFormat":1,},"tilesetId":{"name":"T_Cables","path":"tilesets/T_Cables/T_Cables.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+      ],"name":"ForegroundTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":78,"SerialiseWidth":225,"TileCompressedData":[-17550,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"T_Cables","path":"tilesets/T_Cables/T_Cables.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRInstanceLayer":"","%Name":"Robot","depth":900,"effectEnabled":true,"effectType":null,"gridX":6,"gridY":6,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_219CCC79_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_219CCC79_1","objectId":{"name":"O_Player","path":"objects/O_Player/O_Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":549.0,"y":560.0,},
       ],"layers":[],"name":"Robot","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"Level_Objects_Foreground","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"$GMRInstanceLayer":"","%Name":"Level_Objects_Foreground","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_2CF84301","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2CF84301","objectId":{"name":"O_Button","path":"objects/O_Button/O_Button.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_Button","path":"objects/O_Button/O_Button.yy",},"propertyId":{"name":"DoorID","path":"objects/O_Button/O_Button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"JumpPadShortCutDoor",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":1634.0,"y":585.0,},
@@ -645,28 +667,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_Button","path":"objects/O_Button/O_Button.yy",},"propertyId":{"name":"DoorID","path":"objects/O_Button/O_Button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"FinalDoor",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1438.0,"y":287.0,},
       ],"layers":[],"name":"Level_Objects_Foreground","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRTileLayer":"","%Name":"ForegroundTiles","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
-        {"$GMRTileLayer":"","%Name":"Cable_Ties","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Cable_Ties","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":78,"SerialiseWidth":225,"TileCompressedData":[
-              -2762,-2147483648,-30,0,-195,-2147483648,-30,0,-195,-2147483648,-30,0,-195,-2147483648,-30,0,-195,-2147483648,
-              -30,0,-195,-2147483648,-30,0,-195,-2147483648,-30,0,-195,-2147483648,-30,0,-195,-2147483648,-23,0,4,
-              15,0,0,7,-3,0,-195,-2147483648,-5,0,7,15,0,0,7,15,0,7,-3,0,7,15,0,0,7,15,0,7,-8,0,-200,-2147483648,-18,
-              0,-438,-2147483648,10,11,-2147483648,15,0,7,-2147483648,15,-2147483648,0,7,-1566,-2147483648,8,15,0,
-              0,7,15,-2147483648,-2147483648,7,-28,-2147483648,1,1,-224,-2147483648,4,15,0,0,7,-193,-2147483648,1,
-              2,-449,-2147483648,1,2,-694,-2147483648,2,11,0,-8896,-2147483648,
-            ],"TileDataFormat":1,},"tilesetId":{"name":"T_Cables","path":"tilesets/T_Cables/T_Cables.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-        {"$GMRTileLayer":"","%Name":"Cables","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Cables","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":78,"SerialiseWidth":225,"TileCompressedData":[
-              -3214,-2147483648,4,4,10,10,5,-221,-2147483648,4,6,-2147483648,-2147483648,6,-221,-2147483648,4,0,-2147483648,
-              -2147483648,6,-224,-2147483648,1,6,-224,-2147483648,1,6,-22,-2147483648,1,6,-201,-2147483648,1,6,-22,
-              -2147483648,1,6,-201,-2147483648,1,6,-16,-2147483648,7,4,10,12,13,10,10,9,-201,-2147483648,6,8,12,13,
-              10,10,14,-5,10,7,12,13,10,10,14,10,9,-661,-2147483648,1,4,-4,10,1,14,-3,10,5,12,13,10,10,5,-8,-2147483648,
-              7,0,10,14,12,13,10,5,-199,-2147483648,1,0,-9,-2147483648,1,6,-14,-2147483648,1,6,-200,-2147483648,-2,
-              0,-7,-2147483648,2,8,0,-248,-2147483648,2,0,5,-185,-2147483648,3,0,10,5,-36,-2147483648,1,6,-186,-2147483648,
-              2,0,6,-36,-2147483648,1,6,-186,-2147483648,2,0,6,-36,-2147483648,1,6,-186,-2147483648,11,0,8,10,12,13,
-              10,10,12,13,10,5,-27,-2147483648,1,6,-196,-2147483648,1,6,-27,-2147483648,5,8,12,13,10,5,-192,-2147483648,
-              1,6,-31,-2147483648,1,6,-192,-2147483648,1,6,-224,-2147483648,1,6,-224,-2147483648,1,6,-243,-2147483648,
-              1,6,-224,-2147483648,3,8,10,0,-8896,-2147483648,
-            ],"TileDataFormat":1,},"tilesetId":{"name":"T_Cables","path":"tilesets/T_Cables/T_Cables.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-      ],"name":"ForegroundTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":78,"SerialiseWidth":225,"TileCompressedData":[-17550,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"T_Cables","path":"tilesets/T_Cables/T_Cables.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Pickups","depth":1100,"effectEnabled":true,"effectType":null,"gridX":2,"gridY":2,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_8400CD8_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_8400CD8_1","objectId":{"name":"o_TapeMeasure","path":"objects/o_TapeMeasure/o_TapeMeasure.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":440.0,"y":579.0,},
         {"$GMRInstance":"v4","%Name":"inst_71E5B3C4_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71E5B3C4_1","objectId":{"name":"o_TapeMeasure","path":"objects/o_TapeMeasure/o_TapeMeasure.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":376.0,"y":579.0,},
