@@ -471,6 +471,7 @@
     {"name":"inst_2BF4625F","path":"rooms/OurGame/OurGame.yy",},
     {"name":"inst_6C907852","path":"rooms/OurGame/OurGame.yy",},
     {"name":"inst_7A4363F2","path":"rooms/OurGame/OurGame.yy",},
+    {"name":"inst_3B1DFA21","path":"rooms/OurGame/OurGame.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -628,6 +629,7 @@
       ],"name":"ForegroundTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":78,"SerialiseWidth":225,"TileCompressedData":[-17550,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"T_Cables","path":"tilesets/T_Cables/T_Cables.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Robot","depth":900,"effectEnabled":true,"effectType":null,"gridX":6,"gridY":6,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_219CCC79_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_219CCC79_1","objectId":{"name":"O_Player","path":"objects/O_Player/O_Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":549.0,"y":560.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3B1DFA21","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B1DFA21","objectId":{"name":"O_EndAnim","path":"objects/O_EndAnim/O_EndAnim.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.85,"scaleY":1.85,"x":-1584.0,"y":-954.0,},
       ],"layers":[],"name":"Robot","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Level_Objects_Foreground","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_2CF84301","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2CF84301","objectId":{"name":"O_Button","path":"objects/O_Button/O_Button.yy",},"properties":[
