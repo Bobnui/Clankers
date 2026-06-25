@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"O_UIManager",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":75,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"END_SCREEN",
+  "eventList":[],
   "managed":true,
-  "name":"O_UIManager",
+  "name":"END_SCREEN",
   "overriddenProperties":[],
   "parent":{
-    "name":"Managers",
-    "path":"folders/Objects/Managers.yy",
+    "name":"Keira_Mess",
+    "path":"folders/Objects/Keira_Mess.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Finish_Screen",
+    "path":"sprites/Finish_Screen/Finish_Screen.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
