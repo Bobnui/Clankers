@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Menu_Screen",
-    "path":"sprites/s_Menu_Screen/s_Menu_Screen.yy",
+    "name":"Menu_Screen",
+    "path":"sprites/Menu_Screen/Menu_Screen.yy",
   },
   "spriteMaskId":null,
   "visible":true,
