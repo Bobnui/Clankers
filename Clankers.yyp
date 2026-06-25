@@ -41,6 +41,7 @@
     {"$GMFolder":"","%Name":"Stretch","folderPath":"folders/Sounds/Player/Stretch.yy","name":"Stretch","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Backgrounds","folderPath":"folders/Sprites/Backgrounds.yy","name":"Backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"UI","folderPath":"folders/Sprites/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"LevelDesign","folderPath":"folders/Sprites/LevelDesign.yy","name":"LevelDesign","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notifications","folderPath":"folders/Sprites/Notifications.yy","name":"Notifications","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"In Game","folderPath":"folders/Sprites/Notifications/In Game.yy","name":"In Game","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -58,7 +59,9 @@
   "ForcedPrefabProjectReferences":[
     {"link":"io.gamemaker.gmparticlepresets-1.0.0","name":"io.gamemaker.gmparticlepresets-1.0.0","path":"io.gamemaker.gmparticlepresets-1.0.0.yyp",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"FuseBox.aseprite","CopyToMask":-1,"filePath":"datafiles","name":"FuseBox.aseprite","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -68,6 +71,7 @@
   "resources":[
     {"id":{"name":"f_X_Button","path":"fonts/f_X_Button/f_X_Button.yy",},},
     {"id":{"name":"o_Arms_Notification","path":"objects/o_Arms_Notification/o_Arms_Notification.yy",},},
+    {"id":{"name":"o_Begin_Button","path":"objects/o_Begin_Button/o_Begin_Button.yy",},},
     {"id":{"name":"O_Button","path":"objects/O_Button/O_Button.yy",},},
     {"id":{"name":"O_ButtonDoor","path":"objects/O_ButtonDoor/O_ButtonDoor.yy",},},
     {"id":{"name":"O_CameraManager","path":"objects/O_CameraManager/O_CameraManager.yy",},},
@@ -153,6 +157,7 @@
     {"id":{"name":"Apple_Core","path":"sprites/Apple_Core/Apple_Core.yy",},},
     {"id":{"name":"Apple_Whole","path":"sprites/Apple_Whole/Apple_Whole.yy",},},
     {"id":{"name":"Cans","path":"sprites/Cans/Cans.yy",},},
+    {"id":{"name":"FuseBox","path":"sprites/FuseBox/FuseBox.yy",},},
     {"id":{"name":"Menu_Screen","path":"sprites/Menu_Screen/Menu_Screen.yy",},},
     {"id":{"name":"R1_Building_foot","path":"sprites/R1_Building_foot/R1_Building_foot.yy",},},
     {"id":{"name":"R1_Building","path":"sprites/R1_Building/R1_Building.yy",},},
@@ -232,6 +237,7 @@
     {"id":{"name":"S_Truck","path":"sprites/S_Truck/S_Truck.yy",},},
     {"id":{"name":"s_UI_Font","path":"sprites/s_UI_Font/s_UI_Font.yy",},},
     {"id":{"name":"s_Underground_Funnel","path":"sprites/s_Underground_Funnel/s_Underground_Funnel.yy",},},
+    {"id":{"name":"s_UPPER_INNER","path":"sprites/s_UPPER_INNER/s_UPPER_INNER.yy",},},
     {"id":{"name":"s_Upper_Spikes","path":"sprites/s_Upper_Spikes/s_Upper_Spikes.yy",},},
     {"id":{"name":"Smoke_Line01","path":"sprites/Smoke_Line01/Smoke_Line01.yy",},},
     {"id":{"name":"Smoke_Line02","path":"sprites/Smoke_Line02/Smoke_Line02.yy",},},
